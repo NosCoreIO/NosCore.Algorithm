@@ -1,0 +1,21 @@
+language: csharp
+mono: none
+sudo: required
+dist: xenial
+addons:
+    snaps:
+      - name: dotnet-sdk
+        classic: true
+        channel: latest/beta
+sudo: required
+language: csharp
+mono: none
+script:
+    - sudo snap alias dotnet-sdk.dotnet dotnet
+    - dotnet --version
+    - dotnet restore
+    - dotnet build
+    - dotnet test
+global:
+    - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
+    - DOTNET_CLI_TELEMETRY_OPTOUT=1
