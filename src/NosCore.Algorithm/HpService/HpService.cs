@@ -10,7 +10,7 @@ namespace NosCore.Algorithm.HpService
         public HpService()
         {
             // Adventurer HP
-            for (var i = 0; i < Constants.MaxLevel; i++)
+            for (var i = 1; i < Constants.MaxLevel + 1; i++)
             {
                 _hpData[0, i] = (int)(1 / 2.0 * Math.Pow(i + 1, 2) + 31 / 2.0 * (i + 1) + 205);
             }
