@@ -4,7 +4,7 @@ namespace NosCore.Algorithm.ExperienceService
 {
     public class ExperienceService : IExperienceService
     {
-        private readonly double[]_xpData = new double[Constants.MaxLevel];
+        private readonly double[] _xpData = new double[Constants.MaxLevel];
 
         public ExperienceService()
         {
@@ -50,6 +50,10 @@ namespace NosCore.Algorithm.ExperienceService
                     else if (i == 84)
                     {
                         var = 13000;
+                    }
+                    else if (i == 96)
+                    {
+                        var = 15000;
                     }
 
                     _xpData[i] = Convert.ToInt64(_xpData[i - 1] + var * (i + 2) * (i + 2));

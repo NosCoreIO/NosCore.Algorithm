@@ -2,6 +2,7 @@
 
 namespace NosCore.Algorithm.HpService
 {
+    //TODO finish/fix this service
     public class HpService : IHpService
     {
         private readonly double[,] _hpData = new double[Constants.ClassCount, Constants.MaxLevel];
