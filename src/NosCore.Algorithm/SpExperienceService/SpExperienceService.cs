@@ -17,21 +17,26 @@
                 _spXpData[0, i] = _spXpData[0, i - 1] + 6 * (3 * i * (i + 1) + 1);
             }
 
-            for (int i = 1; i < 20; i++)
+            for (int i = 0; i < Constants.MaxLevel; i++)
             {
-                _spXpData[1, i] = 10000;
+                if (i < 19)
+                {
+                    _spXpData[1, i] = 10000;
+                } else if (i == 19)
+                {
+                    _spXpData[1, i] = 100000;
+                }
+                else if (i < 37)
+                {
+                    _spXpData[1, i] = _spXpData[1, i-1] + 5000;
+                }
+                else
+                {
+                    _spXpData[1, i] = 1;
+                }
+
             }
 
-            for (int i = 20; i < 38; i++)
-            {
-                _spXpData[1, i] = 100000 + (i - 20) * 500;
-            }
-
-            //TODO finish SpXp
-            for (int i = 38; i < 99; i++)
-            {
-                _spXpData[1, i] = 1;
-            }
         }
         public long GetSpExperience(byte level, bool isSecondarySp)
         {
