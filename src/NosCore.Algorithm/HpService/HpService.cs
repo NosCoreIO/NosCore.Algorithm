@@ -2,7 +2,6 @@
 
 namespace NosCore.Algorithm.HpService
 {
-    //TODO finish/fix this service
     public class HpService : IHpService
     {
         private readonly double[,] _hpData = new double[Constants.ClassCount, Constants.MaxLevel];
@@ -10,88 +9,90 @@ namespace NosCore.Algorithm.HpService
         public HpService()
         {
             // Adventurer HP
+            int basicHp = 205;
+            int basicInc = 15;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                _hpData[0, i] = (int)(1 / 2.0 * i * i + 31 / 2.0 * i + 205);
+                basicInc++;
+                basicHp += basicInc;
+
+                _hpData[0, i] = basicHp;
             }
 
             // Swordsman HP
+            int swordHp = 190;
+            int swordInc = 14;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                uint j = 16;
-                var hp = 946;
-                var inc = 85;
-                while (j <= i)
-                {
-                    if (j % 5 == 2)
-                    {
-                        hp += inc / 2;
-                        inc += 2;
-                    }
-                    else
-                    {
-                        hp += inc;
-                        inc += 4;
-                    }
+                bool increase2 = (i - 2) % 10 == 0;
+                bool increase3 = (i - 3) % 10 == 0;
+                bool increase4 = (i - 4) % 10 == 0;
+                bool increase5 = (i - 5) % 10 == 0;
+                bool increase7 = (i - 7) % 10 == 0;
+                bool increase8 = (i - 8) % 10 == 0;
+                bool increase9 = (i - 9) % 10 == 0;
 
-                    ++j;
+                swordInc++;
+                swordHp += swordInc;
+
+                if (increase2 || increase3 || increase4 || increase5 || increase7 || increase8 || increase9 || i % 10 == 0)
+                {
+                    swordInc++;
+                    swordHp += swordInc;
                 }
 
-                _hpData[1, i] = hp;
+                _hpData[1, i] = swordHp;
             }
 
             // Magician HP
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                _hpData[3, i] = (int)((i + 15) * (i + 15) + i + 15.0 - 465 + 550);
+                basicInc++;
+                basicHp += basicInc;
+
+                _hpData[3, i] = basicHp;
             }
 
             // Archer HP
+            int archerHp = 190;
+            int archerInc = 14;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                var hp = 680;
-                var inc = 35;
-                uint j = 16;
-                while (j <= i)
-                {
-                    hp += inc;
-                    ++inc;
-                    if ((j % 10 == 1) || (j % 10 == 5) || (j % 10 == 8))
-                    {
-                        hp += inc;
-                        ++inc;
-                    }
+                bool increase4 = (i - 4) % 10 == 0;
+                bool increase7 = (i - 7) % 10 == 0;
 
-                    ++j;
+                archerInc++;
+                archerHp += archerInc;
+
+                if (increase4 || increase7 || i % 10 == 0)
+                {
+                    archerInc++;
+                    archerHp += archerInc;
                 }
 
-                _hpData[2, i] = hp;
+                _hpData[2, i] = archerHp;
             }
 
             // MartialArtist HP
-            //TODO: Find real formula, this is currently the swordsman statistics
+            int fighterHp = 190;
+            int fighterInc = 14;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                uint j = 16;
-                var hp = 946;
-                var inc = 85;
-                while (j <= i)
-                {
-                    if (j % 5 == 2)
-                    {
-                        hp += inc / 2;
-                        inc += 2;
-                    }
-                    else
-                    {
-                        hp += inc;
-                        inc += 4;
-                    }
+                bool increase2 = (i - 2) % 10 == 0;
+                bool increase4 = (i - 4) % 10 == 0;
+                bool increase6 = (i - 6) % 10 == 0;
+                bool increase7 = (i - 7) % 10 == 0;
 
-                    ++j;
+                fighterInc++;
+                fighterHp += fighterInc;
+
+                if (increase2 || increase4 || increase6 || increase7 || i % 10 == 0)
+                {
+                    fighterInc++;
+                    fighterHp += fighterInc;
                 }
 
-                _hpData[4, i] = hp;
+                _hpData[4, i] = fighterHp;
             }
         }
         public long GetHp(byte @class, byte level)
