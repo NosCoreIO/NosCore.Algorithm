@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NosCore.Algorithm", "src\NosCore.Algorithm\NosCore.Algorithm.csproj", "{47812EE7-E8D0-4AB5-8430-28235C267B5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NosCore.Algorithm.Tests", "src\NosCore.Algorithm.Tests\NosCore.Algorithm.Tests.csproj", "{DB2AF392-6928-4F92-8E85-BEFE26D56E7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NosCore.Algorithm.Tests", "test\NosCore.Algorithm.Tests\NosCore.Algorithm.Tests.csproj", "{DB2AF392-6928-4F92-8E85-BEFE26D56E7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
