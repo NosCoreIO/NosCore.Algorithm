@@ -12,13 +12,13 @@ namespace NosCore.Algorithm.ExperienceService
             double var = 1;
             v[0] = 540;
             v[1] = 960;
-            _xpData[1] = 300;
-            for (var i = 1; i < v.Length; i++)
+            _xpData[0] = 300;
+            for (var i = 2; i < v.Length; i++)
             {
                 v[i] = v[i - 1] + 420 + 120 * (i - 1);
             }
 
-            for (var i = 2; i < _xpData.Length; i++)
+            for (var i = 1; i < _xpData.Length; i++)
             {
                 if (i < 79)
                 {
