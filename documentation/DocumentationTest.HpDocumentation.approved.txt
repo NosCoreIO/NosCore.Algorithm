@@ -1,5 +1,5 @@
 ============ HP Table =============
-Class Adventurer
+-------------- Class Adventurer --------------
 Level 1  - HP: 205
 Level 2  - HP: 221
 Level 3  - HP: 238
@@ -99,7 +99,8 @@ Level 96 - HP: 6190
 Level 97 - HP: 6301
 Level 98 - HP: 6413
 Level 99 - HP: 6526
-Class Swordman
+
+-------------- Class Swordman --------------
 Level 1  - HP: 946
 Level 2  - HP: 946
 Level 3  - HP: 946
@@ -199,7 +200,8 @@ Level 96 - HP: 17290
 Level 97 - HP: 17663
 Level 98 - HP: 17851
 Level 99 - HP: 18230
-Class Archer
+
+-------------- Class Archer --------------
 Level 1  - HP: 680
 Level 2  - HP: 680
 Level 3  - HP: 680
@@ -299,7 +301,8 @@ Level 96 - HP: 9676
 Level 97 - HP: 9815
 Level 98 - HP: 9955
 Level 99 - HP: 10238
-Class Magician
+
+-------------- Class Magician --------------
 Level 1  - HP: 325
 Level 2  - HP: 357
 Level 3  - HP: 391
@@ -399,7 +402,8 @@ Level 96 - HP: 12295
 Level 97 - HP: 12517
 Level 98 - HP: 12741
 Level 99 - HP: 12967
-Class MartialArtist
+
+-------------- Class MartialArtist --------------
 Level 1  - HP: 946
 Level 2  - HP: 946
 Level 3  - HP: 946
