@@ -1,4 +1,5 @@
-============ HP Table =============Class Adventurer
+============ HP Table =============
+Class Adventurer
 Level 1  - HP: 205
 Level 2  - HP: 221
 Level 3  - HP: 238
