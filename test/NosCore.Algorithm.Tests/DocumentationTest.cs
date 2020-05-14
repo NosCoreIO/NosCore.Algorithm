@@ -97,6 +97,26 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void SecondaryDamageDocumentation()
+        {
+            var secondaryDamageService = new SecondaryDamageService.SecondaryDamageService();
+
+            StringBuilder resultBuilder = new StringBuilder("# Secondary Damage Table");
+            foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## Class {@class}");
+                for (byte level = 1; level < 100; level++)
+                {
+                    resultBuilder.AppendLine(
+                        $"- Level {level,2} - Secondary Damage Min: {secondaryDamageService.GetSecondaryMinDamage(@class, level)} Secondary Damage Max: {secondaryDamageService.GetSecondaryMaxDamage(@class, level)}");
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void HitRateDocumentation()
         {
             var hitRateService = new HitRateService.HitRateService();
@@ -117,11 +137,11 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
-        public void SecondaryDamageDocumentation()
+        public void SecondaryHitRateDocumentation()
         {
-            var secondaryDamageService = new SecondaryDamageService.SecondaryDamageService();
+            var secondaryHitRateService = new SecondaryHitRateService.SecondaryHitRateService();
 
-            StringBuilder resultBuilder = new StringBuilder("# Secondary Damage Table");
+            StringBuilder resultBuilder = new StringBuilder("# Secondary HitRate Table");
             foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
             {
                 resultBuilder.AppendLine();
@@ -129,7 +149,7 @@ namespace NosCore.Algorithm.Tests
                 for (byte level = 1; level < 100; level++)
                 {
                     resultBuilder.AppendLine(
-                        $"- Level {level,2} - Secondary Damage Min: {secondaryDamageService.GetSecondaryMinDamage(@class, level)} Secondary Damage Max: {secondaryDamageService.GetSecondaryMaxDamage(@class, level)}");
+                        $"- Level {level,2} - HitRate: {secondaryHitRateService.GetSecondaryHitRate(@class, level)}");
                 }
             }
 
