@@ -28,7 +28,7 @@ namespace NosCore.Algorithm.Tests
             for (byte level = 1; level < 100; level++)
             {
                 resultBuilder.AppendLine(
-                    $"Level {level,2} - XP: {experienceService.GetExperience(level)}");
+                    $"- Level {level,2} - XP: {experienceService.GetExperience(level)}");
             }
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
@@ -49,7 +49,7 @@ namespace NosCore.Algorithm.Tests
                 for (byte level = 1; level < 100; level++)
                 {
                     resultBuilder.AppendLine(
-                        $"Level {level,2} - XP: {experienceService.GetSpExperience(level, i == 1)}");
+                        $"- Level {level,2} - XP: {experienceService.GetSpExperience(level, i == 1)}");
                 }
             }
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
@@ -69,7 +69,7 @@ namespace NosCore.Algorithm.Tests
                 for (byte level = 1; level < 100; level++)
                 {
                     resultBuilder.AppendLine(
-                        $"Level {level,2} - HP: {experienceService.GetHp(@class, level)}");
+                        $"- Level {level,2} - HP: {experienceService.GetHp(@class, level)}");
                 }
             }
 
@@ -89,7 +89,7 @@ namespace NosCore.Algorithm.Tests
                 for (byte level = 1; level < 100; level++)
                 {
                     resultBuilder.AppendLine(
-                        $"Level {level,2} - Damage Min: {damageService.GetMinDamage(@class, level)} Damage Max: {damageService.GetMaxDamage(@class, level)}");
+                        $"- Level {level,2} - Damage Min: {damageService.GetMinDamage(@class, level)} Damage Max: {damageService.GetMaxDamage(@class, level)}");
                 }
             }
 
@@ -109,7 +109,7 @@ namespace NosCore.Algorithm.Tests
                 for (byte level = 1; level < 100; level++)
                 {
                     resultBuilder.AppendLine(
-                        $"Level {level,2} - HitRate: {hitRateService.GetHitRate(@class, level)}");
+                        $"- Level {level,2} - HitRate: {hitRateService.GetHitRate(@class, level)}");
                 }
             }
 
@@ -129,7 +129,7 @@ namespace NosCore.Algorithm.Tests
                 for (byte level = 1; level < 100; level++)
                 {
                     resultBuilder.AppendLine(
-                        $"Level {level,2} - Secondary Damage Min: {secondaryDamageService.GetSecondaryMinDamage(@class, level)} Secondary Damage Max: {secondaryDamageService.GetSecondaryMaxDamage(@class, level)}");
+                        $"- Level {level,2} - Secondary Damage Min: {secondaryDamageService.GetSecondaryMinDamage(@class, level)} Secondary Damage Max: {secondaryDamageService.GetSecondaryMaxDamage(@class, level)}");
                 }
             }
 
