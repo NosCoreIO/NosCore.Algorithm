@@ -5,20 +5,19 @@ using System.Text;
 
 namespace NosCore.Algorithm.DamageService
 {
-    // Work in progress
     public class DamageService : IDamageService
     {
         private readonly double[,] _minDamage = new double[Constants.ClassCount, Constants.MaxLevel];
 
         public DamageService()
         {
-            // Adventurer Damage from Opennos
+            // Adventurer
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
                 _minDamage[0, i] = i + 10;
             }
 
-            // Swordmanint 
+            // Swordman
             int swordmanMin = 8;
             int swordmanMinUp = 2;
             for (var i = 0; i < Constants.MaxLevel; i++)
@@ -37,6 +36,7 @@ namespace NosCore.Algorithm.DamageService
 
                 _minDamage[1, i] = swordmanMin;
             }
+
             // Archer
             int archerMin = 58;
             int archerMinUp = 2;

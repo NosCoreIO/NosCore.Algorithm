@@ -72,7 +72,7 @@ namespace NosCore.Algorithm.Tests
         [TestMethod]
         public void DamageDocumentation()
         {
-            var experienceService = new DamageService.DamageService();
+            var damageService = new DamageService.DamageService();
 
             StringBuilder resultBuilder = new StringBuilder("============ Damage Table =============");
             foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
@@ -82,7 +82,27 @@ namespace NosCore.Algorithm.Tests
                 for (byte level = 1; level < 100; level++)
                 {
                     resultBuilder.AppendLine(
-                        $"Level {level.ToString().PadRight(2)} - Damage Min: {experienceService.GetMinDamage((byte)@class, level)} Damage Max: {experienceService.GetMaxDamage((byte)@class, level)}");
+                        $"Level {level.ToString().PadRight(2)} - Damage Min: {damageService.GetMinDamage((byte)@class, level)} Damage Max: {damageService.GetMaxDamage((byte)@class, level)}");
+                }
+            }
+
+            Approvals.Verify(resultBuilder);
+        }
+
+        [TestMethod]
+        public void HitRateDocumentation()
+        {
+            var hitRateService = new HitRateService.HitRateService();
+
+            StringBuilder resultBuilder = new StringBuilder("============ HitRate Table =============");
+            foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"-------------- Class {@class} --------------");
+                for (byte level = 1; level < 100; level++)
+                {
+                    resultBuilder.AppendLine(
+                        $"Level {level.ToString().PadRight(2)} - HitRate: {hitRateService.GetHitRate((byte)@class, level)}");
                 }
             }
 
