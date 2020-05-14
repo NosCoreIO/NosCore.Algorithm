@@ -1,6 +1,13 @@
-﻿using System;
+﻿//  __  _  __    __   ___ __  ___ ___
+// |  \| |/__\ /' _/ / _//__\| _ \ __|
+// | | ' | \/ |`._`.| \_| \/ | v / _|
+// |_|\__|\__/ |___/ \__/\__/|_|_\___|
+// -----------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.Text;
+using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.SecondaryDamageService
 {
@@ -18,9 +25,9 @@ namespace NosCore.Algorithm.SecondaryDamageService
 
             // Swordman
             int swordmanMin = 8;
-            int swordmanMinUp = 2;
             for(var i = 0; i < Constants.MaxLevel; i++)
             {
+                int swordmanMinUp;
                 if (i == 0 || (i - 5) % 10 == 0 || (i - 10) % 10 == 0)
                 {
                     swordmanMinUp = 2;
@@ -37,9 +44,9 @@ namespace NosCore.Algorithm.SecondaryDamageService
 
             // Archer
             int archerMin = 8;
-            int archerMinUp = 2;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
+                int archerMinUp;
                 if (i == 0 || (i - 4) % 10 == 0 || i > 0 && (i - 7) % 10 == 0 || i > 1 && (i - 1) % 10 == 0)
                 {
                     archerMinUp = 2;
@@ -56,9 +63,9 @@ namespace NosCore.Algorithm.SecondaryDamageService
 
             // Magician
             int mageMin = 8;
-            int mageMinUp = 2;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
+                int mageMinUp;
                 if (i == 0 || (i - 5) % 10 == 0 || (i - 10) % 10 == 0)
                 {
                     mageMinUp = 2;
@@ -74,10 +81,10 @@ namespace NosCore.Algorithm.SecondaryDamageService
             }
 
             // Fighter
-            int fighterMin = 28;
-            int fighterMinUp = 2;
+            var fighterMin = 28;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
+                int fighterMinUp;
                 if(i == 0 || (i - 4) % 10 == 0 || i > 0 && (i - 7) % 10 == 0 || i > 1 && (i - 1) % 10 == 0)
                 {
                     fighterMinUp = 2;
@@ -93,11 +100,11 @@ namespace NosCore.Algorithm.SecondaryDamageService
             }
         }
 
-        public long GetSecondaryMinDamage(byte @class, byte level)
+        public long GetSecondaryMinDamage(CharacterClassType @class, byte level)
         {
-            return (long)_secondaryMinDamage![@class, level - 1];
+            return (long)_secondaryMinDamage![(byte)@class, level - 1];
         }
 
-        public long GetSecondaryMaxDamage(byte @class, byte level) => GetSecondaryMinDamage(@class, level);
+        public long GetSecondaryMaxDamage(CharacterClassType @class, byte level) => GetSecondaryMinDamage(@class, level);
     }
 }

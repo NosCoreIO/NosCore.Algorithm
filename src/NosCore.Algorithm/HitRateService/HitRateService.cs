@@ -1,6 +1,13 @@
-﻿using System;
+﻿//  __  _  __    __   ___ __  ___ ___
+// |  \| |/__\ /' _/ / _//__\| _ \ __|
+// | | ' | \/ |`._`.| \_| \/ | v / _|
+// |_|\__|\__/ |___/ \__/\__/|_|_\___|
+// -----------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.Text;
+using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.HitRateService
 {
@@ -17,9 +24,9 @@ namespace NosCore.Algorithm.HitRateService
 
             // Swordman
             int swordHitRate = 23;
-            int swordHitRateUp = 2;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
+                int swordHitRateUp;
                 if ((i - 5) % 5 == 0)
                 {
                     swordHitRateUp = 2;
@@ -36,9 +43,9 @@ namespace NosCore.Algorithm.HitRateService
 
             // Archer
             int archerHitRate = 31;
-            int archerHitRateUp = 2;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
+                int archerHitRateUp;
                 if (i != 96 && i % 2 == 0 || i > 0 && i % 5 == 0)
                 {
                     archerHitRateUp = 4;
@@ -61,9 +68,9 @@ namespace NosCore.Algorithm.HitRateService
 
             // Fighter
             int fighterHitRate = 8;
-            int fighterHitRateUp = 2;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
+                int fighterHitRateUp;
                 if (i == 0 || (i - 4) % 10 == 0 || i > 0 && (i - 7) % 10 == 0 || i > 0 && (i - 10) % 10 == 0)
                 {
                     fighterHitRateUp = 2;
@@ -79,9 +86,9 @@ namespace NosCore.Algorithm.HitRateService
             }
         }
 
-        public long GetHitRate(byte @class, byte level)
+        public long GetHitRate(CharacterClassType @class, byte level)
         {
-            return (long)_hitRate![@class, level - 1];
+            return (long)_hitRate![(byte)@class, level - 1];
         }
     }
 }
