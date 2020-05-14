@@ -108,5 +108,25 @@ namespace NosCore.Algorithm.Tests
 
             Approvals.Verify(resultBuilder);
         }
+
+        [TestMethod]
+        public void SecondaryDamageDocumentation()
+        {
+            var secondaryDamageService = new SecondaryDamageService.SecondaryDamageService();
+
+            StringBuilder resultBuilder = new StringBuilder("============ Secondary Damage Table =============");
+            foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"-------------- Class {@class} --------------");
+                for (byte level = 1; level < 100; level++)
+                {
+                    resultBuilder.AppendLine(
+                        $"Level {level.ToString().PadRight(2)} - Secondary Damage Min: {secondaryDamageService.GetSecondaryMinDamage((byte)@class, level)} Secondary Damage Max: {secondaryDamageService.GetSecondaryMaxDamage((byte)@class, level)}");
+                }
+            }
+
+            Approvals.Verify(resultBuilder);
+        }
     }
 }
