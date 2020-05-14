@@ -4,12 +4,14 @@
 // |_|\__|\__/ |___/ \__/\__/|_|_\___|
 // -----------------------------------
 
+using NosCore.Shared.Enumerations;
+
 namespace NosCore.Algorithm.DamageService
 {
     public interface IDamageService
     {
-        long GetMinDamage(byte entityClass, byte level);
+        long GetMinDamage(CharacterClassType entityClass, byte level);
 
-        long GetMaxDamage(byte entityClass, byte level);
+        long GetMaxDamage(CharacterClassType entityClass, byte level);
     }
 }

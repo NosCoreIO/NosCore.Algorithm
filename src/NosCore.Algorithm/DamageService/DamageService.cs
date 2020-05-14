@@ -1,7 +1,14 @@
-﻿using NosCore.Algorithm.HpService;
+﻿//  __  _  __    __   ___ __  ___ ___
+// |  \| |/__\ /' _/ / _//__\| _ \ __|
+// | | ' | \/ |`._`.| \_| \/ | v / _|
+// |_|\__|\__/ |___/ \__/\__/|_|_\___|
+// -----------------------------------
+
+using NosCore.Algorithm.HpService;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.DamageService
 {
@@ -39,9 +46,9 @@ namespace NosCore.Algorithm.DamageService
 
             // Archer
             int archerMin = 58;
-            int archerMinUp = 2;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
+                int archerMinUp;
                 if (i > 0 && (i - 1) % 10 == 0 || i > 0 && (i - 3) % 10 == 0 || i > 0 && (i - 5) % 10 == 0 || i > 0 && (i - 8) % 10 == 0)
                 {
                     archerMinUp = 1;
@@ -97,11 +104,11 @@ namespace NosCore.Algorithm.DamageService
             }
         }
 
-        public long GetMinDamage(byte @class, byte level)
+        public long GetMinDamage(CharacterClassType @class, byte level)
         {
-            return (long)_minDamage![@class, level - 1];
+            return (long)_minDamage![(byte)@class, level - 1];
         }
 
-        public long GetMaxDamage(byte @class, byte level) => GetMinDamage(@class, level);
+        public long GetMaxDamage(CharacterClassType @class, byte level) => GetMinDamage(@class, level);
     }
 }

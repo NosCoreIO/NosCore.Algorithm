@@ -4,10 +4,12 @@
 // |_|\__|\__/ |___/ \__/\__/|_|_\___|
 // -----------------------------------
 
+using NosCore.Shared.Enumerations;
+
 namespace NosCore.Algorithm.HpService
 {
     public interface IHpService
     {
-        long GetHp(byte entityClass, byte level);
+        long GetHp(CharacterClassType entityClass, byte level);
     }
 }

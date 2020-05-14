@@ -1,4 +1,11 @@
-﻿using System;
+﻿//  __  _  __    __   ___ __  ___ ___
+// |  \| |/__\ /' _/ / _//__\| _ \ __|
+// | | ' | \/ |`._`.| \_| \/ | v / _|
+// |_|\__|\__/ |___/ \__/\__/|_|_\___|
+// -----------------------------------
+
+using System;
+using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.HpService
 {
@@ -95,9 +102,9 @@ namespace NosCore.Algorithm.HpService
                 _hpData[4, i] = fighterHp;
             }
         }
-        public long GetHp(byte @class, byte level)
+        public long GetHp(CharacterClassType @class, byte level)
         {
-            return (long)_hpData![@class, level-1];
+            return (long)_hpData![(byte)@class, level-1];
         }
     }
 }
