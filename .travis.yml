@@ -13,6 +13,7 @@ install:
   - pip install --user awscli
   - sudo snap alias dotnet-sdk.dotnet dotnet
   - dotnet --version
+  - sudo apt-get install meld
 env:
   global:
     - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
