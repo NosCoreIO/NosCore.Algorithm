@@ -48,7 +48,6 @@ namespace NosCore.Algorithm.Tests
             Approvals.Verify(resultBuilder);
         }
 
-
         [TestMethod]
         public void HpDocumentation()
         {
@@ -64,6 +63,26 @@ namespace NosCore.Algorithm.Tests
                 {
                     resultBuilder.AppendLine(
                         $"Level {level.ToString().PadRight(2)} - HP: {experienceService.GetHp((byte)@class, level)}");
+                }
+            }
+
+            Approvals.Verify(resultBuilder);
+        }
+
+        [TestMethod]
+        public void DamageDocumentation()
+        {
+            var experienceService = new DamageService.DamageService();
+
+            StringBuilder resultBuilder = new StringBuilder("============ Damage Table =============");
+            foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"-------------- Class {@class} --------------");
+                for (byte level = 1; level < 100; level++)
+                {
+                    resultBuilder.AppendLine(
+                        $"Level {level.ToString().PadRight(2)} - Damage Min: {experienceService.GetMinDamage((byte)@class, level)} Damage Max: {experienceService.GetMaxDamage((byte)@class, level)}");
                 }
             }
 

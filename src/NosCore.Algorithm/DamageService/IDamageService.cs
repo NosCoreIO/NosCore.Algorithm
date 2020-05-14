@@ -6,7 +6,7 @@
 
 namespace NosCore.Algorithm.DamageService
 {
-    public interface IDamageMinMaxService
+    public interface IDamageService
     {
         long GetMinDamage(byte entityClass, byte level);
 
