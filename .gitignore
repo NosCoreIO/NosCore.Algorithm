@@ -498,3 +498,5 @@ fabric.properties
 /build/netstandard2.*
 /build/netcoreapp3.*
 /documentation/*.received.md
+/documentation/*.received.txt
+/documentation/*.approved.txt
