@@ -16,13 +16,11 @@ namespace NosCore.Algorithm.HitRateService
         private readonly double[,] _hitRate = new double[Constants.ClassCount, Constants.MaxLevel];
         public HitRateService()
         {
-            // Adventurer
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                _hitRate[0, i] = i + 10;
+                _hitRate[(byte)CharacterClassType.Adventurer, i] = i + 10;
             }
 
-            // Swordman
             int swordHitRate = 23;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
@@ -38,10 +36,9 @@ namespace NosCore.Algorithm.HitRateService
 
                 swordHitRate += swordHitRateUp;
 
-                _hitRate[1, i] = swordHitRate;
+                _hitRate[(byte)CharacterClassType.Swordman, i] = swordHitRate;
             }
 
-            // Archer
             int archerHitRate = 31;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
@@ -60,13 +57,11 @@ namespace NosCore.Algorithm.HitRateService
                 _hitRate[2, i] = archerHitRate;
             }
 
-            // Magician
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                _hitRate[3, i] = 0;
+                _hitRate[(byte)CharacterClassType.Magician, i] = 0;
             }
 
-            // Fighter
             int fighterHitRate = 8;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
@@ -82,7 +77,7 @@ namespace NosCore.Algorithm.HitRateService
 
                 fighterHitRate += fighterHitRateUp;
 
-                _hitRate[4, i] = fighterHitRate;
+                _hitRate[(byte)CharacterClassType.MartialArtist, i] = fighterHitRate;
             }
         }
 

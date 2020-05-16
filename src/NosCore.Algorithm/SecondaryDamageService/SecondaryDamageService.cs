@@ -20,10 +20,9 @@ namespace NosCore.Algorithm.SecondaryDamageService
             // Adventurer
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                _secondaryMinDamage[0, i] = i + 10;
+                _secondaryMinDamage[(byte)CharacterClassType.Adventurer, i] = i + 10;
             }
 
-            // Swordman
             int swordmanMin = 8;
             for(var i = 0; i < Constants.MaxLevel; i++)
             {
@@ -39,10 +38,9 @@ namespace NosCore.Algorithm.SecondaryDamageService
 
                 swordmanMin += swordmanMinUp;
 
-                _secondaryMinDamage[1, i] = swordmanMin;
+                _secondaryMinDamage[(byte)CharacterClassType.Swordman, i] = swordmanMin;
             }
 
-            // Archer
             int archerMin = 8;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
@@ -58,10 +56,9 @@ namespace NosCore.Algorithm.SecondaryDamageService
 
                 archerMin += archerMinUp;
 
-                _secondaryMinDamage[2, i] = archerMin;
+                _secondaryMinDamage[(byte)CharacterClassType.Archer, i] = archerMin;
             }
 
-            // Magician
             int mageMin = 8;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
@@ -77,10 +74,9 @@ namespace NosCore.Algorithm.SecondaryDamageService
 
                 mageMin += mageMinUp;
 
-                _secondaryMinDamage[3, i] = mageMin;
+                _secondaryMinDamage[(byte)CharacterClassType.Magician, i] = mageMin;
             }
 
-            // Fighter
             var fighterMin = 28;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
@@ -96,7 +92,7 @@ namespace NosCore.Algorithm.SecondaryDamageService
 
                 fighterMin += fighterMinUp;
 
-                _secondaryMinDamage[4, i] = fighterMin;
+                _secondaryMinDamage[(byte)CharacterClassType.MartialArtist, i] = fighterMin;
             }
         }
 

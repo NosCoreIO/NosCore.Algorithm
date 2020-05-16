@@ -11,17 +11,15 @@ namespace NosCore.Algorithm.SecondaryHitRateService
 
         public SecondaryHitRateService()
         {
-            // Adventurer
             int adventurerHit = 18;
             int adventurerHitUp = 2;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
                 adventurerHit += adventurerHitUp;
 
-                _secondaryHitRate[0, i] = adventurerHit;
+                _secondaryHitRate[(byte)CharacterClassType.Adventurer, i] = adventurerHit;
             }
 
-            // Swordman
             int swordmanHit = 16;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
@@ -38,10 +36,9 @@ namespace NosCore.Algorithm.SecondaryHitRateService
 
                 swordmanHit += swordmanHitUp;
 
-                _secondaryHitRate[1, i] = swordmanHit;
+                _secondaryHitRate[(byte)CharacterClassType.Swordman, i] = swordmanHit;
             }
 
-            // Archer
             int archerHit = 23;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
@@ -58,10 +55,9 @@ namespace NosCore.Algorithm.SecondaryHitRateService
 
                 archerHit += archerHitUp;
 
-                _secondaryHitRate[2, i] = archerHit;
+                _secondaryHitRate[(byte)CharacterClassType.Archer, i] = archerHit;
             }
 
-            // Magician
             int mageHit = 16;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
@@ -78,10 +74,9 @@ namespace NosCore.Algorithm.SecondaryHitRateService
 
                 mageHit += mageHitUp;
 
-                _secondaryHitRate[3, i] = mageHit;
+                _secondaryHitRate[(byte)CharacterClassType.Magician, i] = mageHit;
             }
 
-            // Fighter
             int fighterHit = 16;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
@@ -98,7 +93,7 @@ namespace NosCore.Algorithm.SecondaryHitRateService
 
                 fighterHit += fighterHitUp;
 
-                _secondaryHitRate[4, i] = fighterHit;
+                _secondaryHitRate[(byte)CharacterClassType.MartialArtist, i] = fighterHit;
             }
         }
 

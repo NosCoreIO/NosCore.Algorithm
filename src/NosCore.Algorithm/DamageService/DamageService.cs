@@ -21,7 +21,7 @@ namespace NosCore.Algorithm.DamageService
             // Adventurer
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                _minDamage[0, i] = i + 10;
+                _minDamage[(byte)CharacterClassType.Adventurer, i] = i + 10;
             }
 
             // Swordman
@@ -41,7 +41,7 @@ namespace NosCore.Algorithm.DamageService
 
                 swordmanMin += swordmanMinUp;
 
-                _minDamage[1, i] = swordmanMin;
+                _minDamage[(byte)CharacterClassType.Swordman, i] = swordmanMin;
             }
 
             // Archer
@@ -60,7 +60,7 @@ namespace NosCore.Algorithm.DamageService
 
                 archerMin += archerMinUp;
 
-                _minDamage[2, i] = archerMin;
+                _minDamage[(byte)CharacterClassType.Archer, i] = archerMin;
             }
 
             // Magician
@@ -80,7 +80,7 @@ namespace NosCore.Algorithm.DamageService
 
                 mageMin += mageMinUp;
 
-                _minDamage[3, i] = mageMin;
+                _minDamage[(byte)CharacterClassType.Magician, i] = mageMin;
             }
 
             // Fighter
@@ -100,7 +100,7 @@ namespace NosCore.Algorithm.DamageService
 
                 fighterMin += fighterMinUp;
 
-                _minDamage[4, i] = fighterMin;
+                _minDamage[(byte)CharacterClassType.MartialArtist, i] = fighterMin;
             }
         }
 
