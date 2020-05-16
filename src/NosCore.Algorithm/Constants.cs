@@ -9,6 +9,7 @@ namespace NosCore.Algorithm
     {
         internal const byte MaxLevel = 99;
         internal const byte MaxJobLevel = 80;
+        internal const byte MaxHeroLevel = 60;
         internal static readonly int ClassCount = Enum.GetNames(typeof(CharacterClassType)).Length;
     }
 }

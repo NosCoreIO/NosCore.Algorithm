@@ -35,6 +35,23 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void HeroExperienceDocumentation()
+        {
+            var heroExperienceService = new HeroExperienceService.HeroExperienceService();
+
+            var resultBuilder = new StringBuilder("# Hero Experience Table");
+            resultBuilder.AppendLine();
+
+            for (byte level = 1; level < 61; level++)
+            {
+                resultBuilder.AppendLine(
+                    $"- Level {level,2} - XP: {heroExperienceService.GetHeroExperience(level)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void SpExperienceDocumentation()
         {
             var experienceService = new SpExperienceService.SpExperienceService();
