@@ -19,51 +19,25 @@ namespace NosCore.Algorithm.ExperienceService
             v[0] = 540;
             v[1] = 960;
             _xpData[0] = 300;
-            for (var i = 2; i < v.Length; i++)
-            {
-                v[i] = v[i - 1] + 420 + 120 * (i - 1);
-            }
 
             for (var i = 1; i < _xpData.Length; i++)
             {
-                if (i < 79)
+                v[i] = i == 1 ? v[i] : v[i - 1] + 420 + 120 * (i - 1);
+                var = i switch
                 {
-                    if (i == 14)
-                    {
-                        var = 6 / 3d;
-                    }
-                    else if (i == 39)
-                    {
-                        var = 19 / 3d;
-                    }
-                    else if (i == 59)
-                    {
-                        var = 70 / 3d;
-                    }
+                    14 => 6 / 3d,
+                    39 => 19 / 3d,
+                    59 => 70 / 3d,
+                    79 => 5000,
+                    82 => 9000,
+                    84 => 13000,
+                    96 => 15000,
+                    _ => var
+                };
 
-                    _xpData[i] = Convert.ToInt64(_xpData[i - 1] + var * v[i - 1]);
-                }
-                else
-                {
-                    if (i == 79)
-                    {
-                        var = 5000;
-                    }
-                    else if (i == 82)
-                    {
-                        var = 9000;
-                    }
-                    else if (i == 84)
-                    {
-                        var = 13000;
-                    }
-                    else if (i == 96)
-                    {
-                        var = 15000;
-                    }
-
-                    _xpData[i] = Convert.ToInt64(_xpData[i - 1] + var * (i + 2) * (i + 2));
-                }
+                _xpData[i] = i < 79
+                    ? Convert.ToInt64(_xpData[i - 1] + var * v[i - 1])
+                    : Convert.ToInt64(_xpData[i - 1] + var * (i + 2) * (i + 2));
             }
         }
         public long GetExperience(byte level)
