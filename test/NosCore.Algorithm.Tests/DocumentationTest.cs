@@ -40,7 +40,7 @@ namespace NosCore.Algorithm.Tests
             var experienceService = new SpExperienceService.SpExperienceService();
 
             StringBuilder resultBuilder = new StringBuilder("# SP Experience Table");
-            
+
 
             for (int i = 0; i < 2; i++)
             {
@@ -150,6 +150,26 @@ namespace NosCore.Algorithm.Tests
                 {
                     resultBuilder.AppendLine(
                         $"- Level {level,2} - HitRate: {secondaryHitRateService.GetSecondaryHitRate(@class, level)}");
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
+        public void JobExperienceDocumentation()
+        {
+            var jobExperienceService = new JobExperienceService.JobExperienceService();
+
+            StringBuilder resultBuilder = new StringBuilder("# Job Experience Table");
+            foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## Class {@class}");
+                for (byte level = 1; level < (@class == CharacterClassType.Adventurer ? 21 : 81); level++)
+                {
+                    resultBuilder.AppendLine(
+                        $"- Level {level,2} - XP: {jobExperienceService.GetJobExperience(@class, level)}");
                 }
             }
 

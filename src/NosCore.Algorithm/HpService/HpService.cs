@@ -23,10 +23,9 @@ namespace NosCore.Algorithm.HpService
                 basicInc++;
                 basicHp += basicInc;
 
-                _hpData[0, i] = basicHp;
+                _hpData[(byte)CharacterClassType.Adventurer, i] = basicHp;
             }
 
-            // Swordsman HP
             int swordHp = 190;
             int swordInc = 14;
             for (var i = 0; i < Constants.MaxLevel; i++)
@@ -48,19 +47,17 @@ namespace NosCore.Algorithm.HpService
                     swordHp += swordInc;
                 }
 
-                _hpData[1, i] = swordHp;
+                _hpData[(byte)CharacterClassType.Swordman, i] = swordHp;
             }
 
-            // Magician HP
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
                 basicInc++;
                 basicHp += basicInc;
 
-                _hpData[3, i] = basicHp;
+                _hpData[(byte)CharacterClassType.Magician, i] = basicHp;
             }
 
-            // Archer HP
             int archerHp = 190;
             int archerInc = 14;
             for (var i = 0; i < Constants.MaxLevel; i++)
@@ -77,10 +74,9 @@ namespace NosCore.Algorithm.HpService
                     archerHp += archerInc;
                 }
 
-                _hpData[2, i] = archerHp;
+                _hpData[(byte)CharacterClassType.Archer, i] = archerHp;
             }
 
-            // MartialArtist HP
             int fighterHp = 190;
             int fighterInc = 14;
             for (var i = 0; i < Constants.MaxLevel; i++)
@@ -99,7 +95,7 @@ namespace NosCore.Algorithm.HpService
                     fighterHp += fighterInc;
                 }
 
-                _hpData[4, i] = fighterHp;
+                _hpData[(byte)CharacterClassType.MartialArtist, i] = fighterHp;
             }
         }
         public long GetHp(CharacterClassType @class, byte level)
