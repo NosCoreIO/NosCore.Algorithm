@@ -18,7 +18,7 @@ namespace NosCore.Algorithm.DamageService
 
         public DamageService()
         {
-            _minDamage[(byte) CharacterClassType.Adventurer, 0] = 10;
+            _minDamage[(byte)CharacterClassType.Adventurer, 0] = 10;
             _minDamage[(byte)CharacterClassType.Swordman, 0] = 10;
             _minDamage[(byte)CharacterClassType.Archer, 0] = 60;
             _minDamage[(byte)CharacterClassType.Magician, 0] = 10;
@@ -34,7 +34,8 @@ namespace NosCore.Algorithm.DamageService
                 if ((i - 2) % 10 == 0 || (i - 7) % 10 == 0)
                 {
                     swordmanMinUp++;
-                } else if ((i - 1) % 10 == 0 || (i - 6) % 10 == 0)
+                }
+                else if ((i - 1) % 10 == 0 || (i - 6) % 10 == 0)
                 {
                     swordmanMinUp--;
                 }
@@ -58,7 +59,7 @@ namespace NosCore.Algorithm.DamageService
                 {
                     mageMinUp++;
                 }
-                else if((i - 1) % 10 == 0 || (i - 6) % 10 == 0)
+                else if ((i - 1) % 10 == 0 || (i - 6) % 10 == 0)
                 {
                     mageMinUp--;
                 }
@@ -69,7 +70,8 @@ namespace NosCore.Algorithm.DamageService
                 if ((i - 2) % 10 == 0 || (i - 4) % 10 == 0 || (i - 6) % 10 == 0 || (i - 8) % 10 == 0 || (i - 10) % 10 == 0)
                 {
                     fighterMinUp++;
-                } else if ((i - 1) % 10 == 0 || (i - 3) % 10 == 0 || (i - 5) % 10 == 0 || (i - 7) % 10 == 0 || (i - 9) % 10 == 0)
+                }
+                else if ((i - 1) % 10 == 0 || (i - 3) % 10 == 0 || (i - 5) % 10 == 0 || (i - 7) % 10 == 0 || (i - 9) % 10 == 0)
                 {
                     fighterMinUp--;
                 }
