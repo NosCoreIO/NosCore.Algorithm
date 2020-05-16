@@ -16,8 +16,8 @@ namespace NosCore.Algorithm.HpService
         public HpService()
         {
             // Adventurer HP
-            int basicHp = 205;
-            int basicInc = 15;
+            var basicHp = 205;
+            var basicInc = 15;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
                 basicInc++;
@@ -26,17 +26,17 @@ namespace NosCore.Algorithm.HpService
                 _hpData[(byte)CharacterClassType.Adventurer, i] = basicHp;
             }
 
-            int swordHp = 190;
-            int swordInc = 14;
+            var swordHp = 190;
+            var swordInc = 14;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                bool increase2 = (i - 2) % 10 == 0;
-                bool increase3 = (i - 3) % 10 == 0;
-                bool increase4 = (i - 4) % 10 == 0;
-                bool increase5 = (i - 5) % 10 == 0;
-                bool increase7 = (i - 7) % 10 == 0;
-                bool increase8 = (i - 8) % 10 == 0;
-                bool increase9 = (i - 9) % 10 == 0;
+                var increase2 = (i - 2) % 10 == 0;
+                var increase3 = (i - 3) % 10 == 0;
+                var increase4 = (i - 4) % 10 == 0;
+                var increase5 = (i - 5) % 10 == 0;
+                var increase7 = (i - 7) % 10 == 0;
+                var increase8 = (i - 8) % 10 == 0;
+                var increase9 = (i - 9) % 10 == 0;
 
                 swordInc++;
                 swordHp += swordInc;
@@ -58,12 +58,12 @@ namespace NosCore.Algorithm.HpService
                 _hpData[(byte)CharacterClassType.Magician, i] = basicHp;
             }
 
-            int archerHp = 190;
-            int archerInc = 14;
+            var archerHp = 190;
+            var archerInc = 14;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                bool increase4 = (i - 4) % 10 == 0;
-                bool increase7 = (i - 7) % 10 == 0;
+                var increase4 = (i - 4) % 10 == 0;
+                var increase7 = (i - 7) % 10 == 0;
 
                 archerInc++;
                 archerHp += archerInc;
@@ -77,14 +77,14 @@ namespace NosCore.Algorithm.HpService
                 _hpData[(byte)CharacterClassType.Archer, i] = archerHp;
             }
 
-            int fighterHp = 190;
-            int fighterInc = 14;
+            var fighterHp = 190;
+            var fighterInc = 14;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                bool increase2 = (i - 2) % 10 == 0;
-                bool increase4 = (i - 4) % 10 == 0;
-                bool increase6 = (i - 6) % 10 == 0;
-                bool increase7 = (i - 7) % 10 == 0;
+                var increase2 = (i - 2) % 10 == 0;
+                var increase4 = (i - 4) % 10 == 0;
+                var increase6 = (i - 6) % 10 == 0;
+                var increase7 = (i - 7) % 10 == 0;
 
                 fighterInc++;
                 fighterHp += fighterInc;

@@ -18,38 +18,31 @@ namespace NosCore.Algorithm.DamageService
 
         public DamageService()
         {
-            // Adventurer
-            for (var i = 0; i < Constants.MaxLevel; i++)
+            _minDamage[(byte) CharacterClassType.Adventurer, 0] = 10;
+            _minDamage[(byte)CharacterClassType.Swordman, 0] = 10;
+            _minDamage[(byte)CharacterClassType.Archer, 0] = 60;
+            _minDamage[(byte)CharacterClassType.Magician, 0] = 10;
+            _minDamage[(byte)CharacterClassType.MartialArtist, 0] = 10;
+
+            var swordmanMinUp = 2;
+            var mageMinUp = 2;
+            var fighterMinUp = 2;
+            for (var i = 1; i < Constants.MaxLevel; i++)
             {
                 _minDamage[(byte)CharacterClassType.Adventurer, i] = i + 10;
-            }
 
-            // Swordman
-            int swordmanMin = 8;
-            int swordmanMinUp = 2;
-            for (var i = 0; i < Constants.MaxLevel; i++)
-            {
-                if (i > 0 && (i - 2) % 10 == 0 || i > 0 && (i - 7) % 10 == 0)
+                if ((i - 2) % 10 == 0 || (i - 7) % 10 == 0)
                 {
                     swordmanMinUp++;
-                }
-
-                if (i > 0 && (i - 1) % 10 == 0 || i > 0 && (i - 6) % 10 == 0)
+                } else if ((i - 1) % 10 == 0 || (i - 6) % 10 == 0)
                 {
                     swordmanMinUp--;
                 }
 
-                swordmanMin += swordmanMinUp;
+                _minDamage[(byte)CharacterClassType.Swordman, i] = _minDamage[(byte)CharacterClassType.Swordman, i - 1] + swordmanMinUp;
 
-                _minDamage[(byte)CharacterClassType.Swordman, i] = swordmanMin;
-            }
-
-            // Archer
-            int archerMin = 58;
-            for (var i = 0; i < Constants.MaxLevel; i++)
-            {
                 int archerMinUp;
-                if (i > 0 && (i - 1) % 10 == 0 || i > 0 && (i - 3) % 10 == 0 || i > 0 && (i - 5) % 10 == 0 || i > 0 && (i - 8) % 10 == 0)
+                if ((i - 1) % 10 == 0 || (i - 3) % 10 == 0 || (i - 5) % 10 == 0 || (i - 8) % 10 == 0)
                 {
                     archerMinUp = 1;
                 }
@@ -58,49 +51,30 @@ namespace NosCore.Algorithm.DamageService
                     archerMinUp = 2;
                 }
 
-                archerMin += archerMinUp;
+                _minDamage[(byte)CharacterClassType.Archer, i] = _minDamage[(byte)CharacterClassType.Archer, i - 1] + archerMinUp;
 
-                _minDamage[(byte)CharacterClassType.Archer, i] = archerMin;
-            }
 
-            // Magician
-            int mageMin = 8;
-            int mageMinUp = 2;
-            for (var i = 0; i < Constants.MaxLevel; i++)
-            {
-                if (i > 0 && (i - 2) % 10 == 0 || i > 0 && (i - 7) % 10 == 0)
+                if ((i - 2) % 10 == 0 || (i - 7) % 10 == 0)
                 {
                     mageMinUp++;
                 }
-
-                if (i > 0 && (i - 1) % 10 == 0 || i > 0 && (i - 6) % 10 == 0)
+                else if((i - 1) % 10 == 0 || (i - 6) % 10 == 0)
                 {
                     mageMinUp--;
                 }
 
-                mageMin += mageMinUp;
+                _minDamage[(byte)CharacterClassType.Magician, i] = _minDamage[(byte)CharacterClassType.Magician, i - 1] + mageMinUp;
 
-                _minDamage[(byte)CharacterClassType.Magician, i] = mageMin;
-            }
 
-            // Fighter
-            int fighterMin = 8;
-            int fighterMinUp = 2;
-            for (var i = 0; i < Constants.MaxLevel; i++)
-            {
-                if (i > 0 && (i - 2) % 10 == 0 || i > 0 && (i - 4) % 10 == 0 || i > 0 && (i - 6) % 10 == 0 || i > 0 && (i - 8) % 10 == 0 || i > 0 && (i - 10) % 10 == 0)
+                if ((i - 2) % 10 == 0 || (i - 4) % 10 == 0 || (i - 6) % 10 == 0 || (i - 8) % 10 == 0 || (i - 10) % 10 == 0)
                 {
                     fighterMinUp++;
-                }
-
-                if (i > 0 && (i - 1) % 10 == 0 || i > 0 && (i - 3) % 10 == 0 || i > 0 && (i - 5) % 10 == 0 || i > 0 && (i - 7) % 10 == 0 || i > 0 && (i - 9) % 10 == 0)
+                } else if ((i - 1) % 10 == 0 || (i - 3) % 10 == 0 || (i - 5) % 10 == 0 || (i - 7) % 10 == 0 || (i - 9) % 10 == 0)
                 {
                     fighterMinUp--;
                 }
 
-                fighterMin += fighterMinUp;
-
-                _minDamage[(byte)CharacterClassType.MartialArtist, i] = fighterMin;
+                _minDamage[(byte)CharacterClassType.MartialArtist, i] = _minDamage[(byte)CharacterClassType.MartialArtist, i - 1] + fighterMinUp;
             }
         }
 

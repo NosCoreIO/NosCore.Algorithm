@@ -22,7 +22,7 @@ namespace NosCore.Algorithm.Tests
         {
             var experienceService = new ExperienceService.ExperienceService();
 
-            StringBuilder resultBuilder = new StringBuilder("# Experience Table");
+            var resultBuilder = new StringBuilder("# Experience Table");
             resultBuilder.AppendLine();
 
             for (byte level = 1; level < 100; level++)
@@ -39,10 +39,10 @@ namespace NosCore.Algorithm.Tests
         {
             var experienceService = new SpExperienceService.SpExperienceService();
 
-            StringBuilder resultBuilder = new StringBuilder("# SP Experience Table");
+            var resultBuilder = new StringBuilder("# SP Experience Table");
 
 
-            for (int i = 0; i < 2; i++)
+            for (var i = 0; i < 2; i++)
             {
                 resultBuilder.AppendLine();
                 resultBuilder.AppendLine($"## {(i == 0 ? "Primary" : "Secondary")} SP");
@@ -60,7 +60,7 @@ namespace NosCore.Algorithm.Tests
         {
             var experienceService = new HpService.HpService();
 
-            StringBuilder resultBuilder = new StringBuilder("# HP Table");
+            var resultBuilder = new StringBuilder("# HP Table");
 
             foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
             {
@@ -81,7 +81,7 @@ namespace NosCore.Algorithm.Tests
         {
             var damageService = new DamageService.DamageService();
 
-            StringBuilder resultBuilder = new StringBuilder("# Damage Table");
+            var resultBuilder = new StringBuilder("# Damage Table");
             foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
             {
                 resultBuilder.AppendLine();
@@ -101,7 +101,7 @@ namespace NosCore.Algorithm.Tests
         {
             var secondaryDamageService = new SecondaryDamageService.SecondaryDamageService();
 
-            StringBuilder resultBuilder = new StringBuilder("# Secondary Damage Table");
+            var resultBuilder = new StringBuilder("# Secondary Damage Table");
             foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
             {
                 resultBuilder.AppendLine();
@@ -121,7 +121,7 @@ namespace NosCore.Algorithm.Tests
         {
             var hitRateService = new HitRateService.HitRateService();
 
-            StringBuilder resultBuilder = new StringBuilder("# HitRate Table");
+            var resultBuilder = new StringBuilder("# HitRate Table");
             foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
             {
                 resultBuilder.AppendLine();
@@ -141,7 +141,7 @@ namespace NosCore.Algorithm.Tests
         {
             var secondaryHitRateService = new SecondaryHitRateService.SecondaryHitRateService();
 
-            StringBuilder resultBuilder = new StringBuilder("# Secondary HitRate Table");
+            var resultBuilder = new StringBuilder("# Secondary HitRate Table");
             foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
             {
                 resultBuilder.AppendLine();
@@ -161,7 +161,7 @@ namespace NosCore.Algorithm.Tests
         {
             var jobExperienceService = new JobExperienceService.JobExperienceService();
 
-            StringBuilder resultBuilder = new StringBuilder("# Job Experience Table");
+            var resultBuilder = new StringBuilder("# Job Experience Table");
             foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
             {
                 resultBuilder.AppendLine();
