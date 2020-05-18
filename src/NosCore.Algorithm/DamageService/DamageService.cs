@@ -14,7 +14,7 @@ namespace NosCore.Algorithm.DamageService
 {
     public class DamageService : IDamageService
     {
-        private readonly double[,] _minDamage = new double[Constants.ClassCount, Constants.MaxLevel];
+        private readonly long[,] _minDamage = new long[Constants.ClassCount, Constants.MaxLevel];
 
         public DamageService()
         {
@@ -82,7 +82,7 @@ namespace NosCore.Algorithm.DamageService
 
         public long GetMinDamage(CharacterClassType @class, byte level)
         {
-            return (long)_minDamage![(byte)@class, level - 1];
+            return _minDamage![(byte)@class, level - 1];
         }
 
         public long GetMaxDamage(CharacterClassType @class, byte level) => GetMinDamage(@class, level);

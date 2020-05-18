@@ -8,7 +8,7 @@ namespace NosCore.Algorithm.SpExperienceService
 {
     public class SpExperienceService : ISpExperienceService
     {
-        private readonly double[,] _spXpData = new double[2, Constants.MaxLevel];
+        private readonly long[,] _spXpData = new long[2, Constants.MaxLevel];
 
         public SpExperienceService()
         {
