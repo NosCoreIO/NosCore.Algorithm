@@ -13,7 +13,7 @@ namespace NosCore.Algorithm.SecondaryDamageService
 {
     public class SecondaryDamageService : ISecondaryDamageService
     {
-        private readonly double[,] _secondaryMinDamage = new double[Constants.ClassCount, Constants.MaxLevel];
+        private readonly long[,] _secondaryMinDamage = new long[Constants.ClassCount, Constants.MaxLevel];
 
         public SecondaryDamageService()
         {

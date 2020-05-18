@@ -13,7 +13,7 @@ namespace NosCore.Algorithm.HitRateService
 {
     public class HitRateService : IHitRateService
     {
-        private readonly double[,] _hitRate = new double[Constants.ClassCount, Constants.MaxLevel];
+        private readonly long[,] _hitRate = new long[Constants.ClassCount, Constants.MaxLevel];
         public HitRateService()
         {
             var archerHitRate = 31;
@@ -38,7 +38,7 @@ namespace NosCore.Algorithm.HitRateService
 
         public long GetHitRate(CharacterClassType @class, byte level)
         {
-            return (long)_hitRate![(byte)@class, level - 1];
+            return _hitRate![(byte)@class, level - 1];
         }
     }
 }

@@ -11,7 +11,7 @@ namespace NosCore.Algorithm.HeroExperienceService
 {
     public class HeroExperienceService : IHeroExperienceService
     {
-        private readonly double[] _heroXpData = new double[Constants.MaxHeroLevel];
+        private readonly long[] _heroXpData = new long[Constants.MaxHeroLevel];
 
         public HeroExperienceService()
         {
@@ -35,7 +35,7 @@ namespace NosCore.Algorithm.HeroExperienceService
         }
         public long GetHeroExperience(byte level)
         {
-            return (long)_heroXpData![level - 1];
+            return _heroXpData![level - 1];
         }
     }
 }

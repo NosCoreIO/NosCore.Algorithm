@@ -7,7 +7,7 @@ namespace NosCore.Algorithm.SecondaryHitRateService
 {
     public class SecondaryHitRateService : ISecondaryHitRateService
     {
-        private readonly double[,] _secondaryHitRate = new double[Constants.ClassCount, Constants.MaxLevel];
+        private readonly long[,] _secondaryHitRate = new long[Constants.ClassCount, Constants.MaxLevel];
 
         public SecondaryHitRateService()
         {

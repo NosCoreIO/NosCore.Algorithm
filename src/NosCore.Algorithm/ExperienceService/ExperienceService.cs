@@ -10,11 +10,11 @@ namespace NosCore.Algorithm.ExperienceService
 {
     public class ExperienceService : IExperienceService
     {
-        private readonly double[] _xpData = new double[Constants.MaxLevel];
+        private readonly long[] _xpData = new long[Constants.MaxLevel];
 
         public ExperienceService()
         {
-            var v = new double[99];
+            var v = new long[99];
             double var = 1;
             v[0] = 540;
             v[1] = 960;
@@ -42,7 +42,7 @@ namespace NosCore.Algorithm.ExperienceService
         }
         public long GetExperience(byte level)
         {
-            return (long)_xpData![level - 1];
+            return _xpData![level - 1];
         }
     }
 }

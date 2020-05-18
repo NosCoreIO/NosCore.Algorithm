@@ -10,7 +10,7 @@ namespace NosCore.Algorithm.JobExperienceService
 {
     public class JobExperienceService : IJobExperienceService
     {
-        private readonly double[,] _jobXpData = new double[Constants.ClassCount, Constants.MaxJobLevel];
+        private readonly long[,] _jobXpData = new long[Constants.ClassCount, Constants.MaxJobLevel];
 
         public JobExperienceService()
         {

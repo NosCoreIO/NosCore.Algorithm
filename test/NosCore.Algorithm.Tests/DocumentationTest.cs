@@ -73,6 +73,24 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void FairyExperienceDocumentation()
+        {
+            var experienceService = new FairyExperienceService.FairyExperienceService();
+
+            var resultBuilder = new StringBuilder("# Fairy Experience Table");
+            resultBuilder.AppendLine();
+
+            for (byte level = 0; level < 80; level++)
+            {
+                resultBuilder.AppendLine(
+                    $"- {level,2}% -> {level+1,2}% - XP: {experienceService.GetFairyExperience(level)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+
+        [TestMethod]
         public void HpDocumentation()
         {
             var experienceService = new HpService.HpService();
