@@ -271,5 +271,25 @@ namespace NosCore.Algorithm.Tests
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
         }
+
+        [TestMethod]
+        public void DistanceDefenceDocumentation()
+        {
+            var distanceDefenceService = new DistanceDefenceService.DistanceDefenceService();
+
+            var resultBuilder = new StringBuilder("# Distance Defence Table");
+            foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## Class {@class}");
+                for (byte level = 1; level < 100; level++)
+                {
+                    resultBuilder.AppendLine(
+                        $"- Level {level,2} - Distance Defence: {distanceDefenceService.GetDistanceDefence(@class, level)}");
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
     }
 }
