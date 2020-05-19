@@ -100,7 +100,7 @@ namespace NosCore.Algorithm.HpService
         }
         public long GetHp(CharacterClassType @class, byte level)
         {
-            return (long)_hpData![(byte)@class, level-1];
+            return _hpData![(byte)@class, level-1];
         }
     }
 }

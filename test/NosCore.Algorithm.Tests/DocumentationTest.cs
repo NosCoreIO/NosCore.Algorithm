@@ -83,7 +83,7 @@ namespace NosCore.Algorithm.Tests
             for (byte level = 0; level < 80; level++)
             {
                 resultBuilder.AppendLine(
-                    $"- {level,2}% -> {level+1,2}% - XP: {experienceService.GetFairyExperience(level)}");
+                    $"- {level,2}% -> {level + 1,2}% - XP: {experienceService.GetFairyExperience(level)}");
             }
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
@@ -105,6 +105,27 @@ namespace NosCore.Algorithm.Tests
                 {
                     resultBuilder.AppendLine(
                         $"- Level {level,2} - HP: {experienceService.GetHp(@class, level)}");
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
+        public void MpDocumentation()
+        {
+            var experienceService = new MpService.MpService();
+
+            var resultBuilder = new StringBuilder("# MP Table");
+
+            foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## Class {@class}");
+                for (byte level = 1; level < 100; level++)
+                {
+                    resultBuilder.AppendLine(
+                        $"- Level {level,2} - MP: {experienceService.GetMp(@class, level)}");
                 }
             }
 

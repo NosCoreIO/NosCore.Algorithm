@@ -36,7 +36,7 @@ namespace NosCore.Algorithm.JobExperienceService
         }
         public long GetJobExperience(CharacterClassType @class, byte level)
         {
-            return (long)_jobXpData![(byte)@class, level - 1];
+            return _jobXpData![(byte)@class, level - 1];
         }
     }
 }
