@@ -18,7 +18,7 @@ namespace NosCore.Algorithm.DistanceDefenceService
             var fighterDefence = 14;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                adventurerDefence += i % 2 == 0 ? 1 : 0; ;
+                adventurerDefence += i % 2 == 0 ? 1 : 0;
                 _distanceDefence[(byte)CharacterClassType.Adventurer, i] = adventurerDefence;
 
                 swordmanDefence += i > 0 && ((i - 1) % 10 == 0 || (i - 3) % 10 == 0 || (i - 5) % 10 == 0 || (i - 8) % 10 == 0) ? 0 : 1;

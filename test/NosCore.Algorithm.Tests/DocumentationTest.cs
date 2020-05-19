@@ -291,5 +291,25 @@ namespace NosCore.Algorithm.Tests
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
         }
+
+        [TestMethod]
+        public void MagicDefenceDocumentation()
+        {
+            var dmagicDefenceService = new MagicDefenceService.MagicDefenceService();
+
+            var resultBuilder = new StringBuilder("# Magic Defence Table");
+            foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## Class {@class}");
+                for (byte level = 1; level < 100; level++)
+                {
+                    resultBuilder.AppendLine(
+                        $"- Level {level,2} - Magic Defence: {dmagicDefenceService.GetMagicDefence(@class, level)}");
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
     }
 }
