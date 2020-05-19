@@ -41,8 +41,8 @@ namespace NosCore.Algorithm.MpService
             _mpData[(byte)CharacterClassType.Adventurer][0] = 60;
             _mpData[(byte)CharacterClassType.Swordman][0] = 60;
             _mpData[(byte)CharacterClassType.Magician][0] = 60;
-            var count = 7;
-            var substract = false;
+            var count = 9;
+            var substract = true;
             for (var i = 1; i < 99; i++)
             {
                 adventurerMpAdd += i % 4 == 0 ? 2 : 0;
@@ -51,43 +51,23 @@ namespace NosCore.Algorithm.MpService
                 _mpData[(byte)CharacterClassType.Swordman][i] = _mpData[(byte)CharacterClassType.Adventurer][i];
                 if ((i - 1) > 9)
                 {
+                    var switcher = !substract ? 1 : -1;
                     if ((i - 1) % 5 == 0)
                     {
-                        if (!substract)
-                        {
-                            count++;
-
-                            if (count == 10)
-                            {
-                                substract = true;
-                            }
-                        }
-                        else
-                        {
-                            count--;
-
-                            if (count == 8)
-                            {
-                                substract = false;
-                            }
-                        }
-
+                        count += !substract ? 1 : -1;
+                        substract = count == 10 || count == 8 ? !substract : substract;
                         magicianMpAdd[(i - 1) % 10] = magicianMpAdd[(i - 1) % 10] + count;
                     }
+                    else
+                    {
+                        magicianMpAdd[(i - 1) % 10] += 18 + switcher / ((i - 1) % 5 % 2 == 1 ? 1 : -1);
+                    }
 
-                    if ((i - 1) % 5 == 1 || (i - 1) % 5 == 3)
-                    {
-                        magicianMpAdd[(i - 1) % 10] = magicianMpAdd[(i - 1) % 10] + (!substract ? 19 : 17);
-                    }
-                    if ((i - 1) % 5 == 2 || (i - 1) % 5 == 4)
-                    {
-                        magicianMpAdd[(i - 1) % 10] = magicianMpAdd[(i - 1) % 10] + (!substract ? 17 : 19);
-                    }
                 }
                 _mpData[(byte)CharacterClassType.Magician][i] =
                     _mpData[(byte)CharacterClassType.Magician][i - 1] + magicianMpAdd[(i - 1) % 10];
             }
- 
+
         }
         public long GetMp(CharacterClassType @class, byte level)
         {
