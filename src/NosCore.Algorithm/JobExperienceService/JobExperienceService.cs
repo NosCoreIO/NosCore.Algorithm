@@ -27,7 +27,7 @@ namespace NosCore.Algorithm.JobExperienceService
                     _jobXpData[(byte)CharacterClassType.Adventurer, i] = _jobXpData[(byte)CharacterClassType.Adventurer, i - 1] + 700;
                 }
 
-                _jobXpData[(byte)CharacterClassType.Archer, i] = _jobXpData[(byte)CharacterClassType.Archer, i - 1] + ((i > 39) ? 15000 : 4500);
+                _jobXpData[(byte)CharacterClassType.Archer, i] = _jobXpData[(byte)CharacterClassType.Archer, i - 1] + (i > 39 ? 15000 : 4500);
 
                 _jobXpData[(byte)CharacterClassType.Magician, i] = _jobXpData[(byte)CharacterClassType.Archer, i];
                 _jobXpData[(byte)CharacterClassType.MartialArtist, i] = _jobXpData[(byte)CharacterClassType.Archer, i];
