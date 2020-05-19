@@ -30,7 +30,7 @@ namespace NosCore.Algorithm.MpService
             var substractMagician = true;
             var substractArcher = false;
             var reverseArcher = 0;
-            for (var i = 1; i < 99; i++)
+            for (var i = 1; i < Constants.MaxLevel; i++)
             {
                 adventurerMpAdd += i % 4 == 0 ? 2 : 0;
                 _mpData[(byte)CharacterClassType.Adventurer, i] =
