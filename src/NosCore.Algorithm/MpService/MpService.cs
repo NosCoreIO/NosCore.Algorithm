@@ -11,7 +11,7 @@ namespace NosCore.Algorithm.MpService
 {
     public class MpService : IMpService
     {
-        private readonly long[][] _mpData = new long[Constants.ClassCount][];
+        private readonly long[,] _mpData = new long[Constants.ClassCount, Constants.MaxLevel];
 
         public MpService()
         {
@@ -20,17 +20,11 @@ namespace NosCore.Algorithm.MpService
             var martialArtistMpAdd = new[] { 9, 9, 9, 10, 22, 11, 12, 13, 13, 27 };
             var archerMpAdd = new[] { 9, 9, 9, 10, 11, 11, 11, 12, 13, 26 };
 
-            _mpData[(byte)CharacterClassType.Adventurer] = new long[99];
-            _mpData[(byte)CharacterClassType.Swordman] = new long[99];
-            _mpData[(byte)CharacterClassType.Magician] = new long[99];
-            _mpData[(byte)CharacterClassType.MartialArtist] = new long[99];
-            _mpData[(byte)CharacterClassType.Archer] = new long[99];
-
-            _mpData[(byte)CharacterClassType.Adventurer][0] = 60;
-            _mpData[(byte)CharacterClassType.Swordman][0] = 60;
-            _mpData[(byte)CharacterClassType.Magician][0] = 60;
-            _mpData[(byte)CharacterClassType.MartialArtist][0] = 60;
-            _mpData[(byte)CharacterClassType.Archer][0] = 60;
+            _mpData[(byte)CharacterClassType.Adventurer, 0] = 60;
+            _mpData[(byte)CharacterClassType.Swordman, 0] = 60;
+            _mpData[(byte)CharacterClassType.Magician, 0] = 60;
+            _mpData[(byte)CharacterClassType.MartialArtist, 0] = 60;
+            _mpData[(byte)CharacterClassType.Archer, 0] = 60;
             var countMagician = 9;
             var countArcher = 11;
             var substractMagician = true;
@@ -39,9 +33,9 @@ namespace NosCore.Algorithm.MpService
             for (var i = 1; i < 99; i++)
             {
                 adventurerMpAdd += i % 4 == 0 ? 2 : 0;
-                _mpData[(byte)CharacterClassType.Adventurer][i] =
-                    _mpData[(byte)CharacterClassType.Adventurer][i - 1] + (i % 4 == 0 ? adventurerMpAdd - 1 : adventurerMpAdd);
-                _mpData[(byte)CharacterClassType.Swordman][i] = _mpData[(byte)CharacterClassType.Adventurer][i];
+                _mpData[(byte)CharacterClassType.Adventurer, i] =
+                    _mpData[(byte)CharacterClassType.Adventurer, i - 1] + (i % 4 == 0 ? adventurerMpAdd - 1 : adventurerMpAdd);
+                _mpData[(byte)CharacterClassType.Swordman, i] = _mpData[(byte)CharacterClassType.Adventurer, i];
                 if (i - 1 > 9)
                 {
                     var switcher = !substractMagician ? 1 : -1;
@@ -75,20 +69,20 @@ namespace NosCore.Algorithm.MpService
 
                     martialArtistMpAdd[(i - 1) % 10] += (i - 1) % 5 == 4 ? 12 : 6;
                 }
-                _mpData[(byte)CharacterClassType.Magician][i] =
-                    _mpData[(byte)CharacterClassType.Magician][i - 1] + magicianMpAdd[(i - 1) % 10];
+                _mpData[(byte)CharacterClassType.Magician, i] =
+                    _mpData[(byte)CharacterClassType.Magician, i - 1] + magicianMpAdd[(i - 1) % 10];
 
-                _mpData[(byte)CharacterClassType.MartialArtist][i] =
-                    _mpData[(byte)CharacterClassType.MartialArtist][i - 1] + martialArtistMpAdd[(i - 1) % 10];
+                _mpData[(byte)CharacterClassType.MartialArtist, i] =
+                    _mpData[(byte)CharacterClassType.MartialArtist, i - 1] + martialArtistMpAdd[(i - 1) % 10];
 
-                _mpData[(byte)CharacterClassType.Archer][i] =
-                    _mpData[(byte)CharacterClassType.Archer][i - 1] + archerMpAdd[(i - 1) % 10];
+                _mpData[(byte)CharacterClassType.Archer, i] =
+                    _mpData[(byte)CharacterClassType.Archer, i - 1] + archerMpAdd[(i - 1) % 10];
             }
 
         }
         public long GetMp(CharacterClassType @class, byte level)
         {
-            return _mpData![(byte)@class][level - 1];
+            return _mpData![(byte)@class, level - 1];
         }
     }
 }
