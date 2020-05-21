@@ -153,6 +153,23 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void ReputationDocumentation()
+        {
+            var reputationService = new ReputationService.ReputationService();
+
+            var resultBuilder = new StringBuilder("# Reputation Table");
+            foreach (var reput in Enum.GetValues(typeof(ReputationType)).Cast<ReputationType>())
+            {
+                resultBuilder.AppendLine();
+                var result = reputationService.GetReputation(reput);
+                resultBuilder.AppendLine($"- {reput} - Min: {result.Item1} Max: {result.Item2}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+
+        [TestMethod]
         public void SecondaryDamageDocumentation()
         {
             var secondaryDamageService = new SecondaryDamageService.SecondaryDamageService();
