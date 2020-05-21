@@ -106,7 +106,7 @@
 - Level  3 - Distance Defence: 6
 - Level  4 - Distance Defence: 6
 - Level  5 - Distance Defence: 7
-- Level  6 - Distance Defence: 7
+- Level  6 - Distance Defence: 8
 - Level  7 - Distance Defence: 8
 - Level  8 - Distance Defence: 9
 - Level  9 - Distance Defence: 9
@@ -116,7 +116,7 @@
 - Level 13 - Distance Defence: 12
 - Level 14 - Distance Defence: 12
 - Level 15 - Distance Defence: 13
-- Level 16 - Distance Defence: 13
+- Level 16 - Distance Defence: 14
 - Level 17 - Distance Defence: 14
 - Level 18 - Distance Defence: 15
 - Level 19 - Distance Defence: 15
@@ -126,7 +126,7 @@
 - Level 23 - Distance Defence: 18
 - Level 24 - Distance Defence: 18
 - Level 25 - Distance Defence: 19
-- Level 26 - Distance Defence: 19
+- Level 26 - Distance Defence: 20
 - Level 27 - Distance Defence: 20
 - Level 28 - Distance Defence: 21
 - Level 29 - Distance Defence: 21
@@ -136,7 +136,7 @@
 - Level 33 - Distance Defence: 24
 - Level 34 - Distance Defence: 24
 - Level 35 - Distance Defence: 25
-- Level 36 - Distance Defence: 25
+- Level 36 - Distance Defence: 26
 - Level 37 - Distance Defence: 26
 - Level 38 - Distance Defence: 27
 - Level 39 - Distance Defence: 27
@@ -146,7 +146,7 @@
 - Level 43 - Distance Defence: 30
 - Level 44 - Distance Defence: 30
 - Level 45 - Distance Defence: 31
-- Level 46 - Distance Defence: 31
+- Level 46 - Distance Defence: 32
 - Level 47 - Distance Defence: 32
 - Level 48 - Distance Defence: 33
 - Level 49 - Distance Defence: 33
@@ -156,7 +156,7 @@
 - Level 53 - Distance Defence: 36
 - Level 54 - Distance Defence: 36
 - Level 55 - Distance Defence: 37
-- Level 56 - Distance Defence: 37
+- Level 56 - Distance Defence: 38
 - Level 57 - Distance Defence: 38
 - Level 58 - Distance Defence: 39
 - Level 59 - Distance Defence: 39
@@ -166,7 +166,7 @@
 - Level 63 - Distance Defence: 42
 - Level 64 - Distance Defence: 42
 - Level 65 - Distance Defence: 43
-- Level 66 - Distance Defence: 43
+- Level 66 - Distance Defence: 44
 - Level 67 - Distance Defence: 44
 - Level 68 - Distance Defence: 45
 - Level 69 - Distance Defence: 45
@@ -176,7 +176,7 @@
 - Level 73 - Distance Defence: 48
 - Level 74 - Distance Defence: 48
 - Level 75 - Distance Defence: 49
-- Level 76 - Distance Defence: 49
+- Level 76 - Distance Defence: 50
 - Level 77 - Distance Defence: 50
 - Level 78 - Distance Defence: 51
 - Level 79 - Distance Defence: 51
@@ -186,7 +186,7 @@
 - Level 83 - Distance Defence: 54
 - Level 84 - Distance Defence: 54
 - Level 85 - Distance Defence: 55
-- Level 86 - Distance Defence: 55
+- Level 86 - Distance Defence: 56
 - Level 87 - Distance Defence: 56
 - Level 88 - Distance Defence: 57
 - Level 89 - Distance Defence: 57
@@ -196,7 +196,7 @@
 - Level 93 - Distance Defence: 60
 - Level 94 - Distance Defence: 60
 - Level 95 - Distance Defence: 61
-- Level 96 - Distance Defence: 61
+- Level 96 - Distance Defence: 62
 - Level 97 - Distance Defence: 62
 - Level 98 - Distance Defence: 63
 - Level 99 - Distance Defence: 63

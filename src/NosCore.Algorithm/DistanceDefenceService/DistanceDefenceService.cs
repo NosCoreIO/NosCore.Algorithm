@@ -21,13 +21,13 @@ namespace NosCore.Algorithm.DistanceDefenceService
                 adventurerDefence += i % 2 == 0 ? 1 : 0;
                 _distanceDefence[(byte)CharacterClassType.Adventurer, i] = adventurerDefence;
 
-                swordmanDefence += i > 0 && ((i - 1) % 10 == 0 || (i - 3) % 10 == 0 || (i - 5) % 10 == 0 || (i - 8) % 10 == 0) ? 0 : 1;
+                swordmanDefence += i == 0 || (i - 2) % 10 == 0 || (i - 4) % 10 == 0 || (i - 5) % 5 == 0 || (i - 7) % 10 == 0 || (i - 9) % 10 == 0 ? 1 : 0;
                 _distanceDefence[(byte)CharacterClassType.Swordman, i] = swordmanDefence;
 
-                archerDefence += i > 0 && ((i - 1) % 10 == 0 || (i - 6) % 10 == 0) ? 0 : 1;
+                archerDefence += i == 0 || (i - 2) % 10 == 0 || (i - 3) % 10 == 0 || (i - 4) % 10 == 0 || (i - 5) % 5 == 0 || (i - 7) % 10 == 0 || (i - 8) % 10 == 0 || (i - 9) % 10 == 0 ? 1 : 0;
                 _distanceDefence[(byte)CharacterClassType.Archer, i] = archerDefence;
 
-                mageDefence += i > 0 && ((i - 1) % 10 == 0 || (i - 3) % 10 == 0 || (i - 6) % 10 == 0 || (i - 8) % 10 == 0) ? 0 : 1;
+                mageDefence += i == 0 || (i - 2) % 10 == 0 || (i - 4) % 10 == 0 || (i - 5) % 5 == 0 || (i - 7) % 10 == 0 || (i - 9) % 10 == 0 ? 1 : 0;
                 _distanceDefence[(byte)CharacterClassType.Magician, i] = mageDefence;
 
                 fighterDefence += i > 0 && ((i - 1) % 20 == 0 || (i - 3) % 20 == 0 || (i - 6) % 20 == 0 || (i - 9) % 20 == 0 || (i - 12) % 20 == 0 || (i - 15) % 20 == 0 || (i - 18) % 20 == 0) ? 0 : 1;
