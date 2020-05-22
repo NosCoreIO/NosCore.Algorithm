@@ -4,11 +4,13 @@
 // |_|\__|\__/ |___/ \__/\__/|_|_\___|
 // -----------------------------------
 
+using NosCore.Shared.Enumerations;
+
 namespace NosCore.Algorithm.ReputationService
 {
     public interface IReputationService
     {
-        byte GetLevelFromReputation(long reputation);
-        (long, long) GetReputation(byte level);
+        ReputationType GetLevelFromReputation(long reputation);
+        (long, long) GetReputation(ReputationType level);
     }
 }

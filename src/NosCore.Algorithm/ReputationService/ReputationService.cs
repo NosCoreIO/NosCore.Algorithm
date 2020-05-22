@@ -4,67 +4,78 @@
 // |_|\__|\__/ |___/ \__/\__/|_|_\___|
 // -----------------------------------
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using NosCore.Shared.Enumerations;
+
 namespace NosCore.Algorithm.ReputationService
 {
     public class ReputationService : IReputationService
     {
-        private readonly long[] _reputData = new long[26];
+        private readonly Dictionary<ReputationType, long> _reputData = new Dictionary<ReputationType, long>();
 
         public ReputationService()
         {
-            _reputData[(byte)ReputationType.GreenBeginner] = 50;
-            _reputData[(byte)ReputationType.BlueBeginner] = 150;
-            _reputData[(byte)ReputationType.RedBeginner] = 250;
+            _reputData[ReputationType.GreenBeginner] = 50;
+            _reputData[ReputationType.BlueBeginner] = 150;
+            _reputData[ReputationType.RedBeginner] = 250;
 
-            _reputData[(byte)ReputationType.GreenTrainee] = 500;
-            _reputData[(byte)ReputationType.BlueTrainee] = 750;
-            _reputData[(byte)ReputationType.RedTrainee] = 1000;
+            _reputData[ReputationType.GreenTrainee] = 500;
+            _reputData[ReputationType.BlueTrainee] = 750;
+            _reputData[ReputationType.RedTrainee] = 1000;
 
-            _reputData[(byte)ReputationType.GreenExperienced] = 2250;
-            _reputData[(byte)ReputationType.BlueExperienced] = 3500;
-            _reputData[(byte)ReputationType.RedExperienced] = 5000;
+            _reputData[ReputationType.GreenExperienced] = 2250;
+            _reputData[ReputationType.BlueExperienced] = 3500;
+            _reputData[ReputationType.RedExperienced] = 5000;
 
-            _reputData[(byte)ReputationType.GreenSoldier] = 9500;
-            _reputData[(byte)ReputationType.BlueSoldier] = 19000;
-            _reputData[(byte)ReputationType.RedSoldier] = 25000;
+            _reputData[ReputationType.GreenSoldier] = 9500;
+            _reputData[ReputationType.BlueSoldier] = 19000;
+            _reputData[ReputationType.RedSoldier] = 25000;
 
-            _reputData[(byte)ReputationType.GreenExpert] = 40000;
-            _reputData[(byte)ReputationType.BlueExpert] = 60000;
-            _reputData[(byte)ReputationType.RedExpert] = 85000;
+            _reputData[ReputationType.GreenExpert] = 40000;
+            _reputData[ReputationType.BlueExpert] = 60000;
+            _reputData[ReputationType.RedExpert] = 85000;
 
-            _reputData[(byte)ReputationType.GreenLeader] = 115000;
-            _reputData[(byte)ReputationType.BlueLeader] = 150000;
-            _reputData[(byte)ReputationType.RedLeader] = 190000;
+            _reputData[ReputationType.GreenLeader] = 115000;
+            _reputData[ReputationType.BlueLeader] = 150000;
+            _reputData[ReputationType.RedLeader] = 190000;
 
-            _reputData[(byte)ReputationType.GreenMaster] = 235000;
-            _reputData[(byte)ReputationType.BlueMaster] = 285000;
-            _reputData[(byte)ReputationType.RedMaster] = 350000;
+            _reputData[ReputationType.GreenMaster] = 235000;
+            _reputData[ReputationType.BlueMaster] = 285000;
+            _reputData[ReputationType.RedMaster] = 350000;
 
-            _reputData[(byte)ReputationType.GreenNos] = 500000;
-            _reputData[(byte)ReputationType.BlueNos] = 1500000;
-            _reputData[(byte)ReputationType.RedNos] = 2500000;
+            _reputData[ReputationType.GreenNos] = 500000;
+            _reputData[ReputationType.BlueNos] = 1500000;
+            _reputData[ReputationType.RedNos] = 2500000;
 
-            _reputData[(byte)ReputationType.GreenElite] = 3750000;
-            _reputData[(byte)ReputationType.BlueElite] = 5000000;
-            _reputData[(byte)ReputationType.RedElite] = long.MaxValue;
+            _reputData[ReputationType.GreenElite] = 3750000;
+            _reputData[ReputationType.BlueElite] = 5000000;
+
+            _reputData[ReputationType.RedElite] = long.MaxValue;
+            _reputData[ReputationType.GreenLegend] = long.MaxValue;
+            _reputData[ReputationType.BlueLegend] = long.MaxValue;
+            _reputData[ReputationType.AncientHero] = long.MaxValue;
+            _reputData[ReputationType.MysteriousHero] = long.MaxValue;
+            _reputData[ReputationType.LegendaryHero] = long.MaxValue;
         }
 
-        public byte GetLevelFromReputation(long reputation)
+        public ReputationType GetLevelFromReputation(long reputation)
         {
-            for (byte i = 0; i < _reputData.Length; i++)
+            foreach (var reput in Enum.GetValues(typeof(ReputationType)).Cast<ReputationType>())
             {
-                if (_reputData[i] < reputation)
+                if (_reputData[reput] < reputation)
                 {
-                    return i;
+                    return reput;
                 }
             }
 
-            return (byte)ReputationType.RedElite;
+            return ReputationType.RedElite;
         }
 
-        public (long, long) GetReputation(byte level)
+        public (long, long) GetReputation(ReputationType level)
         {
-            return (_reputData[level - 1] + level != 1 ? 1 : 0, _reputData[level]);
+            return (level == ReputationType.GreenBeginner ? 0 : _reputData[level < ReputationType.RedElite ? (ReputationType)level - 1 : ReputationType.BlueElite] + 1, level < ReputationType.RedElite ? _reputData[level] : long.MaxValue);
         }
     }
 }

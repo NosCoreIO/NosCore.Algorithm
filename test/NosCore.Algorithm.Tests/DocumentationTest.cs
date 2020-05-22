@@ -162,7 +162,7 @@ namespace NosCore.Algorithm.Tests
             {
                 resultBuilder.AppendLine();
                 var result = reputationService.GetReputation(reput);
-                resultBuilder.AppendLine($"- {reput} - Min: {result.Item1} Max: {result.Item2}");
+                resultBuilder.AppendLine($"- {(byte)reput, 2} {reput} - Min: {result.Item1} Max: {result.Item2}");
             }
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
