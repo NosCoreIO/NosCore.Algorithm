@@ -16,6 +16,7 @@ namespace NosCore.Algorithm.MagicDefenceService
             var archerDefence = 4;
             var mageDefence = 4;
             var fighterDefence = 4;
+
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
                 adventurerDefence += i % 2 == 0 ? 1 : 0;
@@ -24,7 +25,8 @@ namespace NosCore.Algorithm.MagicDefenceService
                 swordmanDefence += (i % 2 == 0) ? 1 : 0;
                 _magicDefence[(byte)CharacterClassType.Swordman, i] = swordmanDefence;
 
-                archerDefence += (i % 2 == 0 || i % 11 == 0) ? 1 : 0;
+                bool plus = i > 10 && i < 20 || i > 30 && i < 40 || i > 50 && i < 60 || i > 70 && i < 80 || i > 90 && i < 99;
+                archerDefence += plus ? ((i + 1) % 2 == 0 ? 1 : 0) : i % 2 == 0 ? 1 : 0;
                 _magicDefence[(byte)CharacterClassType.Archer, i] = archerDefence;
 
                 mageDefence += (i % 2 == 0 || (i - 3) % 10 == 0 || (i - 5) % 5 == 0 || (i - 7) % 10 == 0 || (i - 9) % 10 == 0) ? 1 : 0;
