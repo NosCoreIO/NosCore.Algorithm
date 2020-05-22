@@ -64,7 +64,7 @@ namespace NosCore.Algorithm.ReputationService
         {
             foreach (var reput in Enum.GetValues(typeof(ReputationType)).Cast<ReputationType>())
             {
-                if (_reputData[reput] < reputation)
+                if (_reputData[reput] >= reputation)
                 {
                     return reput;
                 }

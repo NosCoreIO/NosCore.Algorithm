@@ -162,12 +162,34 @@ namespace NosCore.Algorithm.Tests
             {
                 resultBuilder.AppendLine();
                 var result = reputationService.GetReputation(reput);
-                resultBuilder.AppendLine($"- {(byte)reput, 2} {reput} - Min: {result.Item1} Max: {result.Item2}");
+                resultBuilder.AppendLine($"- {(byte)reput,2} {reput,16} - Min: {result.Item1} Max: {result.Item2}");
+                if (reput < ReputationType.GreenLegend)
+                {
+                    Assert.AreEqual(reput, reputationService.GetLevelFromReputation(result.Item1));
+                    Assert.AreEqual(reput, reputationService.GetLevelFromReputation(result.Item2));
+                }
             }
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
         }
 
+        [TestMethod]
+        public void DignityDocumentation()
+        {
+            var dignityService = new DignityService.DignityService();
+
+            var resultBuilder = new StringBuilder("# Dignity Table");
+            foreach (var dignity in Enum.GetValues(typeof(DignityType)).Cast<DignityType>())
+            {
+                resultBuilder.AppendLine();
+                var result = dignityService.GetDignity(dignity);
+                resultBuilder.AppendLine($"- {(byte)dignity,2} {dignity,11} - Max: {result.Item1} Min: {result.Item2}");
+                Assert.AreEqual(dignity, dignityService.GetLevelFromDignity(result.Item1));
+                Assert.AreEqual(dignity, dignityService.GetLevelFromDignity(result.Item2));
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
 
         [TestMethod]
         public void SecondaryDamageDocumentation()
