@@ -11,7 +11,6 @@ namespace NosCore.Algorithm
         internal const byte MaxFairyLevel = 80;
         internal const byte MaxJobLevel = 80;
         internal const byte MaxHeroLevel = 60;
-        internal static readonly int ReputationCount = Enum.GetNames(typeof(ReputationType)).Length;
         internal static readonly int ClassCount = Enum.GetNames(typeof(CharacterClassType)).Length;
     }
 }
