@@ -24,7 +24,9 @@ namespace NosCore.Algorithm.CloseDefenceService
                 swordmanDefence += (i % 2 == 0 || (i - 3) % 10 == 0 || (i - 5) % 10 == 0 || (i - 7) % 10 == 0 || (i - 9) % 10 == 0 || (i - 10) % 10 == 0) ? 1 : 0;
                 _closeDefence[(byte)CharacterClassType.Swordman, i] = swordmanDefence;
 
-                archerDefence += ((i - 2) % 10 == 0 || (i - 4) % 10 == 0 || (i - 5) % 10 == 0 || (i - 7) % 20 == 0 || (i - 8) % 10 == 0 || (i - 10) % 10 == 0 || i > 10 && (i - 11) % 20 == 0 || i > 10 && (i - 15) % 20 == 0 || i > 10 && (i - 19) % 20 == 0) ? 1 : 0;
+                bool plus = i > 10 && i < 20 || i > 30 && i < 40 || i > 50 && i < 60 || i > 70 && i < 80 || i > 90 && i < 99;
+
+                archerDefence += plus ? ((i +1 - 2) % 10 == 0 || (i + 1 - 4) % 10 == 0 || (i + 1 - 5) % 5 == 0 || (i + 1 - 7) % 10 == 0 || (i + 1 - 8) % 10 == 0 ? 1 : 0) : (i - 2) % 10 == 0 || (i - 4) % 10 == 0 || (i - 5) % 5 == 0 || (i - 7) % 10 == 0 || (i - 8) % 10 == 0  ? 1 : 0;
                 _closeDefence[(byte)CharacterClassType.Archer, i] = archerDefence;
 
                 mageDefence += i % 2 == 0 ? 1 : 0;
