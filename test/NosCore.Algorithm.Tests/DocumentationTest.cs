@@ -153,6 +153,45 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void ReputationDocumentation()
+        {
+            var reputationService = new ReputationService.ReputationService();
+
+            var resultBuilder = new StringBuilder("# Reputation Table");
+            foreach (var reput in Enum.GetValues(typeof(ReputationType)).Cast<ReputationType>())
+            {
+                resultBuilder.AppendLine();
+                var result = reputationService.GetReputation(reput);
+                resultBuilder.AppendLine($"- {(byte)reput,2} {reput.ToString().PadRight(16)} - Min: {result.Item1} Max: {result.Item2}");
+                if (reput < ReputationType.GreenLegend)
+                {
+                    Assert.AreEqual(reput, reputationService.GetLevelFromReputation(result.Item1));
+                    Assert.AreEqual(reput, reputationService.GetLevelFromReputation(result.Item2));
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
+        public void DignityDocumentation()
+        {
+            var dignityService = new DignityService.DignityService();
+
+            var resultBuilder = new StringBuilder("# Dignity Table");
+            foreach (var dignity in Enum.GetValues(typeof(DignityType)).Cast<DignityType>())
+            {
+                resultBuilder.AppendLine();
+                var result = dignityService.GetDignity(dignity);
+                resultBuilder.AppendLine($"- {(byte)dignity,2} {dignity.ToString().PadRight(11)} - Max: {result.Item1} Min: {result.Item2}");
+                Assert.AreEqual(dignity, dignityService.GetLevelFromDignity(result.Item1));
+                Assert.AreEqual(dignity, dignityService.GetLevelFromDignity(result.Item2));
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void SecondaryDamageDocumentation()
         {
             var secondaryDamageService = new SecondaryDamageService.SecondaryDamageService();
