@@ -50,12 +50,14 @@ namespace NosCore.Algorithm.HpService
                 _hpData[(byte)CharacterClassType.Swordman, i] = swordHp;
             }
 
+            var magecHp = 205;
+            var mageInc = 15;
             for (var i = 0; i < Constants.MaxLevel; i++)
             {
-                basicInc++;
-                basicHp += basicInc;
+                mageInc++;
+                magecHp += mageInc;
 
-                _hpData[(byte)CharacterClassType.Magician, i] = basicHp;
+                _hpData[(byte)CharacterClassType.Magician, i] = magecHp;
             }
 
             var archerHp = 190;
