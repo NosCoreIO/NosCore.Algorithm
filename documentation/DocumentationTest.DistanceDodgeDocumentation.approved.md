@@ -100,7 +100,7 @@
 - Level 98 - Distance Dodge: 107
 - Level 99 - Distance Dodge: 108
 
-## Class Swordman
+## Class Swordsman
 - Level  1 - Distance Dodge: 10
 - Level  2 - Distance Dodge: 11
 - Level  3 - Distance Dodge: 12
@@ -302,7 +302,7 @@
 - Level 98 - Distance Dodge: 175
 - Level 99 - Distance Dodge: 176
 
-## Class Magician
+## Class Mage
 - Level  1 - Distance Dodge: 10
 - Level  2 - Distance Dodge: 11
 - Level  3 - Distance Dodge: 12

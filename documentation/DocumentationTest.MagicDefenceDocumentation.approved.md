@@ -100,7 +100,7 @@
 - Level 98 - Magic Defence: 53
 - Level 99 - Magic Defence: 54
 
-## Class Swordman
+## Class Swordsman
 - Level  1 - Magic Defence: 5
 - Level  2 - Magic Defence: 5
 - Level  3 - Magic Defence: 6
@@ -302,7 +302,7 @@
 - Level 98 - Magic Defence: 58
 - Level 99 - Magic Defence: 58
 
-## Class Magician
+## Class Mage
 - Level  1 - Magic Defence: 5
 - Level  2 - Magic Defence: 5
 - Level  3 - Magic Defence: 6

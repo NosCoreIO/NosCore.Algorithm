@@ -100,7 +100,7 @@
 - Level 98 - Secondary Damage Min: 107 Secondary Damage Max: 107
 - Level 99 - Secondary Damage Min: 108 Secondary Damage Max: 108
 
-## Class Swordman
+## Class Swordsman
 - Level  1 - Secondary Damage Min: 10 Secondary Damage Max: 10
 - Level  2 - Secondary Damage Min: 11 Secondary Damage Max: 11
 - Level  3 - Secondary Damage Min: 12 Secondary Damage Max: 12
@@ -302,7 +302,7 @@
 - Level 98 - Secondary Damage Min: 136 Secondary Damage Max: 136
 - Level 99 - Secondary Damage Min: 137 Secondary Damage Max: 137
 
-## Class Magician
+## Class Mage
 - Level  1 - Secondary Damage Min: 10 Secondary Damage Max: 10
 - Level  2 - Secondary Damage Min: 11 Secondary Damage Max: 11
 - Level  3 - Secondary Damage Min: 12 Secondary Damage Max: 12

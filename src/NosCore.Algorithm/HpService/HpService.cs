@@ -47,7 +47,7 @@ namespace NosCore.Algorithm.HpService
                     swordHp += swordInc;
                 }
 
-                _hpData[(byte)CharacterClassType.Swordman, i] = swordHp;
+                _hpData[(byte)CharacterClassType.Swordsman, i] = swordHp;
             }
 
             var magecHp = 205;
@@ -57,7 +57,7 @@ namespace NosCore.Algorithm.HpService
                 mageInc++;
                 magecHp += mageInc;
 
-                _hpData[(byte)CharacterClassType.Magician, i] = magecHp;
+                _hpData[(byte)CharacterClassType.Mage, i] = magecHp;
             }
 
             var archerHp = 190;

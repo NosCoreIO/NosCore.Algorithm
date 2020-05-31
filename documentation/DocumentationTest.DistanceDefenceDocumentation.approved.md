@@ -100,7 +100,7 @@
 - Level 98 - Distance Defence: 53
 - Level 99 - Distance Defence: 54
 
-## Class Swordman
+## Class Swordsman
 - Level  1 - Distance Defence: 5
 - Level  2 - Distance Defence: 5
 - Level  3 - Distance Defence: 6
@@ -302,7 +302,7 @@
 - Level 98 - Distance Defence: 82
 - Level 99 - Distance Defence: 83
 
-## Class Magician
+## Class Mage
 - Level  1 - Distance Defence: 25
 - Level  2 - Distance Defence: 25
 - Level  3 - Distance Defence: 26

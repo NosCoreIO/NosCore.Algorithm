@@ -100,7 +100,7 @@
 - Level 98 - HP: 6526
 - Level 99 - HP: 6640
 
-## Class Swordman
+## Class Swordsman
 - Level  1 - HP: 221
 - Level  2 - HP: 238
 - Level  3 - HP: 275
@@ -302,7 +302,7 @@
 - Level 98 - HP: 10238
 - Level 99 - HP: 10381
 
-## Class Magician
+## Class Mage
 - Level  1 - HP: 221
 - Level  2 - HP: 238
 - Level  3 - HP: 256

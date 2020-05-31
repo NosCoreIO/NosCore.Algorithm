@@ -26,13 +26,13 @@ namespace NosCore.Algorithm.SecondaryDamageService
                 _secondaryMinDamage[(byte)CharacterClassType.Adventurer, i] = i + 10;
 
                 swordmanMin += i == 0 || (i - 5) % 10 == 0 || i % 10 == 0 ? 2 : 1;
-                _secondaryMinDamage[(byte)CharacterClassType.Swordman, i] = swordmanMin;
+                _secondaryMinDamage[(byte)CharacterClassType.Swordsman, i] = swordmanMin;
 
                 archerMin += i == 0 || (i - 4) % 10 == 0 || (i - 7) % 10 == 0 || i > 1 && (i - 1) % 10 == 0 ? 2 : 1;
                 _secondaryMinDamage[(byte)CharacterClassType.Archer, i] = archerMin;
 
                 mageMin += i == 0 || (i - 5) % 10 == 0 || i % 10 == 0 ? 2 : 1;
-                _secondaryMinDamage[(byte)CharacterClassType.Magician, i] = mageMin;
+                _secondaryMinDamage[(byte)CharacterClassType.Mage, i] = mageMin;
 
                 fighterMin += i == 0 || (i - 4) % 10 == 0 || (i - 7) % 10 == 0 || i > 1 && (i - 1) % 10 == 0 ? 2 : 1;
                 _secondaryMinDamage[(byte)CharacterClassType.MartialArtist, i] = fighterMin;

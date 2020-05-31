@@ -100,7 +100,7 @@
 - Level 98 - MP: 3213
 - Level 99 - MP: 3270
 
-## Class Swordman
+## Class Swordsman
 - Level  1 - MP: 60
 - Level  2 - MP: 69
 - Level  3 - MP: 78
@@ -302,7 +302,7 @@
 - Level 98 - MP: 3744
 - Level 99 - MP: 3805
 
-## Class Magician
+## Class Mage
 - Level  1 - MP: 60
 - Level  2 - MP: 69
 - Level  3 - MP: 87
