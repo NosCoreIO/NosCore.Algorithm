@@ -21,7 +21,7 @@
 - Level 19 - XP: 14800
 - Level 20 - XP: 15500
 
-## Class Swordman
+## Class Swordsman
 - Level  1 - XP: 14500
 - Level  2 - XP: 19000
 - Level  3 - XP: 23500
@@ -185,7 +185,7 @@
 - Level 79 - XP: 775000
 - Level 80 - XP: 790000
 
-## Class Magician
+## Class Mage
 - Level  1 - XP: 14500
 - Level  2 - XP: 19000
 - Level  3 - XP: 23500

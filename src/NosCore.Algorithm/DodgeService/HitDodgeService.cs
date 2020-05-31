@@ -20,13 +20,13 @@ namespace NosCore.Algorithm.HitDodgeService
                 _hitDodge[(byte)CharacterClassType.Adventurer, i] = i + 10;
 
                 swordmanDodge += (i - 5) % 5 == 0 ? 2 : 1;
-                _hitDodge[(byte)CharacterClassType.Swordman, i] = swordmanDodge;
+                _hitDodge[(byte)CharacterClassType.Swordsman, i] = swordmanDodge;
 
                 archerDodge += ((i - 2) % 10 == 0 || (i - 4) % 10 == 0 || (i - 5) % 5 == 0 || (i - 7) % 10 == 0 || (i - 9) % 10 == 0 || (i - 10) % 10 == 0) ? 2 : 1;
                 _hitDodge[(byte)CharacterClassType.Archer, i] = archerDodge;
 
                 mageDodge += (i - 5) % 5 == 0 ? 2 : 1;
-                _hitDodge[(byte)CharacterClassType.Magician, i] = mageDodge;
+                _hitDodge[(byte)CharacterClassType.Mage, i] = mageDodge;
 
                 fighterDodge += ((i - 4) % 10 == 0 || (i - 7) % 10 == 0 || (i - 10) % 10 == 0) ? 2 : 1;
                 _hitDodge[(byte)CharacterClassType.MartialArtist, i] = fighterDodge;

@@ -24,12 +24,12 @@ namespace NosCore.Algorithm.HitRateService
                 _hitRate[(byte)CharacterClassType.Adventurer, i] = i + 10;
 
                 swordHitRate += (i - 5) % 5 == 0 ? 2 : 1;
-                _hitRate[(byte)CharacterClassType.Swordman, i] = swordHitRate;
+                _hitRate[(byte)CharacterClassType.Swordsman, i] = swordHitRate;
 
                 archerHitRate += i != 96 && i % 2 == 0 || i > 0 && i % 5 == 0 ? 4 : 2;
                 _hitRate[(byte)CharacterClassType.Archer, i] = archerHitRate;
 
-                _hitRate[(byte)CharacterClassType.Magician, i] = 0;
+                _hitRate[(byte)CharacterClassType.Mage, i] = 0;
 
                 fighterHitRate += i == 0 || (i - 4) % 10 == 0 || i > 0 && (i - 7) % 10 == 0 || i > 0 && (i - 10) % 10 == 0 ? 2 : 1;
                 _hitRate[(byte)CharacterClassType.MartialArtist, i] = fighterHitRate;

@@ -23,13 +23,13 @@ namespace NosCore.Algorithm.SecondaryHitRateService
                 _secondaryHitRate[(byte)CharacterClassType.Adventurer, i] = adventurerHit;
 
                 swordmanHit += (i - 5) % 5 == 0 ? 4 : 2;
-                _secondaryHitRate[(byte)CharacterClassType.Swordman, i] = swordmanHit;
+                _secondaryHitRate[(byte)CharacterClassType.Swordsman, i] = swordmanHit;
 
                 archerHit += i != 0 && ((i - 1) % 10 == 0 || (i - 3) % 10 == 0 || (i - 5) % 10 == 0 || (i - 8) % 10 == 0) ? 1 : 2;
                 _secondaryHitRate[(byte)CharacterClassType.Archer, i] = archerHit;
 
                 mageHit += (i - 5) % 5 == 0 ? 4 : 2;
-                _secondaryHitRate[(byte)CharacterClassType.Magician, i] = mageHit;
+                _secondaryHitRate[(byte)CharacterClassType.Mage, i] = mageHit;
 
                 fighterHit += (i - 4) % 4 == 0 || (i - 10) % 10 == 0 ? 4 : 2;
                 _secondaryHitRate[(byte)CharacterClassType.MartialArtist, i] = fighterHit;

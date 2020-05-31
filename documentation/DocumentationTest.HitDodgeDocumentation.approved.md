@@ -100,7 +100,7 @@
 - Level 98 - Hit Dodge: 107
 - Level 99 - Hit Dodge: 108
 
-## Class Swordman
+## Class Swordsman
 - Level  1 - Hit Dodge: 10
 - Level  2 - Hit Dodge: 11
 - Level  3 - Hit Dodge: 12
@@ -302,7 +302,7 @@
 - Level 98 - Hit Dodge: 175
 - Level 99 - Hit Dodge: 176
 
-## Class Magician
+## Class Mage
 - Level  1 - Hit Dodge: 20
 - Level  2 - Hit Dodge: 21
 - Level  3 - Hit Dodge: 22

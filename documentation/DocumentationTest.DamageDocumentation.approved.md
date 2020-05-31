@@ -100,7 +100,7 @@
 - Level 98 - Damage Min: 107 Damage Max: 107
 - Level 99 - Damage Min: 108 Damage Max: 108
 
-## Class Swordman
+## Class Swordsman
 - Level  1 - Damage Min: 10 Damage Max: 10
 - Level  2 - Damage Min: 11 Damage Max: 11
 - Level  3 - Damage Min: 13 Damage Max: 13
@@ -302,7 +302,7 @@
 - Level 98 - Damage Min: 215 Damage Max: 215
 - Level 99 - Damage Min: 216 Damage Max: 216
 
-## Class Magician
+## Class Mage
 - Level  1 - Damage Min: 10 Damage Max: 10
 - Level  2 - Damage Min: 11 Damage Max: 11
 - Level  3 - Damage Min: 13 Damage Max: 13

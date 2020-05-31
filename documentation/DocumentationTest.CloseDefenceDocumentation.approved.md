@@ -100,7 +100,7 @@
 - Level 98 - Close Defence: 53
 - Level 99 - Close Defence: 54
 
-## Class Swordman
+## Class Swordsman
 - Level  1 - Close Defence: 5
 - Level  2 - Close Defence: 5
 - Level  3 - Close Defence: 6
@@ -302,7 +302,7 @@
 - Level 98 - Close Defence: 68
 - Level 99 - Close Defence: 68
 
-## Class Magician
+## Class Mage
 - Level  1 - Close Defence: 5
 - Level  2 - Close Defence: 5
 - Level  3 - Close Defence: 6

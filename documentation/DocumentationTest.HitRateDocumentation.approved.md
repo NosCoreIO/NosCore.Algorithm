@@ -100,7 +100,7 @@
 - Level 98 - HitRate: 107
 - Level 99 - HitRate: 108
 
-## Class Swordman
+## Class Swordsman
 - Level  1 - HitRate: 25
 - Level  2 - HitRate: 26
 - Level  3 - HitRate: 27
@@ -302,7 +302,7 @@
 - Level 98 - HitRate: 343
 - Level 99 - HitRate: 347
 
-## Class Magician
+## Class Mage
 - Level  1 - HitRate: 0
 - Level  2 - HitRate: 0
 - Level  3 - HitRate: 0
