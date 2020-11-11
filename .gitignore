@@ -497,6 +497,7 @@ fabric.properties
 # should be stored in the .pubxml.user file.
 /build/netstandard2.*
 /build/netcoreapp3.*
+/build/net*.*
 /documentation/*.received.md
 /documentation/*.received.txt
 /documentation/*.approved.txt
