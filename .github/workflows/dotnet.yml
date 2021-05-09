@@ -5,7 +5,7 @@ on:
     branches: [ master ]
   create:
     tags:
-      - 'v*.*.*'
+      - '*.*.*'
   pull_request:
     branches: [ master ]
 jobs:
@@ -45,6 +45,7 @@ jobs:
         echo ::set-output name=ARTIFACT_NAME::NosCore.Algorithm.${GITHUB_RUN_NUMBER}.zip
         
     - name: Gets Latest Release
+      if: steps.check-tag.outputs.match == 'true'
       id: latest_release_info
       uses: jossef/action-latest-release-info@v1.1.0
       env:
