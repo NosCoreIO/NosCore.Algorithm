@@ -29,7 +29,7 @@ jobs:
       run: |
         dotnet restore
         dotnet build
-        dotnet test test/Algorithm.Tests -v m
+        dotnet test test/NosCore.Algorithm.Tests -v m
         
     - name: Build Artifact
       if: steps.check-tag.outputs.match == 'true'
