@@ -1,0 +1,63 @@
+name: .NET
+
+on:
+  push:
+    branches: [ master ]
+  create:
+    tags:
+      - 'v*.*.*'
+  pull_request:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+        
+    - name: Check Tag
+      id: check-tag
+      run: |
+        if [[ ${{ github.event.ref }} =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo ::set-output name=match::true
+        fi
+        
+    - name: Run Unit Tests
+      run: |
+        dotnet restore
+        dotnet build
+        dotnet test test/Algorithm.Tests -v m
+        
+    - name: Build Artifact
+      if: steps.check-tag.outputs.match == 'true'
+      id: build_artifact
+      run: |
+        dotnet restore
+        dotnet build -c Release
+        dotnet pack -c Release -o /tmp/nupkgs -v m -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg
+        dotnet nuget push /tmp/nupkgs/NosCore.Algorithm.${github.event.ref}.nupkg -k ${NUGET_API_KEY} -s https://api.nuget.org/v3/index.json
+        cd /tmp/
+        zip -r NosCore.Algorithm.${GITHUB_RUN_NUMBER}.zip NosCore.Algorithm.${GITHUB_RUN_NUMBER}
+        echo ::set-output name=ARTIFACT_PATH::/tmp/NosCore.Algorithm.${GITHUB_RUN_NUMBER}.zip
+        echo ::set-output name=ARTIFACT_NAME::NosCore.Algorithm.${GITHUB_RUN_NUMBER}.zip
+        
+    - name: Gets Latest Release
+      id: latest_release_info
+      uses: jossef/action-latest-release-info@v1.1.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+        
+    - name: Upload Release Asset
+      if: steps.check-tag.outputs.match == 'true'
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+      with:
+        upload_url: ${{ steps.latest_release_info.outputs.upload_url }} 
+        asset_path: ${{ steps.build_artifact.outputs.ARTIFACT_PATH }}
+        asset_name: ${{ steps.build_artifact.outputs.ARTIFACT_NAME }}
+        asset_content_type: application/zip
+        
