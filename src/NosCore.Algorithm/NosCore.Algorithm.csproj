@@ -2,6 +2,7 @@
 
 <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <LangVersion>latest</LangVersion>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
