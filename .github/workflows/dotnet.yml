@@ -38,7 +38,7 @@ jobs:
         dotnet restore
         dotnet build -c Release
         dotnet pack -c Release -o /tmp/nupkgs -v m -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg
-        dotnet nuget push /tmp/nupkgs/NosCore.Algorithm.${github.event.ref}.nupkg -k ${NUGET_API_KEY} -s https://api.nuget.org/v3/index.json
+        dotnet nuget push /tmp/nupkgs/NosCore.Algorithm.${{github.event.ref}}.nupkg -k ${NUGET_API_KEY} -s https://api.nuget.org/v3/index.json
         cd /tmp/
         zip -r NosCore.Algorithm.${GITHUB_RUN_NUMBER}.zip NosCore.Algorithm.${GITHUB_RUN_NUMBER}
         echo ::set-output name=ARTIFACT_PATH::/tmp/NosCore.Algorithm.${GITHUB_RUN_NUMBER}.zip
