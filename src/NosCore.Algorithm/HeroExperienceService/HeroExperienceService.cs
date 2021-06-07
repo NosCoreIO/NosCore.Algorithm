@@ -24,12 +24,12 @@ namespace NosCore.Algorithm.HeroExperienceService
             _heroXpData[54] = 33224190;
             for (var lvl = 1; lvl < Constants.MaxHeroLevel; lvl++)
             {
-                if (lvl == Constants.HeroAlgosChange)
+                if (lvl == 54)
                 {
                     continue;
                 }
 
-                if (lvl > Constants.HeroAlgosChange)
+                if (lvl > 54)
                 {
                     _heroXpData[lvl] = (long)Math.Floor(_heroXpData[lvl - 1] * 1.15);
                     continue;
