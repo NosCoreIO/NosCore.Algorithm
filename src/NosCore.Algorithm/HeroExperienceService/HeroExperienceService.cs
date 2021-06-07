@@ -31,7 +31,7 @@ namespace NosCore.Algorithm.HeroExperienceService
 
                 if (lvl > Constants.HeroAlgosChange)
                 {
-                    _heroXpData[lvl] = (long)Math.Floor(_heroXpData[lvl - 1] * Constants.HeroMultiplierConstant);
+                    _heroXpData[lvl] = (long)Math.Floor(_heroXpData[lvl - 1] * 1.15);
                     continue;
                 }
 
