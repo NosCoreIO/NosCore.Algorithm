@@ -53,9 +53,9 @@
 - Level 52 - XP: 25842210
 - Level 53 - XP: 26834880
 - Level 54 - XP: 27850950
-- Level 55 - XP: 28890600
-- Level 56 - XP: 29954010
-- Level 57 - XP: 31041360
-- Level 58 - XP: 32152830
-- Level 59 - XP: 33288600
-- Level 60 - XP: 34448850
+- Level 55 - XP: 33224190
+- Level 56 - XP: 38207818
+- Level 57 - XP: 43938990
+- Level 58 - XP: 50529838
+- Level 59 - XP: 58109313
+- Level 60 - XP: 66825709

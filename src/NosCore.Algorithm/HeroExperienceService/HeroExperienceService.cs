@@ -21,8 +21,20 @@ namespace NosCore.Algorithm.HeroExperienceService
             var increment3 = 360;
 
             _heroXpData[0] = 949560;
+            _heroXpData[54] = 33224190;
             for (var lvl = 1; lvl < Constants.MaxHeroLevel; lvl++)
             {
+                if (lvl == 54)
+                {
+                    continue;
+                }
+
+                if (lvl > 54)
+                {
+                    _heroXpData[lvl] = (long)Math.Floor(_heroXpData[lvl - 1] * 1.15);
+                    continue;
+                }
+
                 _heroXpData[lvl] = _heroXpData[lvl - 1] + increment;
                 increment2 += increment3;
                 increment += increment2;
