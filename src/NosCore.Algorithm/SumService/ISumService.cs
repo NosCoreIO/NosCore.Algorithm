@@ -8,8 +8,8 @@ namespace NosCore.Algorithm.UpgradeService
 {
     public interface ISumService
     {
-        byte GetSuccessRate(byte sourceUpgrade, byte targetUpgrade);
-        ushort GetSumPrice(byte sourceUpgrade, byte targetUpgrade);
-        ushort GetSandCost(byte sourceUpgrade, byte targetUpgrade);
+        byte GetSuccessRate(byte level);
+        ushort GetPrice(byte level);
+        ushort GetSandCost(byte level);
     }
 }

@@ -8,23 +8,23 @@ namespace NosCore.Algorithm.UpgradeService
 {
     public class SumService : ISumService
     {
-        internal static readonly byte[] SumSuccess = { 100, 100, 85, 70, 50, 20 };
-        internal static readonly ushort[] SumPrice = { 1500, 3000, 6000, 12000, 24000, 48000 };
-        internal static readonly byte[] SumSand = { 5, 10, 15, 20, 25, 30 };
+        internal static readonly byte[] SuccessRate = { 100, 100, 85, 70, 50, 20 };
+        internal static readonly ushort[] Price = { 1500, 3000, 6000, 12000, 24000, 48000 };
+        internal static readonly byte[] SandCost = { 5, 10, 15, 20, 25, 30 };
 
-        public byte GetSuccessRate(byte sourceUpgrade, byte targetUpgrade)
+        public byte GetSuccessRate(byte level)
         {
-            return SumSuccess[sourceUpgrade + targetUpgrade];
+            return SuccessRate[level];
         }
 
-        public ushort GetSumPrice(byte sourceUpgrade, byte targetUpgrade)
+        public ushort GetPrice(byte level)
         {
-            return SumPrice[sourceUpgrade + targetUpgrade];
+            return Price[level];
         }
 
-        public ushort GetSandCost(byte sourceUpgrade, byte targetUpgrade)
+        public ushort GetSandCost(byte level)
         {
-            return SumSand[sourceUpgrade + targetUpgrade];
+            return SandCost[level];
         }
     }
 }
