@@ -4,7 +4,7 @@
 // |_|\__|\__/ |___/ \__/\__/|_|_\___|
 // -----------------------------------
 
-namespace NosCore.Algorithm.UpgradeService
+namespace NosCore.Algorithm.SumService
 {
     public interface ISumService
     {
