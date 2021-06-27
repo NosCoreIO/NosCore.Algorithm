@@ -389,7 +389,7 @@ namespace NosCore.Algorithm.Tests
         [TestMethod]
         public void SumDocumentation()
         {
-            var sumService = new UpgradeService.SumService();
+            var sumService = new SumService.SumService();
 
             var resultBuilder = new StringBuilder($"# Sum Table");
             resultBuilder.AppendLine();
