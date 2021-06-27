@@ -385,5 +385,21 @@ namespace NosCore.Algorithm.Tests
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
         }
+
+        [TestMethod]
+        public void SumDocumentation()
+        {
+            var sumService = new SumService.SumService();
+
+            var resultBuilder = new StringBuilder($"# Sum Table");
+            resultBuilder.AppendLine();
+            for (byte i = 0; i < 6; i++)
+            {
+                resultBuilder.AppendLine(
+                    $"- Sum {i + 1} - Rate: {sumService.GetSuccessRate(i)}% - Cost: {sumService.GetPrice(i)} - Sand: {sumService.GetSandCost(i)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
     }
 }
