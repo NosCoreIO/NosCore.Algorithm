@@ -385,5 +385,24 @@ namespace NosCore.Algorithm.Tests
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
         }
+
+        /// <summary>
+        /// Method to approuve sum table
+        /// </summary>
+        [TestMethod]
+        public void SumDocumentation()
+        {
+            var upgradeService = new UpgradeService.UpgradeService();
+
+            var resultBuilder = new StringBuilder($"# Sum Table (SandVNum: {upgradeService.GetSumSandVNum()})");
+            resultBuilder.AppendLine();
+            for (byte i = 0; i < 6; i++)
+            {
+                resultBuilder.AppendLine(
+                    $"- Somme {i + 1} - Proba: {upgradeService.GetSumSucess(i, 0)}% - Cost: {upgradeService.GetSumPrice(i, 0)} - Sand: {upgradeService.GetSumSand(i, 0)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
     }
 }
