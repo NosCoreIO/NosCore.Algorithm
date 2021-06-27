@@ -396,7 +396,7 @@ namespace NosCore.Algorithm.Tests
             for (byte i = 0; i < 6; i++)
             {
                 resultBuilder.AppendLine(
-                    $"- Sum {i + 1} - Rate: {sumService.GetSuccessRate(i, 0)}% - Cost: {sumService.GetSumPrice(i, 0)} - Sand: {sumService.GetSandCost(i, 0)}");
+                    $"- Sum {i + 1} - Rate: {sumService.GetSuccessRate(i)}% - Cost: {sumService.GetPrice(i)} - Sand: {sumService.GetSandCost(i)}");
             }
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
