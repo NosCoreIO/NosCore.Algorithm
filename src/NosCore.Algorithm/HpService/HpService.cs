@@ -11,98 +11,23 @@ namespace NosCore.Algorithm.HpService
 {
     public class HpService : IHpService
     {
-        private readonly long[,] _hpData = new long[Constants.ClassCount, Constants.MaxLevel];
+        private readonly long[,] _hpData = new long[Constants.ClassCount, Constants.MaxLevel + 1];
 
         public HpService()
         {
-            // Adventurer HP
-            var basicHp = 205;
-            var basicInc = 15;
-            for (var i = 0; i < Constants.MaxLevel; i++)
+            foreach (CharacterClassType classType in Enum.GetValues(typeof(CharacterClassType)))
             {
-                basicInc++;
-                basicHp += basicInc;
-
-                _hpData[(byte)CharacterClassType.Adventurer, i] = basicHp;
-            }
-
-            var swordHp = 190;
-            var swordInc = 14;
-            for (var i = 0; i < Constants.MaxLevel; i++)
-            {
-                var increase2 = (i - 2) % 10 == 0;
-                var increase3 = (i - 3) % 10 == 0;
-                var increase4 = (i - 4) % 10 == 0;
-                var increase5 = (i - 5) % 10 == 0;
-                var increase7 = (i - 7) % 10 == 0;
-                var increase8 = (i - 8) % 10 == 0;
-                var increase9 = (i - 9) % 10 == 0;
-
-                swordInc++;
-                swordHp += swordInc;
-
-                if (increase2 || increase3 || increase4 || increase5 || increase7 || increase8 || increase9 || i % 10 == 0)
+                for (var i = 1; i < Constants.MaxLevel + 1; i++)
                 {
-                    swordInc++;
-                    swordHp += swordInc;
+                    var hpx = i + Math.Floor((i - 1) * (double)(Constants.ClassConstants[(int)classType][0]) / 10);
+                    var hp = (0.5 * Math.Pow(hpx, 2)) + (15.5 * hpx) + 205;
+                    _hpData[(int)classType, i] = (long)hp;
                 }
-
-                _hpData[(byte)CharacterClassType.Swordsman, i] = swordHp;
-            }
-
-            var magecHp = 205;
-            var mageInc = 15;
-            for (var i = 0; i < Constants.MaxLevel; i++)
-            {
-                mageInc++;
-                magecHp += mageInc;
-
-                _hpData[(byte)CharacterClassType.Mage, i] = magecHp;
-            }
-
-            var archerHp = 190;
-            var archerInc = 14;
-            for (var i = 0; i < Constants.MaxLevel; i++)
-            {
-                var increase4 = (i - 4) % 10 == 0;
-                var increase7 = (i - 7) % 10 == 0;
-
-                archerInc++;
-                archerHp += archerInc;
-
-                if (increase4 || increase7 || i % 10 == 0)
-                {
-                    archerInc++;
-                    archerHp += archerInc;
-                }
-
-                _hpData[(byte)CharacterClassType.Archer, i] = archerHp;
-            }
-
-            var fighterHp = 190;
-            var fighterInc = 14;
-            for (var i = 0; i < Constants.MaxLevel; i++)
-            {
-                var increase2 = (i - 2) % 10 == 0;
-                var increase4 = (i - 4) % 10 == 0;
-                var increase6 = (i - 6) % 10 == 0;
-                var increase7 = (i - 7) % 10 == 0;
-
-                fighterInc++;
-                fighterHp += fighterInc;
-
-                if (increase2 || increase4 || increase6 || increase7 || i % 10 == 0)
-                {
-                    fighterInc++;
-                    fighterHp += fighterInc;
-                }
-
-                _hpData[(byte)CharacterClassType.MartialArtist, i] = fighterHp;
             }
         }
         public long GetHp(CharacterClassType @class, byte level)
         {
-            return _hpData![(byte)@class, level-1];
+            return _hpData![(byte)@class, level];
         }
     }
 }
