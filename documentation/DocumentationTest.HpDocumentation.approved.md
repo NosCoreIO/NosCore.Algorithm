@@ -411,7 +411,7 @@
 - Level  5 - HP: 338
 - Level  6 - HP: 361
 - Level  7 - HP: 410
-- Level  8 - HP: 463
+- Level  8 - HP: 436
 - Level  9 - HP: 491
 - Level 10 - HP: 520
 - Level 11 - HP: 581
@@ -421,7 +421,7 @@
 - Level 15 - HP: 788
 - Level 16 - HP: 826
 - Level 17 - HP: 905
-- Level 18 - HP: 988
+- Level 18 - HP: 946
 - Level 19 - HP: 1031
 - Level 20 - HP: 1075
 - Level 21 - HP: 1166
@@ -431,7 +431,7 @@
 - Level 25 - HP: 1463
 - Level 26 - HP: 1516
 - Level 27 - HP: 1625
-- Level 28 - HP: 1738
+- Level 28 - HP: 1681
 - Level 29 - HP: 1796
 - Level 30 - HP: 1855
 - Level 31 - HP: 1976
@@ -441,7 +441,7 @@
 - Level 35 - HP: 2363
 - Level 36 - HP: 2431
 - Level 37 - HP: 2570
-- Level 38 - HP: 2713
+- Level 38 - HP: 2641
 - Level 39 - HP: 2786
 - Level 40 - HP: 2860
 - Level 41 - HP: 3011
@@ -451,7 +451,7 @@
 - Level 45 - HP: 3488
 - Level 46 - HP: 3571
 - Level 47 - HP: 3740
-- Level 48 - HP: 3913
+- Level 48 - HP: 3826
 - Level 49 - HP: 4001
 - Level 50 - HP: 4090
 - Level 51 - HP: 4271
@@ -461,7 +461,7 @@
 - Level 55 - HP: 4838
 - Level 56 - HP: 4936
 - Level 57 - HP: 5135
-- Level 58 - HP: 5338
+- Level 58 - HP: 5236
 - Level 59 - HP: 5441
 - Level 60 - HP: 5545
 - Level 61 - HP: 5756
@@ -471,7 +471,7 @@
 - Level 65 - HP: 6413
 - Level 66 - HP: 6526
 - Level 67 - HP: 6755
-- Level 68 - HP: 6988
+- Level 68 - HP: 6871
 - Level 69 - HP: 7106
 - Level 70 - HP: 7225
 - Level 71 - HP: 7466
@@ -481,7 +481,7 @@
 - Level 75 - HP: 8213
 - Level 76 - HP: 8341
 - Level 77 - HP: 8600
-- Level 78 - HP: 8863
+- Level 78 - HP: 8731
 - Level 79 - HP: 8996
 - Level 80 - HP: 9130
 - Level 81 - HP: 9401
@@ -491,7 +491,7 @@
 - Level 85 - HP: 10238
 - Level 86 - HP: 10381
 - Level 87 - HP: 10670
-- Level 88 - HP: 10963
+- Level 88 - HP: 10816
 - Level 89 - HP: 11111
 - Level 90 - HP: 11260
 - Level 91 - HP: 11561
@@ -501,5 +501,5 @@
 - Level 95 - HP: 12488
 - Level 96 - HP: 12646
 - Level 97 - HP: 12965
-- Level 98 - HP: 13288
+- Level 98 - HP: 13126
 - Level 99 - HP: 13451
