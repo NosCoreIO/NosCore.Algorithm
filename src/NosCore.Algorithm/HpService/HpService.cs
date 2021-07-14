@@ -11,7 +11,7 @@ namespace NosCore.Algorithm.HpService
 {
     public class HpService : IHpService
     {
-        private readonly long[,] _hpData = new long[Constants.ClassCount, Constants.MaxLevel];
+        private readonly long[,] _hpData = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
 
         public HpService()
         {

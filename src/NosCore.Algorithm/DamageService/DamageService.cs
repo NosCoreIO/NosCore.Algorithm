@@ -4,17 +4,14 @@
 // |_|\__|\__/ |___/ \__/\__/|_|_\___|
 // -----------------------------------
 
-using NosCore.Algorithm.HpService;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.DamageService
 {
     public class DamageService : IDamageService
     {
-        private readonly long[,] _minDamage = new long[Constants.ClassCount, Constants.MaxLevel];
+        private readonly long[,] _minDamage = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
 
         public DamageService()
         {
