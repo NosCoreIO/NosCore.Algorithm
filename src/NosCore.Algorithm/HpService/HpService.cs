@@ -11,15 +11,15 @@ namespace NosCore.Algorithm.HpService
 {
     public class HpService : IHpService
     {
-        private readonly long[,] _hpData = new long[Constants.ClassCount, Constants.MaxLevel + 1];
+        private readonly long[,] _hpData = new long[Constants.ClassCount, Constants.MaxLevel];
 
         public HpService()
         {
             foreach (CharacterClassType classType in Enum.GetValues(typeof(CharacterClassType)))
             {
-                for (var i = 1; i < Constants.MaxLevel + 1; i++)
+                for (var i = 0; i < Constants.MaxLevel; i++)
                 {
-                    var hpx = i + Math.Floor((i - 1) * (double)(Constants.ClassConstants[(int)classType][0]) / 10);
+                    var hpx = i + 1 + Math.Floor(i * (double)(Constants.ClassConstants[(int)classType][0]) / 10);
                     var hp = (0.5 * Math.Pow(hpx, 2)) + (15.5 * hpx) + 205;
                     _hpData[(int)classType, i] = (long)hp;
                 }
@@ -27,7 +27,7 @@ namespace NosCore.Algorithm.HpService
         }
         public long GetHp(CharacterClassType @class, byte level)
         {
-            return _hpData![(byte)@class, level];
+            return _hpData![(byte)@class, level-1];
         }
     }
 }
