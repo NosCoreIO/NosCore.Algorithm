@@ -10,7 +10,7 @@ namespace NosCore.Algorithm.MpService
 {
     public class MpService : IMpService
     {
-        private readonly long[,] _mpData = new long[5, Constants.MaxLevel];
+        private readonly long[,] _mpData = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
 
         public MpService()
         {

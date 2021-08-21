@@ -10,7 +10,7 @@ namespace NosCore.Algorithm.DamageService
 {
     public class DamageService : IDamageService
     {
-        private readonly long[,] _minDamage = new long[5, Constants.MaxLevel];
+        private readonly long[,] _minDamage = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
 
         public DamageService()
         {

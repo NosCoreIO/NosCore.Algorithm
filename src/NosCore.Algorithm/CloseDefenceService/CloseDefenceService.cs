@@ -4,7 +4,7 @@ namespace NosCore.Algorithm.CloseDefenceService
 {
     public class CloseDefenceService : ICloseDefenceService
     {
-        private readonly long[,] _closeDefence = new long[5, Constants.MaxLevel];
+        private readonly long[,] _closeDefence = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
 
         public CloseDefenceService()
         {
