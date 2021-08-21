@@ -5,6 +5,7 @@
 // -----------------------------------
 
 using NosCore.Shared.Enumerations;
+using System;
 
 namespace NosCore.Algorithm.DamageService
 {
