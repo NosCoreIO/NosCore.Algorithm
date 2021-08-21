@@ -6,6 +6,5 @@
         internal const byte MaxFairyLevel = 80;
         internal const byte MaxJobLevel = 80;
         internal const byte MaxHeroLevel = 60;
-        internal static readonly int[][] ClassConstants = new int[][] { new int[] { 0, 0, 0 }, new int[] { 8, 2, 0 }, new int[] { 3, 6, 1 }, new int[] { 0, 2, 8 }, new int[] { 5, 3, 2 } };
     }
 }

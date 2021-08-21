@@ -4,14 +4,13 @@
 // |_|\__|\__/ |___/ \__/\__/|_|_\___|
 // -----------------------------------
 
-using System;
 using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.HitRateService
 {
     public class HitRateService : IHitRateService
     {
-        private readonly long[,] _hitRate = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
+        private readonly long[,] _hitRate = new long[5, Constants.MaxLevel];
         public HitRateService()
         {
             var archerHitRate = 31;

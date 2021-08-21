@@ -1,11 +1,10 @@
 ﻿using NosCore.Shared.Enumerations;
-using System;
 
 namespace NosCore.Algorithm.DistanceDefenceService
 {
     public class DistanceDefenceService : IDistanceDefenceService
     {
-        private readonly long[,] _distanceDefence = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
+        private readonly long[,] _distanceDefence = new long[5, Constants.MaxLevel];
 
         public DistanceDefenceService()
         {

@@ -1,11 +1,10 @@
 ﻿using NosCore.Shared.Enumerations;
-using System;
 
 namespace NosCore.Algorithm.MagicDefenceService
 {
     public class MagicDefenceService : IMagicDefenceService
     {
-        private readonly long[,] _magicDefence = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
+        private readonly long[,] _magicDefence = new long[5, Constants.MaxLevel];
 
         public MagicDefenceService()
         {

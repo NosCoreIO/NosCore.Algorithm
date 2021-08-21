@@ -5,13 +5,12 @@
 // -----------------------------------
 
 using NosCore.Shared.Enumerations;
-using System;
 
 namespace NosCore.Algorithm.JobExperienceService
 {
     public class JobExperienceService : IJobExperienceService
     {
-        private readonly long[,] _jobXpData = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxJobLevel];
+        private readonly long[,] _jobXpData = new long[5, Constants.MaxJobLevel];
 
         public JobExperienceService()
         {

@@ -1,11 +1,10 @@
 ﻿using NosCore.Shared.Enumerations;
-using System;
 
 namespace NosCore.Algorithm.SecondaryHitRateService
 {
     public class SecondaryHitRateService : ISecondaryHitRateService
     {
-        private readonly long[,] _secondaryHitRate = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
+        private readonly long[,] _secondaryHitRate = new long[5, Constants.MaxLevel];
 
         public SecondaryHitRateService()
         {

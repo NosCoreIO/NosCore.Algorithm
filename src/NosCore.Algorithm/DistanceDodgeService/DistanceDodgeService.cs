@@ -1,11 +1,10 @@
 ﻿using NosCore.Shared.Enumerations;
-using System;
 
 namespace NosCore.Algorithm.DistanceDodgeService
 {
     public class DistanceDodgeService : IDistanceDodgeService
     {
-        private readonly long[,] _distanceDodge = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
+        private readonly long[,] _distanceDodge = new long[5, Constants.MaxLevel];
 
         public DistanceDodgeService()
         {

@@ -4,14 +4,13 @@
 // |_|\__|\__/ |___/ \__/\__/|_|_\___|
 // -----------------------------------
 
-using System;
 using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.MpService
 {
     public class MpService : IMpService
     {
-        private readonly long[,] _mpData = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
+        private readonly long[,] _mpData = new long[5, Constants.MaxLevel];
 
         public MpService()
         {
