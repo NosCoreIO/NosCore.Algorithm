@@ -5,7 +5,6 @@
 // -----------------------------------
 
 using System;
-using NosCore.Algorithm.ExperienceService;
 
 namespace NosCore.Algorithm.HeroExperienceService
 {

@@ -7,7 +7,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using NosCore.Algorithm.DignityService;
 using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.DignityService

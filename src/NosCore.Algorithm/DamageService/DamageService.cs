@@ -4,10 +4,6 @@
 // |_|\__|\__/ |___/ \__/\__/|_|_\___|
 // -----------------------------------
 
-using NosCore.Algorithm.HpService;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.DamageService
@@ -19,8 +15,8 @@ namespace NosCore.Algorithm.DamageService
         public DamageService()
         {
             _minDamage[(byte)CharacterClassType.Adventurer, 0] = 10;
-            _minDamage[(byte)CharacterClassType.Swordsman, 0] = 10;
             _minDamage[(byte)CharacterClassType.Archer, 0] = 60;
+            _minDamage[(byte)CharacterClassType.Swordsman, 0] = 10;
             _minDamage[(byte)CharacterClassType.Mage, 0] = 10;
             _minDamage[(byte)CharacterClassType.MartialArtist, 0] = 10;
 

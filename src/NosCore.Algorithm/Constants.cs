@@ -1,5 +1,5 @@
-﻿using System;
-using NosCore.Shared.Enumerations;
+﻿using NosCore.Shared.Enumerations;
+using System;
 
 namespace NosCore.Algorithm
 {

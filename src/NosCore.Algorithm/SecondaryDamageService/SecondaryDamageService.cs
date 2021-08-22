@@ -4,10 +4,8 @@
 // |_|\__|\__/ |___/ \__/\__/|_|_\___|
 // -----------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Text;
 using NosCore.Shared.Enumerations;
+using System;
 
 namespace NosCore.Algorithm.SecondaryDamageService
 {
