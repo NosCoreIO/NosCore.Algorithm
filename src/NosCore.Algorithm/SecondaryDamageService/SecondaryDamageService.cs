@@ -11,7 +11,7 @@ namespace NosCore.Algorithm.SecondaryDamageService
 {
     public class SecondaryDamageService : ISecondaryDamageService
     {
-        private readonly long[,] _secondaryMinDamage = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
+        private readonly long[,] _secondaryMinDamage = new long[Constants.ClassCount, Constants.MaxLevel];
 
         public SecondaryDamageService()
         {

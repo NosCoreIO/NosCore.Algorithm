@@ -1,11 +1,10 @@
 ﻿using NosCore.Shared.Enumerations;
-using System;
 
 namespace NosCore.Algorithm.CloseDefenceService
 {
     public class CloseDefenceService : ICloseDefenceService
     {
-        private readonly long[,] _closeDefence = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
+        private readonly long[,] _closeDefence = new long[Constants.ClassCount, Constants.MaxLevel];
 
         public CloseDefenceService()
         {

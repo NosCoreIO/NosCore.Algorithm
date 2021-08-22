@@ -5,19 +5,18 @@
 // -----------------------------------
 
 using NosCore.Shared.Enumerations;
-using System;
 
 namespace NosCore.Algorithm.DamageService
 {
     public class DamageService : IDamageService
     {
-        private readonly long[,] _minDamage = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
+        private readonly long[,] _minDamage = new long[Constants.ClassCount, Constants.MaxLevel];
 
         public DamageService()
         {
             _minDamage[(byte)CharacterClassType.Adventurer, 0] = 10;
-            _minDamage[(byte)CharacterClassType.Swordsman, 0] = 10;
             _minDamage[(byte)CharacterClassType.Archer, 0] = 60;
+            _minDamage[(byte)CharacterClassType.Swordsman, 0] = 10;
             _minDamage[(byte)CharacterClassType.Mage, 0] = 10;
             _minDamage[(byte)CharacterClassType.MartialArtist, 0] = 10;
 

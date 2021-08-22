@@ -5,13 +5,12 @@
 // -----------------------------------
 
 using NosCore.Shared.Enumerations;
-using System;
 
 namespace NosCore.Algorithm.HitRateService
 {
     public class HitRateService : IHitRateService
     {
-        private readonly long[,] _hitRate = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
+        private readonly long[,] _hitRate = new long[Constants.ClassCount, Constants.MaxLevel];
         public HitRateService()
         {
             var archerHitRate = 31;

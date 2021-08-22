@@ -5,13 +5,12 @@
 // -----------------------------------
 
 using NosCore.Shared.Enumerations;
-using System;
 
 namespace NosCore.Algorithm.MpService
 {
     public class MpService : IMpService
     {
-        private readonly long[,] _mpData = new long[Enum.GetNames(typeof(CharacterClassType)).Length, Constants.MaxLevel];
+        private readonly long[,] _mpData = new long[Constants.ClassCount, Constants.MaxLevel];
 
         public MpService()
         {
