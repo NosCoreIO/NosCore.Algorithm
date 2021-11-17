@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
 	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <LangVersion>latest</LangVersion>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
@@ -13,7 +13,7 @@
     <RepositoryUrl>https://github.com/NosCoreIO/NosCore.Algorithm.git</RepositoryUrl>
     <PackageIconUrl></PackageIconUrl>
     <PackageTags>nostale, noscore, nostale private server source, nostale emulator</PackageTags>
-    <Version>0.6.3</Version>
+    <Version>1.0.0</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>NosCore's Algorithm</Description>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
@@ -27,7 +27,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NosCore.Shared" Version="1.9.2" />
+    <PackageReference Include="NosCore.Shared" Version="1.14.4" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
