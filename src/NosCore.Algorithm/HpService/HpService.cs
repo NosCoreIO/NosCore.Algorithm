@@ -12,7 +12,7 @@ namespace NosCore.Algorithm.HpService
     public class HpService : IHpService
     {
         private readonly long[,] _hpData = new long[Constants.ClassCount, Constants.MaxLevel];
-        public readonly int[][] ClassConstants = new int[][] { new int[] { 0, 0, 0 }, new int[] { 8, 2, 0 }, new int[] { 3, 6, 1 }, new int[] { 0, 2, 8 }, new int[] { 5, 3, 2 } };
+        public readonly int[][] ClassConstants = new int[][] { new int[] { 0 }, new int[] { 8 }, new int[] { 3 }, new int[] { 0 }, new int[] { 5 } };
 
         public HpService()
         {
