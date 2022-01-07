@@ -5,80 +5,34 @@
 // -----------------------------------
 
 using NosCore.Shared.Enumerations;
+using System;
 
 namespace NosCore.Algorithm.MpService
 {
     public class MpService : IMpService
     {
         private readonly long[,] _mpData = new long[Constants.ClassCount, Constants.MaxLevel];
+        public readonly int[][] ClassConstants = new int[][] { new int[] { 0, 0, 0 }, new int[] { 8, 2, 0 }, new int[] { 3, 6, 1 }, new int[] { 0, 2, 8 }, new int[] { 5, 3, 2 } };
 
         public MpService()
         {
-            var adventurerMpAdd = 9;
-            var magicianMpAdd = new[] { 9, 18, 21, 22, 25, 13, 27, 30, 31, 34 };
-            var martialArtistMpAdd = new[] { 9, 9, 9, 10, 22, 11, 12, 13, 13, 27 };
-            var archerMpAdd = new[] { 9, 9, 9, 10, 11, 11, 11, 12, 13, 26 };
-
-            _mpData[(byte)CharacterClassType.Adventurer, 0] = 60;
-            _mpData[(byte)CharacterClassType.Swordsman, 0] = 60;
-            _mpData[(byte)CharacterClassType.Mage, 0] = 60;
-            _mpData[(byte)CharacterClassType.MartialArtist, 0] = 60;
-            _mpData[(byte)CharacterClassType.Archer, 0] = 60;
-            var countMagician = 9;
-            var countArcher = 11;
-            var substractMagician = true;
-            var substractArcher = false;
-            var reverseArcher = 0;
-            for (var i = 1; i < Constants.MaxLevel; i++)
+            foreach (CharacterClassType classType in Enum.GetValues(typeof(CharacterClassType)))
             {
-                adventurerMpAdd += i % 4 == 0 ? 2 : 0;
-                _mpData[(byte)CharacterClassType.Adventurer, i] =
-                    _mpData[(byte)CharacterClassType.Adventurer, i - 1] + (i % 4 == 0 ? adventurerMpAdd - 1 : adventurerMpAdd);
-                _mpData[(byte)CharacterClassType.Swordsman, i] = _mpData[(byte)CharacterClassType.Adventurer, i];
-                if (i - 1 > 9)
+                for (var i = 0; i < Constants.MaxLevel; i++)
                 {
-                    var switcher = !substractMagician ? 1 : -1;
-                    if ((i - 1) % 5 == 0)
-                    {
-                        countMagician += !substractMagician ? 1 : -1;
-                        substractMagician = countMagician == 10 || countMagician == 8 ? !substractMagician : substractMagician;
-                        magicianMpAdd[(i - 1) % 10] = magicianMpAdd[(i - 1) % 10] + countMagician;
-                    }
-                    else
-                    {
-                        magicianMpAdd[(i - 1) % 10] += 18 + switcher / ((i - 1) % 5 % 2 == 1 ? 1 : -1);
-                    }
-
-                    if (i % 10 == 0)
-                    {
-                        countArcher += !substractArcher ? 1 : -1;
-                        substractArcher = countArcher == 12 || countArcher == 10 ? !substractArcher : substractArcher;
-                        archerMpAdd[(i - 1) % 10] = archerMpAdd[(i - 1) % 10] + countArcher;
-                        reverseArcher++;
-                    }
-                    else
-                    {
-                        var switcherArcher = reverseArcher % 4 == 2 || reverseArcher % 4 == 3 ? -1 : 1;
-                        archerMpAdd[(i - 1) % 10] += (switcherArcher == -1 ? 6 : 5) +
-                                                     (i % 20 < 10
-                                                         ? i % 4 == 2 || i % 4 == 1 ? 0 : switcherArcher
-                                                         : i % 4 == 0 || i % 4 == 1 ? switcherArcher : 0);
-
-                    }
-
-                    martialArtistMpAdd[(i - 1) % 10] += (i - 1) % 5 == 4 ? 12 : 6;
+                    var mpx = i + 1 + Math.Floor(i * (double)(ClassConstants[(int)classType][2]) / 10);
+                    var mp = Math.Floor(9.25 * mpx + 50.75) + ((int)((mpx - 2) / 4) * 2) * (Modulus(mpx - 2, 4) + 1 + (int)((mpx - 6) / 4) * 2);
+                    _mpData[(int)classType, i] = (long)mp;
                 }
-                _mpData[(byte)CharacterClassType.Mage, i] =
-                    _mpData[(byte)CharacterClassType.Mage, i - 1] + magicianMpAdd[(i - 1) % 10];
-
-                _mpData[(byte)CharacterClassType.MartialArtist, i] =
-                    _mpData[(byte)CharacterClassType.MartialArtist, i - 1] + martialArtistMpAdd[(i - 1) % 10];
-
-                _mpData[(byte)CharacterClassType.Archer, i] =
-                    _mpData[(byte)CharacterClassType.Archer, i - 1] + archerMpAdd[(i - 1) % 10];
             }
-
         }
+
+        private static double Modulus(double dividend, double divisor)
+        {
+            double modulus = (Math.Abs(dividend) - (Math.Abs(divisor) * Math.Floor(Math.Abs(dividend) / Math.Abs(divisor)))) * Math.Sign(dividend);
+            return modulus;
+        }
+
         public long GetMp(CharacterClassType @class, byte level)
         {
             return _mpData![(byte)@class, level - 1];
