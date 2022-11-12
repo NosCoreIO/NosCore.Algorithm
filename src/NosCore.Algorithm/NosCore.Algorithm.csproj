@@ -7,13 +7,13 @@
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>NosCore</Authors>
-    <Copyright>2020</Copyright>
+    <Copyright>2022</Copyright>
     <Nullable>enable</Nullable>
     <PackageProjectUrl>https://github.com/NosCore/NosCore.Algorithm</PackageProjectUrl>
     <RepositoryUrl>https://github.com/NosCoreIO/NosCore.Algorithm.git</RepositoryUrl>
     <PackageIconUrl></PackageIconUrl>
     <PackageTags>nostale, noscore, nostale private server source, nostale emulator</PackageTags>
-    <Version>1.0.1</Version>
+    <Version>2.0.0</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>NosCore's Algorithm</Description>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
