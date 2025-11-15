@@ -2,10 +2,16 @@
 
 namespace NosCore.Algorithm.DistanceDefenceService
 {
+    /// <summary>
+    /// Provides distance combat defence value calculations for different character classes and levels
+    /// </summary>
     public class DistanceDefenceService : IDistanceDefenceService
     {
         private readonly long[,] _distanceDefence = new long[Constants.ClassCount, Constants.MaxLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the DistanceDefenceService and pre-calculates distance defence values for all character classes and levels
+        /// </summary>
         public DistanceDefenceService()
         {
             var adventurerDefence = 4;
@@ -32,6 +38,12 @@ namespace NosCore.Algorithm.DistanceDefenceService
             }
         }
 
+        /// <summary>
+        /// Gets the distance defence value for a character class at a specific level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The character level</param>
+        /// <returns>The distance defence value</returns>
         public long GetDistanceDefence(CharacterClassType @class, byte level)
         {
             return _distanceDefence![(byte)@class, level - 1];

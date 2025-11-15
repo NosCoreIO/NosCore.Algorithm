@@ -6,10 +6,16 @@
 
 namespace NosCore.Algorithm.SpExperienceService
 {
+    /// <summary>
+    /// Provides specialist card (SP) experience requirement calculations for different levels
+    /// </summary>
     public class SpExperienceService : ISpExperienceService
     {
         private readonly long[,] _spXpData = new long[2, Constants.MaxLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the SpExperienceService and pre-calculates experience requirements for all specialist card levels
+        /// </summary>
         public SpExperienceService()
         {
             _spXpData[1, 0] = 10000;
@@ -33,6 +39,13 @@ namespace NosCore.Algorithm.SpExperienceService
             }
 
         }
+
+        /// <summary>
+        /// Gets the experience required for a specialist card to reach a specific level
+        /// </summary>
+        /// <param name="level">The specialist card level</param>
+        /// <param name="isSecondarySp">Whether this is a secondary specialist card</param>
+        /// <returns>The experience required</returns>
         public long GetSpExperience(byte level, bool isSecondarySp)
         {
             return (long)_spXpData![isSecondarySp ? 1 : 0, level - 1];

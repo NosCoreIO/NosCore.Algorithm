@@ -8,10 +8,16 @@ using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.DamageService
 {
+    /// <summary>
+    /// Provides damage value calculations for different character classes and levels
+    /// </summary>
     public class DamageService : IDamageService
     {
         private readonly long[,] _minDamage = new long[Constants.ClassCount, Constants.MaxLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the DamageService and pre-calculates damage values for all character classes and levels
+        /// </summary>
         public DamageService()
         {
             _minDamage[(byte)CharacterClassType.Adventurer, 0] = 10;
@@ -76,11 +82,23 @@ namespace NosCore.Algorithm.DamageService
             }
         }
 
+        /// <summary>
+        /// Gets the minimum damage value for a character class at a specific level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The character level</param>
+        /// <returns>The minimum damage value</returns>
         public long GetMinDamage(CharacterClassType @class, byte level)
         {
             return _minDamage![(byte)@class, level - 1];
         }
 
+        /// <summary>
+        /// Gets the maximum damage value for a character class at a specific level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The character level</param>
+        /// <returns>The maximum damage value</returns>
         public long GetMaxDamage(CharacterClassType @class, byte level) => GetMinDamage(@class, level);
     }
 }

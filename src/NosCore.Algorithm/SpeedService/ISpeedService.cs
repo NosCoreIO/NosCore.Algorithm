@@ -8,8 +8,16 @@ using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.SpeedService
 {
+    /// <summary>
+    /// Service for retrieving base speed values for different character classes
+    /// </summary>
     public interface ISpeedService
     {
+        /// <summary>
+        /// Gets the base speed value for a character class
+        /// </summary>
+        /// <param name="entityClass">The character class type</param>
+        /// <returns>The base speed value</returns>
         byte GetSpeed(CharacterClassType entityClass);
     }
 }

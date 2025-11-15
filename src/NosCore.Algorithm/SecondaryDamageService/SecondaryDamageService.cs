@@ -9,10 +9,16 @@ using System;
 
 namespace NosCore.Algorithm.SecondaryDamageService
 {
+    /// <summary>
+    /// Provides secondary weapon damage value calculations for different character classes and levels
+    /// </summary>
     public class SecondaryDamageService : ISecondaryDamageService
     {
         private readonly long[,] _secondaryMinDamage = new long[Constants.ClassCount, Constants.MaxLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the SecondaryDamageService and pre-calculates secondary damage values for all character classes and levels
+        /// </summary>
         public SecondaryDamageService()
         {
             var fighterMin = 28;
@@ -37,11 +43,23 @@ namespace NosCore.Algorithm.SecondaryDamageService
             }
         }
 
+        /// <summary>
+        /// Gets the minimum secondary weapon damage value for a character class at a specific level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The character level</param>
+        /// <returns>The minimum secondary weapon damage value</returns>
         public long GetSecondaryMinDamage(CharacterClassType @class, byte level)
         {
             return (long)_secondaryMinDamage![(byte)@class, level - 1];
         }
 
+        /// <summary>
+        /// Gets the maximum secondary weapon damage value for a character class at a specific level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The character level</param>
+        /// <returns>The maximum secondary weapon damage value</returns>
         public long GetSecondaryMaxDamage(CharacterClassType @class, byte level) => GetSecondaryMinDamage(@class, level);
     }
 }

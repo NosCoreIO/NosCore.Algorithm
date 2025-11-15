@@ -9,11 +9,21 @@ using System;
 
 namespace NosCore.Algorithm.MpService
 {
+    /// <summary>
+    /// Provides mana point (MP) value calculations for different character classes and levels
+    /// </summary>
     public class MpService : IMpService
     {
         private readonly long[,] _mpData = new long[Constants.ClassCount, Constants.MaxLevel];
+
+        /// <summary>
+        /// Constants used in MP calculations for each character class
+        /// </summary>
         public readonly int[] ClassConstants = new int[] { 0,  0, 1, 8, 2 };
 
+        /// <summary>
+        /// Initializes a new instance of the MpService and pre-calculates MP values for all character classes and levels
+        /// </summary>
         public MpService()
         {
             foreach (CharacterClassType classType in Enum.GetValues(typeof(CharacterClassType)))
@@ -27,12 +37,24 @@ namespace NosCore.Algorithm.MpService
             }
         }
 
+        /// <summary>
+        /// Calculates the modulus of two numbers with special handling for negative values
+        /// </summary>
+        /// <param name="dividend">The dividend</param>
+        /// <param name="divisor">The divisor</param>
+        /// <returns>The modulus result</returns>
         private static double Modulus(double dividend, double divisor)
         {
             double modulus = (Math.Abs(dividend) - (Math.Abs(divisor) * Math.Floor(Math.Abs(dividend) / Math.Abs(divisor)))) * Math.Sign(dividend);
             return modulus;
         }
 
+        /// <summary>
+        /// Gets the MP value for a character class at a specific level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The character level</param>
+        /// <returns>The MP value</returns>
         public long GetMp(CharacterClassType @class, byte level)
         {
             return _mpData![(byte)@class, level - 1];

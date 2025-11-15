@@ -8,9 +8,16 @@ using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.HitRateService
 {
+    /// <summary>
+    /// Provides hit rate value calculations for different character classes and levels
+    /// </summary>
     public class HitRateService : IHitRateService
     {
         private readonly long[,] _hitRate = new long[Constants.ClassCount, Constants.MaxLevel];
+
+        /// <summary>
+        /// Initializes a new instance of the HitRateService and pre-calculates hit rate values for all character classes and levels
+        /// </summary>
         public HitRateService()
         {
             var archerHitRate = 31;
@@ -33,6 +40,12 @@ namespace NosCore.Algorithm.HitRateService
             }
         }
 
+        /// <summary>
+        /// Gets the hit rate value for a character class at a specific level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The character level</param>
+        /// <returns>The hit rate value</returns>
         public long GetHitRate(CharacterClassType @class, byte level)
         {
             return _hitRate![(byte)@class, level - 1];

@@ -8,10 +8,16 @@ using System;
 
 namespace NosCore.Algorithm.HeroExperienceService
 {
+    /// <summary>
+    /// Provides hero experience requirement calculations for different levels
+    /// </summary>
     public class HeroExperienceService : IHeroExperienceService
     {
         private readonly long[] _heroXpData = new long[Constants.MaxHeroLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the HeroExperienceService and pre-calculates experience requirements for all hero levels
+        /// </summary>
         public HeroExperienceService()
         {
             var index = 1;
@@ -44,6 +50,12 @@ namespace NosCore.Algorithm.HeroExperienceService
                 }
             }
         }
+
+        /// <summary>
+        /// Gets the total experience required for a hero to reach a specific level
+        /// </summary>
+        /// <param name="level">The hero level</param>
+        /// <returns>The total experience required</returns>
         public long GetHeroExperience(byte level)
         {
             return _heroXpData![level - 1];
