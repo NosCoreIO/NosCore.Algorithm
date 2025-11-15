@@ -30,7 +30,7 @@
 
   <ItemGroup>
     <PackageReference Include="NosCore.Shared" Version="3.4.0" />
-    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
