@@ -5,6 +5,7 @@
 	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <IsPackable>false</IsPackable>
 	<Nullable>enable</Nullable>
+	<NoWarn>MSTEST0037</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
