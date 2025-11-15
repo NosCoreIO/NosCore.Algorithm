@@ -21,6 +21,7 @@
     <Company>NosCore</Company>
     <PackageIcon>icon.png</PackageIcon>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NuGetAudit>false</NuGetAudit>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -29,7 +30,7 @@
 
   <ItemGroup>
     <PackageReference Include="NosCore.Shared" Version="3.4.0" />
-    <PackageReference Include="System.ComponentModel.Annotations" Version="6.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
