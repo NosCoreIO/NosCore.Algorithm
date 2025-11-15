@@ -8,10 +8,16 @@ using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.JobExperienceService
 {
+    /// <summary>
+    /// Provides job experience requirement calculations for different character classes and job levels
+    /// </summary>
     public class JobExperienceService : IJobExperienceService
     {
         private readonly long[,] _jobXpData = new long[Constants.ClassCount, Constants.MaxJobLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the JobExperienceService and pre-calculates job experience requirements for all character classes and job levels
+        /// </summary>
         public JobExperienceService()
         {
             _jobXpData[(byte)CharacterClassType.Adventurer, 0] = 2200;
@@ -34,6 +40,13 @@ namespace NosCore.Algorithm.JobExperienceService
                 _jobXpData[(byte)CharacterClassType.Swordsman, i] = _jobXpData[(byte)CharacterClassType.Archer, i];
             }
         }
+
+        /// <summary>
+        /// Gets the total job experience required for a character class to reach a specific job level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The job level</param>
+        /// <returns>The total job experience required</returns>
         public long GetJobExperience(CharacterClassType @class, byte level)
         {
             return _jobXpData![(byte)@class, level - 1];

@@ -8,10 +8,16 @@ using System;
 
 namespace NosCore.Algorithm.ExperienceService
 {
+    /// <summary>
+    /// Provides character experience requirement calculations for different levels
+    /// </summary>
     public class ExperienceService : IExperienceService
     {
         private readonly long[] _xpData = new long[Constants.MaxLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the ExperienceService and pre-calculates experience requirements for all levels
+        /// </summary>
         public ExperienceService()
         {
             var v = new long[99];
@@ -40,6 +46,12 @@ namespace NosCore.Algorithm.ExperienceService
                     : Convert.ToInt64(_xpData[i - 1] + var * (i + 2) * (i + 2));
             }
         }
+
+        /// <summary>
+        /// Gets the total experience required to reach a specific level
+        /// </summary>
+        /// <param name="level">The target level</param>
+        /// <returns>The total experience required</returns>
         public long GetExperience(byte level)
         {
             return _xpData![level - 1];

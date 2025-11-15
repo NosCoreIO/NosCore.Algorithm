@@ -6,10 +6,16 @@
 
 namespace NosCore.Algorithm.FairyExperienceService
 {
+    /// <summary>
+    /// Provides fairy experience requirement calculations for different levels
+    /// </summary>
     public class FairyExperienceService : IFairyExperienceService
     {
         private readonly int[] _fairyXpData = new int[Constants.MaxFairyLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the FairyExperienceService and pre-calculates experience requirements for all fairy levels
+        /// </summary>
         public FairyExperienceService()
         {
             for (var i = 0; i < _fairyXpData.Length; i++)
@@ -18,6 +24,12 @@ namespace NosCore.Algorithm.FairyExperienceService
             }
 
         }
+
+        /// <summary>
+        /// Gets the experience required for a fairy to reach a specific level
+        /// </summary>
+        /// <param name="level">The fairy level</param>
+        /// <returns>The experience required</returns>
         public int GetFairyExperience(byte level)
         {
             return _fairyXpData![level];

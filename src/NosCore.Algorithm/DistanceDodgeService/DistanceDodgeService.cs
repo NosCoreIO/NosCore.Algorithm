@@ -2,10 +2,16 @@
 
 namespace NosCore.Algorithm.DistanceDodgeService
 {
+    /// <summary>
+    /// Provides distance combat dodge value calculations for different character classes and levels
+    /// </summary>
     public class DistanceDodgeService : IDistanceDodgeService
     {
         private readonly long[,] _distanceDodge = new long[Constants.ClassCount, Constants.MaxLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the DistanceDodgeService and pre-calculates distance dodge values for all character classes and levels
+        /// </summary>
         public DistanceDodgeService()
         {
             var swordmanDodge = 8;
@@ -31,6 +37,12 @@ namespace NosCore.Algorithm.DistanceDodgeService
             }
         }
 
+        /// <summary>
+        /// Gets the distance dodge value for a character class at a specific level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The character level</param>
+        /// <returns>The distance dodge value</returns>
         public long GetDistanceDodge(CharacterClassType @class, byte level)
         {
             return _distanceDodge![(byte)@class, level - 1];

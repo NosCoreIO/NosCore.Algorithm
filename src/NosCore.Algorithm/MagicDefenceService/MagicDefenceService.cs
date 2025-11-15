@@ -2,10 +2,16 @@
 
 namespace NosCore.Algorithm.MagicDefenceService
 {
+    /// <summary>
+    /// Provides magic defence value calculations for different character classes and levels
+    /// </summary>
     public class MagicDefenceService : IMagicDefenceService
     {
         private readonly long[,] _magicDefence = new long[Constants.ClassCount, Constants.MaxLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the MagicDefenceService and pre-calculates magic defence values for all character classes and levels
+        /// </summary>
         public MagicDefenceService()
         {
             var adventurerDefence = 4;
@@ -34,6 +40,12 @@ namespace NosCore.Algorithm.MagicDefenceService
             }
         }
 
+        /// <summary>
+        /// Gets the magic defence value for a character class at a specific level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The character level</param>
+        /// <returns>The magic defence value</returns>
         public long GetMagicDefence(CharacterClassType @class, byte level)
         {
             return _magicDefence![(byte)@class, level - 1];

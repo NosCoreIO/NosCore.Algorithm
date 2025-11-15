@@ -2,10 +2,16 @@
 
 namespace NosCore.Algorithm.HitDodgeService
 {
+    /// <summary>
+    /// Provides close combat dodge value calculations for different character classes and levels
+    /// </summary>
     public class HitDodgeService : IHitDodgeService
     {
         private readonly long[,] _hitDodge = new long[Constants.ClassCount, Constants.MaxLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the HitDodgeService and pre-calculates close combat dodge values for all character classes and levels
+        /// </summary>
         public HitDodgeService()
         {
             var swordmanDodge = 8;
@@ -31,6 +37,12 @@ namespace NosCore.Algorithm.HitDodgeService
             }
         }
 
+        /// <summary>
+        /// Gets the close combat dodge value for a character class at a specific level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The character level</param>
+        /// <returns>The close combat dodge value</returns>
         public long GetHitDodge(CharacterClassType @class, byte level)
         {
             return _hitDodge![(byte)@class, level - 1];

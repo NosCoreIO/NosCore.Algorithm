@@ -11,10 +11,16 @@ using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.ReputationService
 {
+    /// <summary>
+    /// Provides reputation level and threshold calculations
+    /// </summary>
     public class ReputationService : IReputationService
     {
         private readonly Dictionary<ReputationType, long> _reputData = new Dictionary<ReputationType, long>();
 
+        /// <summary>
+        /// Initializes a new instance of the ReputationService and sets up reputation thresholds for each reputation type
+        /// </summary>
         public ReputationService()
         {
             _reputData[ReputationType.GreenBeginner] = 50;
@@ -60,6 +66,11 @@ namespace NosCore.Algorithm.ReputationService
             _reputData[ReputationType.LegendaryHero] = long.MaxValue;
         }
 
+        /// <summary>
+        /// Gets the reputation level type based on a reputation value
+        /// </summary>
+        /// <param name="reputation">The reputation value</param>
+        /// <returns>The reputation level type</returns>
         public ReputationType GetLevelFromReputation(long reputation)
         {
             foreach (var reput in Enum.GetValues(typeof(ReputationType)).Cast<ReputationType>())
@@ -73,6 +84,11 @@ namespace NosCore.Algorithm.ReputationService
             return ReputationType.RedElite;
         }
 
+        /// <summary>
+        /// Gets the reputation value range for a specific reputation level
+        /// </summary>
+        /// <param name="level">The reputation level type</param>
+        /// <returns>A tuple containing the minimum and maximum reputation values for the level</returns>
         public (long, long) GetReputation(ReputationType level)
         {
             return (level == ReputationType.GreenBeginner ? 0 : _reputData[level < ReputationType.RedElite ? (ReputationType)level - 1 : ReputationType.BlueElite] + 1, level < ReputationType.RedElite ? _reputData[level] : long.MaxValue);

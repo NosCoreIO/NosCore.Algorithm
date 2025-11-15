@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
 	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <LangVersion>latest</LangVersion>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
@@ -21,7 +21,7 @@
     <Company>NosCore</Company>
     <PackageIcon>icon.png</PackageIcon>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>CS1591</NoWarn>
+    <NuGetAudit>false</NuGetAudit>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -30,7 +30,6 @@
 
   <ItemGroup>
     <PackageReference Include="NosCore.Shared" Version="3.4.0" />
-    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>

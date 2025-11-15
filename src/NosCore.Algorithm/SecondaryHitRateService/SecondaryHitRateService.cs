@@ -2,10 +2,16 @@
 
 namespace NosCore.Algorithm.SecondaryHitRateService
 {
+    /// <summary>
+    /// Provides secondary weapon hit rate value calculations for different character classes and levels
+    /// </summary>
     public class SecondaryHitRateService : ISecondaryHitRateService
     {
         private readonly long[,] _secondaryHitRate = new long[Constants.ClassCount, Constants.MaxLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the SecondaryHitRateService and pre-calculates secondary hit rate values for all character classes and levels
+        /// </summary>
         public SecondaryHitRateService()
         {
             var adventurerHit = 18;
@@ -33,6 +39,12 @@ namespace NosCore.Algorithm.SecondaryHitRateService
             }
         }
 
+        /// <summary>
+        /// Gets the secondary weapon hit rate value for a character class at a specific level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The character level</param>
+        /// <returns>The secondary weapon hit rate value</returns>
         public long GetSecondaryHitRate(CharacterClassType @class, byte level)
         {
             return (long)_secondaryHitRate![(byte)@class, level - 1];

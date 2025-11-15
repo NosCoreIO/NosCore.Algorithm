@@ -2,10 +2,16 @@
 
 namespace NosCore.Algorithm.CloseDefenceService
 {
+    /// <summary>
+    /// Provides close combat defence value calculations for different character classes and levels
+    /// </summary>
     public class CloseDefenceService : ICloseDefenceService
     {
         private readonly long[,] _closeDefence = new long[Constants.ClassCount, Constants.MaxLevel];
 
+        /// <summary>
+        /// Initializes a new instance of the CloseDefenceService and pre-calculates close defence values for all character classes and levels
+        /// </summary>
         public CloseDefenceService()
         {
             var adventurerDefence = 4;
@@ -34,6 +40,12 @@ namespace NosCore.Algorithm.CloseDefenceService
             }
         }
 
+        /// <summary>
+        /// Gets the close defence value for a character class at a specific level
+        /// </summary>
+        /// <param name="class">The character class type</param>
+        /// <param name="level">The character level</param>
+        /// <returns>The close defence value</returns>
         public long GetCloseDefence(CharacterClassType @class, byte level)
         {
             return _closeDefence![(byte)@class, level - 1];
