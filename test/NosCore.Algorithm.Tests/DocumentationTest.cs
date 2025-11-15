@@ -165,8 +165,10 @@ namespace NosCore.Algorithm.Tests
                 resultBuilder.AppendLine($"- {(byte)reput,2} {reput.ToString().PadRight(16)} - Min: {result.Item1} Max: {result.Item2}");
                 if (reput < ReputationType.GreenLegend)
                 {
-                    Assert.AreEqual(reput, reputationService.GetLevelFromReputation(result.Item1));
-                    Assert.AreEqual(reput, reputationService.GetLevelFromReputation(result.Item2));
+                    var actualFromMin = reputationService.GetLevelFromReputation(result.Item1);
+                    var actualFromMax = reputationService.GetLevelFromReputation(result.Item2);
+                    Assert.AreEqual(reput, actualFromMin);
+                    Assert.AreEqual(reput, actualFromMax);
                 }
             }
 
@@ -184,8 +186,10 @@ namespace NosCore.Algorithm.Tests
             {
                 var result = dignityService.GetDignity(dignity);
                 resultBuilder.AppendLine($"- {(byte)dignity,2} {dignity.ToString().PadRight(11)} - Max: {result.Item1} Min: {result.Item2}");
-                Assert.AreEqual(dignity, dignityService.GetLevelFromDignity(result.Item1));
-                Assert.AreEqual(dignity, dignityService.GetLevelFromDignity(result.Item2));
+                var actualFromMax = dignityService.GetLevelFromDignity(result.Item1);
+                var actualFromMin = dignityService.GetLevelFromDignity(result.Item2);
+                Assert.AreEqual(dignity, actualFromMax);
+                Assert.AreEqual(dignity, actualFromMin);
             }
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
