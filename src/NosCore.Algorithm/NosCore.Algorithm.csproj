@@ -29,7 +29,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NosCore.Shared" Version="3.4.0" />
+    <PackageReference Include="NosCore.Shared" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
