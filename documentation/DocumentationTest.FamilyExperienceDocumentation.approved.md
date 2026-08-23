@@ -1,4 +1,4 @@
-﻿# Family Experience Table
+# Family Experience Table
 - Level  1 - XP: 100000
 - Level  2 - XP: 250000
 - Level  3 - XP: 370000

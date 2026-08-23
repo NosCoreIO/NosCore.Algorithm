@@ -1,4 +1,4 @@
-﻿# Mate Experience Table
+# Mate Experience Table
 - Level  1 - Pet: 15 - Partner: 60
 - Level  2 - Pet: 42 - Partner: 168
 - Level  3 - Pet: 90 - Partner: 360

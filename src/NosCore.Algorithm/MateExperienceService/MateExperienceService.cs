@@ -10,11 +10,9 @@ namespace NosCore.Algorithm.MateExperienceService
     /// Provides pet and partner experience requirement calculations for different levels
     /// </summary>
     /// <remarks>
-    /// The curve is the one the older emulators publish, divided by 20 for a pet and by 5 for a
-    /// partner. Those divisors come from the XpLoad field of sc_p and sc_n in a packet capture:
-    /// eleven observations between level 1 and level 88 match to the unit, including
-    /// 29 312 950 and 39 495 200. Without them a pet needs twenty times the experience it
-    /// should, which raises nothing and simply looks like slow progress.
+    /// A pet needs a twentieth of the curve and a partner a fifth. Both divisors come from the
+    /// XpLoad field of sc_p and sc_n, which match to the unit across eleven levels between 1
+    /// and 88.
     /// </remarks>
     public class MateExperienceService : IMateExperienceService
     {

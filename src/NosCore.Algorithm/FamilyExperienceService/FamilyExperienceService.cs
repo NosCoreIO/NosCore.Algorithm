@@ -10,10 +10,9 @@ namespace NosCore.Algorithm.FamilyExperienceService
     /// Provides family experience requirement calculations for different levels
     /// </summary>
     /// <remarks>
-    /// The table is the one the older emulators publish. A ginfo line from a packet capture puts
-    /// a level 7 family's bar at 640 000 where this says 1 900 000, so at least that row is
-    /// wrong; one observation is not enough to rebuild the rest, so the published numbers stand
-    /// until more ginfo lines from other levels turn up.
+    /// A ginfo line puts a level 7 family's bar at 640 000 against the 1 900 000 here, so at
+    /// least that row is suspect. One observation is not enough to rebuild the curve, so the
+    /// table stands until more levels can be checked.
     /// </remarks>
     public class FamilyExperienceService : IFamilyExperienceService
     {
