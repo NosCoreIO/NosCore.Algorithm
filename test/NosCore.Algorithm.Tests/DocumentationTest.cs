@@ -431,7 +431,7 @@ namespace NosCore.Algorithm.Tests
             var resultBuilder = new StringBuilder("# Family Experience Table");
             resultBuilder.AppendLine();
 
-            for (byte level = 1; level < 20; level++)
+            for (byte level = 1; level <= 30; level++)
             {
                 resultBuilder.AppendLine(
                     $"- Level {level,2} - XP: {familyExperienceService.GetFamilyExperience(level)}");
