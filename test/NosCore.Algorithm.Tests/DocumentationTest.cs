@@ -405,5 +405,39 @@ namespace NosCore.Algorithm.Tests
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
         }
+
+        [TestMethod]
+        public void MateExperienceDocumentation()
+        {
+            var mateExperienceService = new MateExperienceService.MateExperienceService();
+
+            var resultBuilder = new StringBuilder("# Mate Experience Table");
+            resultBuilder.AppendLine();
+
+            for (byte level = 1; level < 100; level++)
+            {
+                resultBuilder.AppendLine(
+                    $"- Level {level,2} - Pet: {mateExperienceService.GetPetExperience(level)} - Partner: {mateExperienceService.GetPartnerExperience(level)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
+        public void FamilyExperienceDocumentation()
+        {
+            var familyExperienceService = new FamilyExperienceService.FamilyExperienceService();
+
+            var resultBuilder = new StringBuilder("# Family Experience Table");
+            resultBuilder.AppendLine();
+
+            for (byte level = 1; level < 20; level++)
+            {
+                resultBuilder.AppendLine(
+                    $"- Level {level,2} - XP: {familyExperienceService.GetFamilyExperience(level)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
     }
 }

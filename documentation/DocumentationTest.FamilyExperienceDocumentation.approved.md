@@ -1,0 +1,20 @@
+# Family Experience Table
+- Level  1 - XP: 100000
+- Level  2 - XP: 250000
+- Level  3 - XP: 370000
+- Level  4 - XP: 560000
+- Level  5 - XP: 840000
+- Level  6 - XP: 1260000
+- Level  7 - XP: 1900000
+- Level  8 - XP: 2850000
+- Level  9 - XP: 3570000
+- Level 10 - XP: 3830000
+- Level 11 - XP: 4150000
+- Level 12 - XP: 4750000
+- Level 13 - XP: 5500000
+- Level 14 - XP: 6500000
+- Level 15 - XP: 7000000
+- Level 16 - XP: 8500000
+- Level 17 - XP: 9500000
+- Level 18 - XP: 10000000
+- Level 19 - XP: 17000000

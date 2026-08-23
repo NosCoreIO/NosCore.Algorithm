@@ -502,3 +502,6 @@ fabric.properties
 /documentation/*.received.txt
 /documentation/*.approved.txt
 build_output.txt
+# Vim swap files
+*.swp
+*.swo
