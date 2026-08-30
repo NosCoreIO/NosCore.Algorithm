@@ -3,27 +3,25 @@ name: .NET
 on:
   push:
     branches: [ master ]
-  create:
     tags:
       - '*.*.*'
   pull_request:
     branches: [ master ]
+
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 10.0.x
-
-    - name: Check Tag
-      id: check-tag
-      run: |
-        if [[ v${{ github.event.ref }} =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "match=true" >> $GITHUB_OUTPUT
-        fi
+        persist-credentials: false
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v5
+      with:
+        dotnet-version: '10.0.x'
 
     - name: Run Unit Tests
       run: |
@@ -31,21 +29,43 @@ jobs:
         dotnet build
         dotnet test test/NosCore.Algorithm.Tests -v m
 
-    - name: Build Artifact
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v5
+      with:
+        dotnet-version: '10.0.x'
+
+    - name: Check Tag
+      id: check-tag
+      run: |
+        if [[ "$GITHUB_REF" =~ ^refs/tags/[0-9]+[.][0-9]+[.][0-9]+$ ]]; then
+            echo "match=true" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Pack and push to NuGet
       if: steps.check-tag.outputs.match == 'true'
       id: build_artifact
       run: |
+        TAG_NAME=${GITHUB_REF#refs/tags/}
         dotnet restore
         dotnet build -c Release
-        dotnet pack -c Release -o /tmp/nupkgs -v m -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg
-        dotnet nuget push /tmp/nupkgs/NosCore.Algorithm.${{github.event.ref}}.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_API_KEY}}
-        echo "ARTIFACT_PATH=/tmp/nupkgs/NosCore.Algorithm.${{github.event.ref}}.nupkg" >> $GITHUB_OUTPUT
-        echo "ARTIFACT_NAME=NosCore.Algorithm.${{github.event.ref}}.nupkg" >> $GITHUB_OUTPUT
+        dotnet pack -c Release -o /tmp/nupkgs -v m -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg -p:PackageVersion=${TAG_NAME}
+        dotnet nuget push /tmp/nupkgs/NosCore.Algorithm.${TAG_NAME}.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_API_KEY}}
+        echo "ARTIFACT_PATH=/tmp/nupkgs/NosCore.Algorithm.${TAG_NAME}.nupkg" >> $GITHUB_OUTPUT
 
     - name: Upload Release Asset
       if: steps.check-tag.outputs.match == 'true'
+      uses: softprops/action-gh-release@v3
+      with:
+        files: ${{ steps.build_artifact.outputs.ARTIFACT_PATH }}
       env:
-        GH_TOKEN: ${{ secrets.REPO_TOKEN }}
-      run: |
-        gh release upload ${{ github.event.ref }} ${{ steps.build_artifact.outputs.ARTIFACT_PATH }}
-
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
