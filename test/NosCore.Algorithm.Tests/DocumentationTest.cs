@@ -426,6 +426,15 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void NoCellonLevelHasNoOptions()
+        {
+            var cellonService = new CellonService.CellonService();
+
+            Assert.AreEqual(0, cellonService.GetOptions(0).Count);
+            Assert.AreEqual(0, cellonService.GetOptions(11).Count);
+        }
+
+        [TestMethod]
         public void MateExperienceDocumentation()
         {
             var mateExperienceService = new MateExperienceService.MateExperienceService();

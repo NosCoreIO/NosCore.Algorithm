@@ -40,7 +40,7 @@ namespace NosCore.Algorithm.CellonService
         /// <returns>The options, or an empty list for a level no cellon has</returns>
         public IReadOnlyList<CellonOption> GetOptions(byte level)
         {
-            return level <= Constants.MaxCellonLevel ? Options[level] : Array.Empty<CellonOption>();
+            return level <= Constants.MaxCellonLevel ? Array.AsReadOnly(Options[level]) : Array.Empty<CellonOption>();
         }
 
         /// <summary>
