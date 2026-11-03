@@ -29,6 +29,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NosCore.Analyzers" Version="2.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="NosCore.Shared" Version="6.0.2" />
   </ItemGroup>
 
