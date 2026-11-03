@@ -1,0 +1,242 @@
+﻿# Rarity Point Table
+## Rarity -2
+- Item level  0- 4 - Points: -4
+- Item level  5- 9 - Points: -8
+- Item level 10-14 - Points: -12
+- Item level 15-19 - Points: -16
+- Item level 20-24 - Points: -20
+- Item level 25-29 - Points: -24
+- Item level 30-34 - Points: -28
+- Item level 35-39 - Points: -32
+- Item level 40-44 - Points: -36
+- Item level 45-49 - Points: -40
+- Item level 50-54 - Points: -44
+- Item level 55-59 - Points: -48
+- Item level 60-64 - Points: -52
+- Item level 65-69 - Points: -56
+- Item level 70-74 - Points: -60
+- Item level 75-79 - Points: -64
+- Item level 80-84 - Points: -68
+- Item level 85-89 - Points: -72
+- Item level 90-94 - Points: -76
+- Item level 95-99 - Points: -80
+
+## Rarity -1
+- Item level  0- 4 - Points: -2
+- Item level  5- 9 - Points: -4
+- Item level 10-14 - Points: -6
+- Item level 15-19 - Points: -8
+- Item level 20-24 - Points: -10
+- Item level 25-29 - Points: -12
+- Item level 30-34 - Points: -14
+- Item level 35-39 - Points: -16
+- Item level 40-44 - Points: -18
+- Item level 45-49 - Points: -20
+- Item level 50-54 - Points: -22
+- Item level 55-59 - Points: -24
+- Item level 60-64 - Points: -26
+- Item level 65-69 - Points: -28
+- Item level 70-74 - Points: -30
+- Item level 75-79 - Points: -32
+- Item level 80-84 - Points: -34
+- Item level 85-89 - Points: -36
+- Item level 90-94 - Points: -38
+- Item level 95-99 - Points: -40
+
+## Rarity 0
+- Item level  0- 4 - Points: 0
+- Item level  5- 9 - Points: 0
+- Item level 10-14 - Points: 0
+- Item level 15-19 - Points: 0
+- Item level 20-24 - Points: 0
+- Item level 25-29 - Points: 0
+- Item level 30-34 - Points: 0
+- Item level 35-39 - Points: 0
+- Item level 40-44 - Points: 0
+- Item level 45-49 - Points: 0
+- Item level 50-54 - Points: 0
+- Item level 55-59 - Points: 0
+- Item level 60-64 - Points: 0
+- Item level 65-69 - Points: 0
+- Item level 70-74 - Points: 0
+- Item level 75-79 - Points: 0
+- Item level 80-84 - Points: 0
+- Item level 85-89 - Points: 0
+- Item level 90-94 - Points: 0
+- Item level 95-99 - Points: 0
+
+## Rarity 1
+- Item level  0- 4 - Points: 1
+- Item level  5- 9 - Points: 2
+- Item level 10-14 - Points: 3
+- Item level 15-19 - Points: 4
+- Item level 20-24 - Points: 5
+- Item level 25-29 - Points: 6
+- Item level 30-34 - Points: 7
+- Item level 35-39 - Points: 8
+- Item level 40-44 - Points: 9
+- Item level 45-49 - Points: 10
+- Item level 50-54 - Points: 11
+- Item level 55-59 - Points: 12
+- Item level 60-64 - Points: 13
+- Item level 65-69 - Points: 14
+- Item level 70-74 - Points: 15
+- Item level 75-79 - Points: 16
+- Item level 80-84 - Points: 17
+- Item level 85-89 - Points: 18
+- Item level 90-94 - Points: 19
+- Item level 95-99 - Points: 20
+
+## Rarity 2
+- Item level  0- 4 - Points: 2
+- Item level  5- 9 - Points: 4
+- Item level 10-14 - Points: 6
+- Item level 15-19 - Points: 8
+- Item level 20-24 - Points: 10
+- Item level 25-29 - Points: 12
+- Item level 30-34 - Points: 14
+- Item level 35-39 - Points: 16
+- Item level 40-44 - Points: 18
+- Item level 45-49 - Points: 20
+- Item level 50-54 - Points: 22
+- Item level 55-59 - Points: 24
+- Item level 60-64 - Points: 26
+- Item level 65-69 - Points: 28
+- Item level 70-74 - Points: 30
+- Item level 75-79 - Points: 32
+- Item level 80-84 - Points: 34
+- Item level 85-89 - Points: 36
+- Item level 90-94 - Points: 38
+- Item level 95-99 - Points: 40
+
+## Rarity 3
+- Item level  0- 4 - Points: 3
+- Item level  5- 9 - Points: 6
+- Item level 10-14 - Points: 9
+- Item level 15-19 - Points: 12
+- Item level 20-24 - Points: 15
+- Item level 25-29 - Points: 18
+- Item level 30-34 - Points: 21
+- Item level 35-39 - Points: 24
+- Item level 40-44 - Points: 27
+- Item level 45-49 - Points: 30
+- Item level 50-54 - Points: 33
+- Item level 55-59 - Points: 36
+- Item level 60-64 - Points: 39
+- Item level 65-69 - Points: 42
+- Item level 70-74 - Points: 45
+- Item level 75-79 - Points: 48
+- Item level 80-84 - Points: 51
+- Item level 85-89 - Points: 54
+- Item level 90-94 - Points: 57
+- Item level 95-99 - Points: 60
+
+## Rarity 4
+- Item level  0- 4 - Points: 4
+- Item level  5- 9 - Points: 8
+- Item level 10-14 - Points: 12
+- Item level 15-19 - Points: 16
+- Item level 20-24 - Points: 20
+- Item level 25-29 - Points: 24
+- Item level 30-34 - Points: 28
+- Item level 35-39 - Points: 32
+- Item level 40-44 - Points: 36
+- Item level 45-49 - Points: 40
+- Item level 50-54 - Points: 44
+- Item level 55-59 - Points: 48
+- Item level 60-64 - Points: 52
+- Item level 65-69 - Points: 56
+- Item level 70-74 - Points: 60
+- Item level 75-79 - Points: 64
+- Item level 80-84 - Points: 68
+- Item level 85-89 - Points: 72
+- Item level 90-94 - Points: 76
+- Item level 95-99 - Points: 80
+
+## Rarity 5
+- Item level  0- 4 - Points: 5
+- Item level  5- 9 - Points: 10
+- Item level 10-14 - Points: 15
+- Item level 15-19 - Points: 20
+- Item level 20-24 - Points: 25
+- Item level 25-29 - Points: 30
+- Item level 30-34 - Points: 35
+- Item level 35-39 - Points: 40
+- Item level 40-44 - Points: 45
+- Item level 45-49 - Points: 50
+- Item level 50-54 - Points: 55
+- Item level 55-59 - Points: 60
+- Item level 60-64 - Points: 65
+- Item level 65-69 - Points: 70
+- Item level 70-74 - Points: 75
+- Item level 75-79 - Points: 80
+- Item level 80-84 - Points: 85
+- Item level 85-89 - Points: 90
+- Item level 90-94 - Points: 95
+- Item level 95-99 - Points: 100
+
+## Rarity 6
+- Item level  0- 4 - Points: 7
+- Item level  5- 9 - Points: 14
+- Item level 10-14 - Points: 21
+- Item level 15-19 - Points: 28
+- Item level 20-24 - Points: 35
+- Item level 25-29 - Points: 42
+- Item level 30-34 - Points: 49
+- Item level 35-39 - Points: 56
+- Item level 40-44 - Points: 63
+- Item level 45-49 - Points: 70
+- Item level 50-54 - Points: 77
+- Item level 55-59 - Points: 84
+- Item level 60-64 - Points: 91
+- Item level 65-69 - Points: 98
+- Item level 70-74 - Points: 105
+- Item level 75-79 - Points: 112
+- Item level 80-84 - Points: 119
+- Item level 85-89 - Points: 126
+- Item level 90-94 - Points: 133
+- Item level 95-99 - Points: 140
+
+## Rarity 7
+- Item level  0- 4 - Points: 10
+- Item level  5- 9 - Points: 20
+- Item level 10-14 - Points: 30
+- Item level 15-19 - Points: 40
+- Item level 20-24 - Points: 50
+- Item level 25-29 - Points: 60
+- Item level 30-34 - Points: 70
+- Item level 35-39 - Points: 80
+- Item level 40-44 - Points: 90
+- Item level 45-49 - Points: 100
+- Item level 50-54 - Points: 110
+- Item level 55-59 - Points: 120
+- Item level 60-64 - Points: 130
+- Item level 65-69 - Points: 140
+- Item level 70-74 - Points: 150
+- Item level 75-79 - Points: 160
+- Item level 80-84 - Points: 170
+- Item level 85-89 - Points: 180
+- Item level 90-94 - Points: 190
+- Item level 95-99 - Points: 200
+
+## Rarity 8
+- Item level  0- 4 - Points: 15
+- Item level  5- 9 - Points: 30
+- Item level 10-14 - Points: 45
+- Item level 15-19 - Points: 60
+- Item level 20-24 - Points: 75
+- Item level 25-29 - Points: 90
+- Item level 30-34 - Points: 105
+- Item level 35-39 - Points: 120
+- Item level 40-44 - Points: 135
+- Item level 45-49 - Points: 150
+- Item level 50-54 - Points: 165
+- Item level 55-59 - Points: 180
+- Item level 60-64 - Points: 195
+- Item level 65-69 - Points: 210
+- Item level 70-74 - Points: 225
+- Item level 75-79 - Points: 240
+- Item level 80-84 - Points: 255
+- Item level 85-89 - Points: 270
+- Item level 90-94 - Points: 285
+- Item level 95-99 - Points: 300

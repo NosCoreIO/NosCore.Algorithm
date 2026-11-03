@@ -439,5 +439,112 @@ namespace NosCore.Algorithm.Tests
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
         }
+
+        [TestMethod]
+        public void DignityShopPriceDocumentation()
+        {
+            var dignityService = new DignityService.DignityService();
+
+            var resultBuilder = new StringBuilder("# Dignity Shop Price Table");
+            resultBuilder.AppendLine();
+            foreach (var dignity in Enum.GetValues(typeof(DignityType)).Cast<DignityType>())
+            {
+                resultBuilder.AppendLine($"- {dignity,-11} - Price: x{dignityService.GetShopPriceMultiplier(dignity)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
+        public void ExperienceShareDocumentation()
+        {
+            var experienceShareService = new ExperienceShareService.ExperienceShareService();
+
+            var resultBuilder = new StringBuilder("# Group Experience Share Table");
+            resultBuilder.AppendLine();
+            for (byte members = 1; members <= 3; members++)
+            {
+                resultBuilder.AppendLine(
+                    $"- {members} member(s) - XP: {experienceShareService.GetExperienceShare(members):P2} Job XP: {experienceShareService.GetJobExperienceShare(members):P2}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
+        public void LevelPenaltyDocumentation()
+        {
+            var levelPenaltyService = new LevelPenaltyService.LevelPenaltyService();
+
+            var resultBuilder = new StringBuilder("# Level Penalty Table");
+            resultBuilder.AppendLine();
+            for (var difference = -5; difference <= 35; difference++)
+            {
+                const byte playerLevel = 50;
+                var monsterLevel = (byte)(playerLevel - difference);
+                resultBuilder.AppendLine(
+                    $"- Player {difference,3} level(s) above the monster - XP: x{levelPenaltyService.GetExperiencePenalty(playerLevel, monsterLevel)} Gold: x{levelPenaltyService.GetGoldPenalty(playerLevel, monsterLevel)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
+        public void RarityPointDocumentation()
+        {
+            var rarityPointService = new RarityPointService.RarityPointService();
+
+            var resultBuilder = new StringBuilder("# Rarity Point Table");
+            for (sbyte rarity = -2; rarity <= 8; rarity++)
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## Rarity {rarity}");
+                for (byte level = 0; level < 100; level += 5)
+                {
+                    resultBuilder.AppendLine($"- Item level {level,2}-{level + 4,2} - Points: {rarityPointService.GetRarityPoint(rarity, level)}");
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
+        public void SpecialistPointDocumentation()
+        {
+            var specialistPointService = new SpecialistPointService.SpecialistPointService();
+
+            var resultBuilder = new StringBuilder("# Specialist Point Table");
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("## Points by level (+0)");
+            for (byte level = 1; level < 100; level++)
+            {
+                resultBuilder.AppendLine($"- Level {level,2} - Points: {specialistPointService.GetSpecialistPoints(level, 0)}");
+            }
+
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("## Points at level 99 by upgrade");
+            for (byte upgrade = 0; upgrade <= 15; upgrade++)
+            {
+                resultBuilder.AppendLine($"- +{upgrade,-2} - Points: {specialistPointService.GetSpecialistPoints(99, upgrade)}");
+            }
+
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("## Stat level by points spent");
+            for (short points = 0; points <= 410; points += 5)
+            {
+                resultBuilder.AppendLine(
+                    $"- {points,3} points - Attack: {specialistPointService.GetAttackLevel(points)} Defence: {specialistPointService.GetDefenceLevel(points)} Element: {specialistPointService.GetElementLevel(points)} HP/MP: {specialistPointService.GetHpMpLevel(points)}");
+            }
+
+            for (short points = 1; points <= 420; points++)
+            {
+                Assert.IsTrue(specialistPointService.GetAttackLevel(points) >= specialistPointService.GetAttackLevel((short)(points - 1)));
+                Assert.IsTrue(specialistPointService.GetDefenceLevel(points) >= specialistPointService.GetDefenceLevel((short)(points - 1)));
+                Assert.IsTrue(specialistPointService.GetElementLevel(points) >= specialistPointService.GetElementLevel((short)(points - 1)));
+                Assert.IsTrue(specialistPointService.GetHpMpLevel(points) >= specialistPointService.GetHpMpLevel((short)(points - 1)));
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
     }
 }

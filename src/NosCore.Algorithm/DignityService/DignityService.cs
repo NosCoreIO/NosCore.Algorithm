@@ -58,5 +58,21 @@ namespace NosCore.Algorithm.DignityService
         {
             return (level == DignityType.Default ? (short)200 : (short)(_dignityData[level - 1] - 1), _dignityData[level]);
         }
+
+        /// <summary>
+        /// Gets the multiplier applied to NPC shop prices for a dignity level
+        /// </summary>
+        /// <param name="level">The buyer's dignity level type</param>
+        /// <returns>The price multiplier</returns>
+        public double GetShopPriceMultiplier(DignityType level)
+        {
+            return level switch
+            {
+                DignityType.Dreadful => 1.1,
+                DignityType.Unqualified => 1.2,
+                DignityType.Useless or DignityType.Failed => 1.5,
+                _ => 1
+            };
+        }
     }
 }

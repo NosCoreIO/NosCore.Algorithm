@@ -26,5 +26,12 @@ namespace NosCore.Algorithm.DignityService
         /// <param name="level">The dignity level type</param>
         /// <returns>A tuple containing the maximum and minimum dignity values for the level</returns>
         (short, short) GetDignity(DignityType level);
+
+        /// <summary>
+        /// Gets the multiplier applied to NPC shop prices for a dignity level
+        /// </summary>
+        /// <param name="level">The buyer's dignity level type</param>
+        /// <returns>The price multiplier</returns>
+        double GetShopPriceMultiplier(DignityType level);
     }
 }

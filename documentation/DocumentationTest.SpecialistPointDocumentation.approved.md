@@ -1,0 +1,204 @@
+﻿# Specialist Point Table
+## Points by level (+0)
+- Level  1 - Points: 0
+- Level  2 - Points: 0
+- Level  3 - Points: 0
+- Level  4 - Points: 0
+- Level  5 - Points: 0
+- Level  6 - Points: 0
+- Level  7 - Points: 0
+- Level  8 - Points: 0
+- Level  9 - Points: 0
+- Level 10 - Points: 0
+- Level 11 - Points: 0
+- Level 12 - Points: 0
+- Level 13 - Points: 0
+- Level 14 - Points: 0
+- Level 15 - Points: 0
+- Level 16 - Points: 0
+- Level 17 - Points: 0
+- Level 18 - Points: 0
+- Level 19 - Points: 0
+- Level 20 - Points: 0
+- Level 21 - Points: 3
+- Level 22 - Points: 6
+- Level 23 - Points: 9
+- Level 24 - Points: 12
+- Level 25 - Points: 15
+- Level 26 - Points: 18
+- Level 27 - Points: 21
+- Level 28 - Points: 24
+- Level 29 - Points: 27
+- Level 30 - Points: 30
+- Level 31 - Points: 33
+- Level 32 - Points: 36
+- Level 33 - Points: 39
+- Level 34 - Points: 42
+- Level 35 - Points: 45
+- Level 36 - Points: 48
+- Level 37 - Points: 51
+- Level 38 - Points: 54
+- Level 39 - Points: 57
+- Level 40 - Points: 60
+- Level 41 - Points: 63
+- Level 42 - Points: 66
+- Level 43 - Points: 69
+- Level 44 - Points: 72
+- Level 45 - Points: 75
+- Level 46 - Points: 78
+- Level 47 - Points: 81
+- Level 48 - Points: 84
+- Level 49 - Points: 87
+- Level 50 - Points: 90
+- Level 51 - Points: 93
+- Level 52 - Points: 96
+- Level 53 - Points: 99
+- Level 54 - Points: 102
+- Level 55 - Points: 105
+- Level 56 - Points: 108
+- Level 57 - Points: 111
+- Level 58 - Points: 114
+- Level 59 - Points: 117
+- Level 60 - Points: 120
+- Level 61 - Points: 123
+- Level 62 - Points: 126
+- Level 63 - Points: 129
+- Level 64 - Points: 132
+- Level 65 - Points: 135
+- Level 66 - Points: 138
+- Level 67 - Points: 141
+- Level 68 - Points: 144
+- Level 69 - Points: 147
+- Level 70 - Points: 150
+- Level 71 - Points: 153
+- Level 72 - Points: 156
+- Level 73 - Points: 159
+- Level 74 - Points: 162
+- Level 75 - Points: 165
+- Level 76 - Points: 168
+- Level 77 - Points: 171
+- Level 78 - Points: 174
+- Level 79 - Points: 177
+- Level 80 - Points: 180
+- Level 81 - Points: 183
+- Level 82 - Points: 186
+- Level 83 - Points: 189
+- Level 84 - Points: 192
+- Level 85 - Points: 195
+- Level 86 - Points: 198
+- Level 87 - Points: 201
+- Level 88 - Points: 204
+- Level 89 - Points: 207
+- Level 90 - Points: 210
+- Level 91 - Points: 213
+- Level 92 - Points: 216
+- Level 93 - Points: 219
+- Level 94 - Points: 222
+- Level 95 - Points: 225
+- Level 96 - Points: 228
+- Level 97 - Points: 231
+- Level 98 - Points: 234
+- Level 99 - Points: 237
+
+## Points at level 99 by upgrade
+- +0  - Points: 237
+- +1  - Points: 242
+- +2  - Points: 247
+- +3  - Points: 252
+- +4  - Points: 257
+- +5  - Points: 265
+- +6  - Points: 273
+- +7  - Points: 283
+- +8  - Points: 293
+- +9  - Points: 305
+- +10 - Points: 317
+- +11 - Points: 332
+- +12 - Points: 347
+- +13 - Points: 365
+- +14 - Points: 385
+- +15 - Points: 410
+
+## Stat level by points spent
+-   0 points - Attack: 0 Defence: 0 Element: 0 HP/MP: 0
+-   5 points - Attack: 5 Defence: 5 Element: 5 HP/MP: 5
+-  10 points - Attack: 10 Defence: 10 Element: 10 HP/MP: 10
+-  15 points - Attack: 12 Defence: 12 Element: 15 HP/MP: 12
+-  20 points - Attack: 15 Defence: 15 Element: 20 HP/MP: 15
+-  25 points - Attack: 17 Defence: 17 Element: 22 HP/MP: 17
+-  30 points - Attack: 19 Defence: 20 Element: 25 HP/MP: 20
+-  35 points - Attack: 21 Defence: 22 Element: 27 HP/MP: 22
+-  40 points - Attack: 23 Defence: 25 Element: 30 HP/MP: 25
+-  45 points - Attack: 24 Defence: 27 Element: 31 HP/MP: 27
+-  50 points - Attack: 26 Defence: 29 Element: 33 HP/MP: 30
+-  55 points - Attack: 28 Defence: 31 Element: 35 HP/MP: 31
+-  60 points - Attack: 29 Defence: 33 Element: 36 HP/MP: 33
+-  65 points - Attack: 31 Defence: 34 Element: 38 HP/MP: 35
+-  70 points - Attack: 33 Defence: 36 Element: 40 HP/MP: 36
+-  75 points - Attack: 34 Defence: 38 Element: 41 HP/MP: 38
+-  80 points - Attack: 36 Defence: 39 Element: 42 HP/MP: 40
+-  85 points - Attack: 38 Defence: 41 Element: 43 HP/MP: 41
+-  90 points - Attack: 39 Defence: 42 Element: 45 HP/MP: 43
+-  95 points - Attack: 40 Defence: 43 Element: 46 HP/MP: 45
+- 100 points - Attack: 42 Defence: 44 Element: 47 HP/MP: 46
+- 105 points - Attack: 43 Defence: 46 Element: 48 HP/MP: 48
+- 110 points - Attack: 44 Defence: 47 Element: 50 HP/MP: 50
+- 115 points - Attack: 45 Defence: 48 Element: 51 HP/MP: 51
+- 120 points - Attack: 47 Defence: 49 Element: 52 HP/MP: 52
+- 125 points - Attack: 48 Defence: 51 Element: 53 HP/MP: 53
+- 130 points - Attack: 49 Defence: 52 Element: 54 HP/MP: 55
+- 135 points - Attack: 50 Defence: 53 Element: 55 HP/MP: 56
+- 140 points - Attack: 52 Defence: 54 Element: 56 HP/MP: 57
+- 145 points - Attack: 53 Defence: 56 Element: 57 HP/MP: 58
+- 150 points - Attack: 54 Defence: 57 Element: 58 HP/MP: 60
+- 155 points - Attack: 55 Defence: 58 Element: 59 HP/MP: 61
+- 160 points - Attack: 57 Defence: 59 Element: 60 HP/MP: 62
+- 165 points - Attack: 58 Defence: 60 Element: 61 HP/MP: 63
+- 170 points - Attack: 59 Defence: 61 Element: 62 HP/MP: 64
+- 175 points - Attack: 60 Defence: 62 Element: 63 HP/MP: 65
+- 180 points - Attack: 61 Defence: 63 Element: 64 HP/MP: 66
+- 185 points - Attack: 62 Defence: 64 Element: 65 HP/MP: 67
+- 190 points - Attack: 63 Defence: 65 Element: 66 HP/MP: 68
+- 195 points - Attack: 64 Defence: 66 Element: 67 HP/MP: 69
+- 200 points - Attack: 65 Defence: 67 Element: 68 HP/MP: 70
+- 205 points - Attack: 66 Defence: 68 Element: 69 HP/MP: 70
+- 210 points - Attack: 67 Defence: 69 Element: 70 HP/MP: 71
+- 215 points - Attack: 68 Defence: 70 Element: 70 HP/MP: 72
+- 220 points - Attack: 69 Defence: 71 Element: 71 HP/MP: 73
+- 225 points - Attack: 70 Defence: 72 Element: 72 HP/MP: 74
+- 230 points - Attack: 71 Defence: 73 Element: 73 HP/MP: 75
+- 235 points - Attack: 72 Defence: 74 Element: 74 HP/MP: 75
+- 240 points - Attack: 73 Defence: 75 Element: 75 HP/MP: 76
+- 245 points - Attack: 74 Defence: 76 Element: 75 HP/MP: 77
+- 250 points - Attack: 75 Defence: 77 Element: 76 HP/MP: 78
+- 255 points - Attack: 76 Defence: 78 Element: 77 HP/MP: 79
+- 260 points - Attack: 77 Defence: 79 Element: 78 HP/MP: 80
+- 265 points - Attack: 78 Defence: 79 Element: 79 HP/MP: 80
+- 270 points - Attack: 79 Defence: 80 Element: 80 HP/MP: 81
+- 275 points - Attack: 80 Defence: 81 Element: 80 HP/MP: 82
+- 280 points - Attack: 81 Defence: 82 Element: 81 HP/MP: 82
+- 285 points - Attack: 81 Defence: 83 Element: 82 HP/MP: 83
+- 290 points - Attack: 82 Defence: 84 Element: 82 HP/MP: 84
+- 295 points - Attack: 83 Defence: 84 Element: 83 HP/MP: 85
+- 300 points - Attack: 84 Defence: 85 Element: 84 HP/MP: 85
+- 305 points - Attack: 85 Defence: 86 Element: 85 HP/MP: 86
+- 310 points - Attack: 86 Defence: 86 Element: 85 HP/MP: 87
+- 315 points - Attack: 86 Defence: 87 Element: 86 HP/MP: 87
+- 320 points - Attack: 87 Defence: 88 Element: 87 HP/MP: 88
+- 325 points - Attack: 88 Defence: 89 Element: 87 HP/MP: 89
+- 330 points - Attack: 89 Defence: 89 Element: 88 HP/MP: 90
+- 335 points - Attack: 90 Defence: 90 Element: 89 HP/MP: 90
+- 340 points - Attack: 90 Defence: 91 Element: 90 HP/MP: 91
+- 345 points - Attack: 91 Defence: 91 Element: 90 HP/MP: 91
+- 350 points - Attack: 92 Defence: 92 Element: 91 HP/MP: 92
+- 355 points - Attack: 93 Defence: 93 Element: 92 HP/MP: 93
+- 360 points - Attack: 93 Defence: 94 Element: 92 HP/MP: 93
+- 365 points - Attack: 94 Defence: 94 Element: 93 HP/MP: 94
+- 370 points - Attack: 95 Defence: 95 Element: 94 HP/MP: 95
+- 375 points - Attack: 95 Defence: 95 Element: 95 HP/MP: 95
+- 380 points - Attack: 96 Defence: 96 Element: 95 HP/MP: 96
+- 385 points - Attack: 97 Defence: 97 Element: 96 HP/MP: 96
+- 390 points - Attack: 97 Defence: 97 Element: 97 HP/MP: 97
+- 395 points - Attack: 98 Defence: 98 Element: 97 HP/MP: 98
+- 400 points - Attack: 99 Defence: 99 Element: 98 HP/MP: 98
+- 405 points - Attack: 99 Defence: 99 Element: 99 HP/MP: 99
+- 410 points - Attack: 100 Defence: 100 Element: 100 HP/MP: 100
