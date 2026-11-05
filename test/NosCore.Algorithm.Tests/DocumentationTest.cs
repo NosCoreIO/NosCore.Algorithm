@@ -407,6 +407,34 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void CellonDocumentation()
+        {
+            var cellonService = new CellonService.CellonService();
+
+            var resultBuilder = new StringBuilder("# Cellon Table");
+            for (byte level = 1; level <= 10; level++)
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## Cellon {level} - Cost: {cellonService.GetPrice(level)}");
+                foreach (var option in cellonService.GetOptions(level))
+                {
+                    resultBuilder.AppendLine($"- {option.Type}: {option.Minimum} - {option.Maximum}");
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
+        public void NoCellonLevelHasNoOptions()
+        {
+            var cellonService = new CellonService.CellonService();
+
+            Assert.AreEqual(0, cellonService.GetOptions(0).Count);
+            Assert.AreEqual(0, cellonService.GetOptions(11).Count);
+        }
+
+        [TestMethod]
         public void MateExperienceDocumentation()
         {
             var mateExperienceService = new MateExperienceService.MateExperienceService();

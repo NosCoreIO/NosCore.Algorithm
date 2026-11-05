@@ -12,6 +12,7 @@ namespace NosCore.Algorithm
         internal const byte MaxMateLevel = 99;
         internal const byte MaxFamilyLevel = 30;
         internal const byte MaxGroupSize = 3;
+        internal const byte MaxCellonLevel = 10;
         internal static readonly int ClassCount = Enum.GetNames(typeof(CharacterClassType)).Length;
     }
 }
