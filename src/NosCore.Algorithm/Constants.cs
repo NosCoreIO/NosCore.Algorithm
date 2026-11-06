@@ -11,6 +11,7 @@ namespace NosCore.Algorithm
         internal const byte MaxHeroLevel = 60;
         internal const byte MaxMateLevel = 99;
         internal const byte MaxFamilyLevel = 30;
+        internal const byte MaxFamilyUpgradeLevel = 2;
         internal const byte MaxGroupSize = 3;
         internal const byte MaxCellonLevel = 10;
         internal const byte MaxSpUpgrade = 20;
