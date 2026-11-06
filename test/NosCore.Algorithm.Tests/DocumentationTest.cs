@@ -622,8 +622,9 @@ namespace NosCore.Algorithm.Tests
                 resultBuilder.AppendLine($"  - HP/MP: {specialistPointService.GetHpMpBonus(level)}");
             }
 
-            Assert.AreEqual(1000 + 1000 + 20, specialistPointService.GetAttackBonus(100).Damage);
-            Assert.AreEqual(1000 + 550, specialistPointService.GetDefenceBonus(100).Defence);
+            Assert.AreEqual(1000 + 20, specialistPointService.GetAttackBonus(100).Damage);
+            Assert.AreEqual(550, specialistPointService.GetDefenceBonus(100).Defence);
+            Assert.AreEqual(5, specialistPointService.GetDefenceBonus(100).DamageReduction);
             Assert.AreEqual(150 + 10, specialistPointService.GetElementBonus(100).ElementRate);
             Assert.AreEqual(150, specialistPointService.GetHpMpBonus(100).HpMpPercent);
             Assert.AreEqual(specialistPointService.GetAttackBonus(100), specialistPointService.GetAttackBonus(120));

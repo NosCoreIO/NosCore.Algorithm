@@ -60,17 +60,17 @@ namespace NosCore.Algorithm.SpecialistPointService
         private static readonly (int Level, SpecialistPointBonus Bonus)[] DefenceMilestones =
         [
             (10, new(Dodge: 5)),
-            (20, new(CriticalDodge: 2)),
+            (20, new(CriticalDodge: 2, DamageReduction: 1)),
             (30, new(Hp: 100)),
-            (40, new(CriticalDodge: 2)),
+            (40, new(CriticalDodge: 2, DamageReduction: 1)),
             (50, new(Dodge: 5)),
             (60, new(Hp: 200)),
             (70, new(CriticalDodge: 3)),
-            (75, new(Resistance: 2)),
+            (75, new(Resistance: 2, DamageReduction: 1)),
             (80, new(Dodge: 10, CriticalDodge: 3)),
-            (90, new(Resistance: 3)),
+            (90, new(Resistance: 3, DamageReduction: 1)),
             (95, new(Hp: 300)),
-            (100, new(Dodge: 20, Resistance: 5)),
+            (100, new(Dodge: 20, Resistance: 5, DamageReduction: 1)),
         ];
 
         private static readonly (int Level, SpecialistPointBonus Bonus)[] ElementMilestones =
@@ -142,20 +142,18 @@ namespace NosCore.Algorithm.SpecialistPointService
         /// <inheritdoc />
         public int GetHpMpLevel(short points) => Level(HpMpBands, points);
 
-        // Attack and defence add ten per level on top of their curve, which puts attack 100 at
-        // over 2 000 damage. No in-game value confirms the sum yet, so both terms are suspect.
         /// <inheritdoc />
         public SpecialistPointBonus GetAttackBonus(int level)
         {
             level = Clamp(level);
-            return Milestones(AttackMilestones, level) + new SpecialistPointBonus(Damage: level * 10 + Curve(AttackDamageBands, level));
+            return Milestones(AttackMilestones, level) + new SpecialistPointBonus(Damage: Curve(AttackDamageBands, level));
         }
 
         /// <inheritdoc />
         public SpecialistPointBonus GetDefenceBonus(int level)
         {
             level = Clamp(level);
-            return Milestones(DefenceMilestones, level) + new SpecialistPointBonus(Defence: level * 10 + Curve(DefenceCurveBands, level));
+            return Milestones(DefenceMilestones, level) + new SpecialistPointBonus(Defence: Curve(DefenceCurveBands, level));
         }
 
         /// <inheritdoc />

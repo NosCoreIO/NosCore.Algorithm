@@ -17,6 +17,7 @@ namespace NosCore.Algorithm.SpecialistPointService
     /// <param name="MagicDefence">Added to the magic defence only</param>
     /// <param name="Dodge">Added to the melee and ranged dodge</param>
     /// <param name="CriticalDodge">Lowers the chance of taking a critical hit, in percent</param>
+    /// <param name="DamageReduction">Lowers the melee, ranged and magic damage taken, in percent</param>
     /// <param name="Resistance">Added to the fire, water, light and shadow resistances</param>
     /// <param name="ElementRate">Added to the specialist element rate</param>
     /// <param name="Hp">Added to the maximum HP</param>
@@ -31,6 +32,7 @@ namespace NosCore.Algorithm.SpecialistPointService
         int MagicDefence = 0,
         int Dodge = 0,
         int CriticalDodge = 0,
+        int DamageReduction = 0,
         int Resistance = 0,
         int ElementRate = 0,
         int Hp = 0,
@@ -49,6 +51,7 @@ namespace NosCore.Algorithm.SpecialistPointService
             a.MagicDefence + b.MagicDefence,
             a.Dodge + b.Dodge,
             a.CriticalDodge + b.CriticalDodge,
+            a.DamageReduction + b.DamageReduction,
             a.Resistance + b.Resistance,
             a.ElementRate + b.ElementRate,
             a.Hp + b.Hp,
