@@ -12,7 +12,7 @@ namespace NosCore.Algorithm.EquipmentUpgradeService
     /// </summary>
     public class EquipmentUpgradeService : IEquipmentUpgradeService
     {
-        private const sbyte HighRarity = 8;
+        private const short HighRarity = 8;
         private const byte FirstCompleteGemUpgrade = 5;
 
         internal static readonly double[] SuccessRate = { 100, 100, 90, 80, 60, 40, 20, 5, 1.5, 0.6 };
@@ -31,27 +31,27 @@ namespace NosCore.Algorithm.EquipmentUpgradeService
         public byte MaxUpgrade => Constants.MaxEquipmentUpgrade;
 
         /// <inheritdoc />
-        public double GetSuccessRate(byte upgrade, sbyte rarity) =>
+        public double GetSuccessRate(byte upgrade, short rarity) =>
             (rarity >= HighRarity ? HighRaritySuccessRate : SuccessRate)[upgrade];
 
         /// <inheritdoc />
-        public double GetFixedRate(byte upgrade, sbyte rarity) =>
+        public double GetFixedRate(byte upgrade, short rarity) =>
             (rarity >= HighRarity ? HighRarityFixedRate : FixedRate)[upgrade];
 
         /// <inheritdoc />
-        public double GetFailureRate(byte upgrade, sbyte rarity) =>
+        public double GetFailureRate(byte upgrade, short rarity) =>
             100 - GetSuccessRate(upgrade, rarity) - GetFixedRate(upgrade, rarity);
 
         /// <inheritdoc />
-        public long GetGoldCost(byte upgrade, sbyte rarity) =>
+        public long GetGoldCost(byte upgrade, short rarity) =>
             (rarity >= HighRarity ? HighRarityGoldCost : GoldCost)[upgrade];
 
         /// <inheritdoc />
-        public short GetCellaCost(byte upgrade, sbyte rarity) =>
+        public short GetCellaCost(byte upgrade, short rarity) =>
             (rarity >= HighRarity ? HighRarityCellaCost : CellaCost)[upgrade];
 
         /// <inheritdoc />
-        public short GetGemCost(byte upgrade, sbyte rarity) =>
+        public short GetGemCost(byte upgrade, short rarity) =>
             (rarity >= HighRarity ? HighRarityGemCost : GemCost)[upgrade];
 
         /// <inheritdoc />

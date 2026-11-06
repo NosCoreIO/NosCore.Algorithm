@@ -428,7 +428,7 @@ namespace NosCore.Algorithm.Tests
             var equipmentUpgradeService = new EquipmentUpgradeService.EquipmentUpgradeService();
 
             var resultBuilder = new StringBuilder("# Equipment Upgrade Table");
-            foreach (var (title, rarity) in new (string, sbyte)[] { ("Rarity below 8", 7), ("Rarity 8", 8) })
+            foreach (var (title, rarity) in new (string, short)[] { ("Rarity below 8", 7), ("Rarity 8", 8) })
             {
                 resultBuilder.AppendLine();
                 resultBuilder.AppendLine($"## {title}");

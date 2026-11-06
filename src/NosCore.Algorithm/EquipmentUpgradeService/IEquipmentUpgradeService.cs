@@ -23,7 +23,7 @@ namespace NosCore.Algorithm.EquipmentUpgradeService
         /// <param name="upgrade">The item's current upgrade level</param>
         /// <param name="rarity">The item's rarity</param>
         /// <returns>The success rate as a percentage</returns>
-        double GetSuccessRate(byte upgrade, sbyte rarity);
+        double GetSuccessRate(byte upgrade, short rarity);
 
         /// <summary>
         /// Gets the chance that an attempt from a specific upgrade level fixes the item at that level.
@@ -32,7 +32,7 @@ namespace NosCore.Algorithm.EquipmentUpgradeService
         /// <param name="upgrade">The item's current upgrade level</param>
         /// <param name="rarity">The item's rarity</param>
         /// <returns>The fixed rate as a percentage</returns>
-        double GetFixedRate(byte upgrade, sbyte rarity);
+        double GetFixedRate(byte upgrade, short rarity);
 
         /// <summary>
         /// Gets the chance that an attempt from a specific upgrade level fails
@@ -40,7 +40,7 @@ namespace NosCore.Algorithm.EquipmentUpgradeService
         /// <param name="upgrade">The item's current upgrade level</param>
         /// <param name="rarity">The item's rarity</param>
         /// <returns>The failure rate as a percentage</returns>
-        double GetFailureRate(byte upgrade, sbyte rarity);
+        double GetFailureRate(byte upgrade, short rarity);
 
         /// <summary>
         /// Gets the gold cost of an attempt from a specific upgrade level
@@ -48,7 +48,7 @@ namespace NosCore.Algorithm.EquipmentUpgradeService
         /// <param name="upgrade">The item's current upgrade level</param>
         /// <param name="rarity">The item's rarity</param>
         /// <returns>The gold cost</returns>
-        long GetGoldCost(byte upgrade, sbyte rarity);
+        long GetGoldCost(byte upgrade, short rarity);
 
         /// <summary>
         /// Gets the number of Cella Powder an attempt from a specific upgrade level consumes
@@ -56,7 +56,7 @@ namespace NosCore.Algorithm.EquipmentUpgradeService
         /// <param name="upgrade">The item's current upgrade level</param>
         /// <param name="rarity">The item's rarity</param>
         /// <returns>The Cella Powder cost</returns>
-        short GetCellaCost(byte upgrade, sbyte rarity);
+        short GetCellaCost(byte upgrade, short rarity);
 
         /// <summary>
         /// Gets the number of gems an attempt from a specific upgrade level consumes.
@@ -65,7 +65,7 @@ namespace NosCore.Algorithm.EquipmentUpgradeService
         /// <param name="upgrade">The item's current upgrade level</param>
         /// <param name="rarity">The item's rarity</param>
         /// <returns>The gem cost</returns>
-        short GetGemCost(byte upgrade, sbyte rarity);
+        short GetGemCost(byte upgrade, short rarity);
 
         /// <summary>
         /// Tells whether an attempt from a specific upgrade level takes Complete Soul Gems rather than Soul Gems
