@@ -1,4 +1,4 @@
-//  __  _  __    __   ___ __  ___ ___
+﻿//  __  _  __    __   ___ __  ___ ___
 // |  \| |/__\ /' _/ / _//__\| _ \ __|
 // | | ' | \/ |`._`.| \_| \/ | v / _|
 // |_|\__|\__/ |___/ \__/\__/|_|_\___|
@@ -428,15 +428,11 @@ namespace NosCore.Algorithm.Tests
             var equipmentUpgradeService = new EquipmentUpgradeService.EquipmentUpgradeService();
 
             var resultBuilder = new StringBuilder("# Equipment Upgrade Table");
-            foreach (var (title, rarity) in new (string, short)[] { ("Rarity below 8", 7), ("Rarity 8", 8) })
+            resultBuilder.AppendLine();
+            for (byte upgrade = 0; upgrade < equipmentUpgradeService.MaxUpgrade; upgrade++)
             {
-                resultBuilder.AppendLine();
-                resultBuilder.AppendLine($"## {title}");
-                for (byte upgrade = 0; upgrade < equipmentUpgradeService.MaxUpgrade; upgrade++)
-                {
-                    resultBuilder.AppendLine(
-                        $"- +{upgrade} to +{upgrade + 1} - Success: {equipmentUpgradeService.GetSuccessRate(upgrade, rarity)}% - Fixed: {equipmentUpgradeService.GetFixedRate(upgrade, rarity)}% - Failure: {equipmentUpgradeService.GetFailureRate(upgrade, rarity)}% - Gold: {equipmentUpgradeService.GetGoldCost(upgrade, rarity)} - Cella Powder: {equipmentUpgradeService.GetCellaCost(upgrade, rarity)} - {(equipmentUpgradeService.UsesCompleteGem(upgrade) ? "Complete Soul Gems" : "Soul Gems")}: {equipmentUpgradeService.GetGemCost(upgrade, rarity)}");
-                }
+                resultBuilder.AppendLine(
+                    $"- +{upgrade} to +{upgrade + 1} - Success: {equipmentUpgradeService.GetSuccessRate(upgrade)}% - Fixed: {equipmentUpgradeService.GetFixedRate(upgrade)}% - Failure: {equipmentUpgradeService.GetFailureRate(upgrade)}% - Gold: {equipmentUpgradeService.GetGoldCost(upgrade)} - Cella Powder: {equipmentUpgradeService.GetCellaCost(upgrade)} - {(equipmentUpgradeService.UsesCompleteGem(upgrade) ? "Complete Soul Gems" : "Soul Gems")}: {equipmentUpgradeService.GetGemCost(upgrade)}");
             }
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
