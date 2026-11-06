@@ -46,5 +46,32 @@ namespace NosCore.Algorithm.SpecialistPointService
         /// <param name="points">The points spent</param>
         /// <returns>The HP/MP level</returns>
         int GetHpMpLevel(short points);
+        /// <summary>
+        /// Gets the stats an attack level adds
+        /// </summary>
+        /// <param name="level">The attack level, 0 to 100</param>
+        /// <returns>The bonus</returns>
+        SpecialistPointBonus GetAttackBonus(int level);
+
+        /// <summary>
+        /// Gets the stats a defence level adds
+        /// </summary>
+        /// <param name="level">The defence level, 0 to 100</param>
+        /// <returns>The bonus</returns>
+        SpecialistPointBonus GetDefenceBonus(int level);
+
+        /// <summary>
+        /// Gets the stats an element level adds
+        /// </summary>
+        /// <param name="level">The element level, 0 to 100</param>
+        /// <returns>The bonus</returns>
+        SpecialistPointBonus GetElementBonus(int level);
+
+        /// <summary>
+        /// Gets the stats an HP/MP level adds
+        /// </summary>
+        /// <param name="level">The HP/MP level, 0 to 100</param>
+        /// <returns>The bonus</returns>
+        SpecialistPointBonus GetHpMpBonus(int level);
     }
 }
