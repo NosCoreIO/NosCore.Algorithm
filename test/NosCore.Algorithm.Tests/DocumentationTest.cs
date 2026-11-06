@@ -581,6 +581,23 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void FamilyUpgradeDocumentation()
+        {
+            var familyUpgradeService = new FamilyUpgradeService.FamilyUpgradeService();
+
+            var resultBuilder = new StringBuilder("# Family Upgrade Table");
+            resultBuilder.AppendLine();
+
+            for (byte level = 0; level <= 2; level++)
+            {
+                resultBuilder.AppendLine(
+                    $"- Level {level} - Warehouse slots: {familyUpgradeService.GetWarehouseSize(level),2} Member limit: {familyUpgradeService.GetMemberLimit(level)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void BankDocumentation()
         {
             var bankService = new BankService.BankService();
