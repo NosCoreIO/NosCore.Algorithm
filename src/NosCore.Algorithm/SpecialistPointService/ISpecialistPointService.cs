@@ -20,6 +20,13 @@ namespace NosCore.Algorithm.SpecialistPointService
         int GetSpecialistPoints(byte specialistLevel, byte upgrade);
 
         /// <summary>
+        /// Gets the highest level one stat of a card can reach
+        /// </summary>
+        /// <param name="upgrade">The card's upgrade level</param>
+        /// <returns>100 up to +15, then 105, 110, 115 and 120</returns>
+        int GetMaximumStatLevel(byte upgrade);
+
+        /// <summary>
         /// Gets the attack level bought with the points spent on attack
         /// </summary>
         /// <param name="points">The points spent</param>

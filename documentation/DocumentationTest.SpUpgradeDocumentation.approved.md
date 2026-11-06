@@ -1,16 +1,21 @@
-# Specialist Card Upgrade Table
-- +0 to +1 - Success: 80% - Soul destroyed: 0% - Gold: 200000 - Feathers: 3 - Full moons: 1 - Souls: 2 - Job level: 21
-- +1 to +2 - Success: 75% - Soul destroyed: 0% - Gold: 200000 - Feathers: 5 - Full moons: 3 - Souls: 4 - Job level: 21
-- +2 to +3 - Success: 70% - Soul destroyed: 5% - Gold: 200000 - Feathers: 8 - Full moons: 5 - Souls: 6 - Job level: 21
-- +3 to +4 - Success: 60% - Soul destroyed: 10% - Gold: 200000 - Feathers: 10 - Full moons: 7 - Souls: 8 - Job level: 21
-- +4 to +5 - Success: 50% - Soul destroyed: 15% - Gold: 200000 - Feathers: 15 - Full moons: 10 - Souls: 10 - Job level: 21
-- +5 to +6 - Success: 40% - Soul destroyed: 20% - Gold: 500000 - Feathers: 20 - Full moons: 12 - Souls: 1 - Job level: 41
-- +6 to +7 - Success: 35% - Soul destroyed: 25% - Gold: 500000 - Feathers: 25 - Full moons: 14 - Souls: 2 - Job level: 41
-- +7 to +8 - Success: 30% - Soul destroyed: 30% - Gold: 500000 - Feathers: 30 - Full moons: 16 - Souls: 3 - Job level: 41
-- +8 to +9 - Success: 25% - Soul destroyed: 35% - Gold: 500000 - Feathers: 35 - Full moons: 18 - Souls: 4 - Job level: 41
-- +9 to +10 - Success: 20% - Soul destroyed: 40% - Gold: 500000 - Feathers: 40 - Full moons: 20 - Souls: 5 - Job level: 41
-- +10 to +11 - Success: 10% - Soul destroyed: 45% - Gold: 1000000 - Feathers: 45 - Full moons: 22 - Souls: 1 - Job level: 51
-- +11 to +12 - Success: 7% - Soul destroyed: 50% - Gold: 1000000 - Feathers: 50 - Full moons: 24 - Souls: 2 - Job level: 51
-- +12 to +13 - Success: 5% - Soul destroyed: 55% - Gold: 1000000 - Feathers: 55 - Full moons: 26 - Souls: 3 - Job level: 51
-- +13 to +14 - Success: 3% - Soul destroyed: 60% - Gold: 1000000 - Feathers: 60 - Full moons: 28 - Souls: 4 - Job level: 51
-- +14 to +15 - Success: 1.5% - Soul destroyed: 70% - Gold: 1000000 - Feathers: 70 - Full moons: 30 - Souls: 5 - Job level: 51
+﻿# Specialist Card Upgrade Table
+- +0 to +1 - Success: 80% - Soul destroyed: 0% - Gold: 200000 - Feathers: 3 - Full moons: 1 - Souls: 2 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 21
+- +1 to +2 - Success: 75% - Soul destroyed: 0% - Gold: 200000 - Feathers: 5 - Full moons: 3 - Souls: 4 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 21
+- +2 to +3 - Success: 70% - Soul destroyed: 5% - Gold: 200000 - Feathers: 8 - Full moons: 5 - Souls: 6 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 21
+- +3 to +4 - Success: 60% - Soul destroyed: 10% - Gold: 200000 - Feathers: 10 - Full moons: 7 - Souls: 8 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 21
+- +4 to +5 - Success: 50% - Soul destroyed: 15% - Gold: 200000 - Feathers: 15 - Full moons: 10 - Souls: 10 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 21
+- +5 to +6 - Success: 40% - Soul destroyed: 20% - Gold: 500000 - Feathers: 20 - Full moons: 12 - Souls: 1 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 41
+- +6 to +7 - Success: 35% - Soul destroyed: 25% - Gold: 500000 - Feathers: 25 - Full moons: 14 - Souls: 2 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 41
+- +7 to +8 - Success: 30% - Soul destroyed: 30% - Gold: 500000 - Feathers: 30 - Full moons: 16 - Souls: 3 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 41
+- +8 to +9 - Success: 25% - Soul destroyed: 35% - Gold: 500000 - Feathers: 35 - Full moons: 18 - Souls: 4 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 41
+- +9 to +10 - Success: 20% - Soul destroyed: 40% - Gold: 500000 - Feathers: 40 - Full moons: 20 - Souls: 5 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 41
+- +10 to +11 - Success: 10% - Soul destroyed: 45% - Gold: 1000000 - Feathers: 45 - Full moons: 22 - Souls: 1 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 51
+- +11 to +12 - Success: 7% - Soul destroyed: 50% - Gold: 1000000 - Feathers: 50 - Full moons: 24 - Souls: 2 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 51
+- +12 to +13 - Success: 5% - Soul destroyed: 55% - Gold: 1000000 - Feathers: 55 - Full moons: 26 - Souls: 3 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 51
+- +13 to +14 - Success: 3% - Soul destroyed: 60% - Gold: 1000000 - Feathers: 60 - Full moons: 28 - Souls: 4 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 51
+- +14 to +15 - Success: 1.5% - Soul destroyed: 70% - Gold: 1000000 - Feathers: 70 - Full moons: 30 - Souls: 5 - Dragon Gems: 0 - Dimensiolith Shards (other dimensions): 0 - Job level: 51
+- +15 to +16 - Success: 1.2% - Soul destroyed: 70% - Gold: 1250000 - Feathers: 80 - Full moons: 32 - Souls: 0 - Dragon Gems: 2 - Dimensiolith Shards (other dimensions): 1 - Job level: 51
+- +16 to +17 - Success: 1% - Soul destroyed: 70% - Gold: 1500000 - Feathers: 90 - Full moons: 34 - Souls: 0 - Dragon Gems: 4 - Dimensiolith Shards (other dimensions): 1 - Job level: 51
+- +17 to +18 - Success: 0.8% - Soul destroyed: 75% - Gold: 1750000 - Feathers: 100 - Full moons: 36 - Souls: 0 - Dragon Gems: 6 - Dimensiolith Shards (other dimensions): 2 - Job level: 51
+- +18 to +19 - Success: 0.6% - Soul destroyed: 80% - Gold: 2000000 - Feathers: 110 - Full moons: 38 - Souls: 0 - Dragon Gems: 8 - Dimensiolith Shards (other dimensions): 2 - Job level: 51
+- +19 to +20 - Success: 0.4% - Soul destroyed: 80% - Gold: 2250000 - Feathers: 120 - Full moons: 40 - Souls: 0 - Dragon Gems: 10 - Dimensiolith Shards (other dimensions): 3 - Job level: 51

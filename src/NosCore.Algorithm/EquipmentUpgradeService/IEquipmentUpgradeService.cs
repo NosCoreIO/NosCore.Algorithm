@@ -55,17 +55,37 @@ namespace NosCore.Algorithm.EquipmentUpgradeService
 
         /// <summary>
         /// Gets the number of gems an attempt from a specific upgrade level consumes.
-        /// Below +5 they are Soul Gems, from +5 on Complete Soul Gems.
+        /// Which gem it is depends on the level, see <see cref="GetGemType"/>.
         /// </summary>
         /// <param name="upgrade">The item's current upgrade level</param>
         /// <returns>The gem cost</returns>
         short GetGemCost(byte upgrade);
 
         /// <summary>
-        /// Tells whether an attempt from a specific upgrade level takes Complete Soul Gems rather than Soul Gems
+        /// Gets the gem an attempt from a specific upgrade level consumes
         /// </summary>
         /// <param name="upgrade">The item's current upgrade level</param>
-        /// <returns>True when the attempt takes Complete Soul Gems</returns>
-        bool UsesCompleteGem(byte upgrade);
+        /// <returns>Soul Gems below +5, Complete Soul Gems from +5 and Dimensional Force from +10</returns>
+        UpgradeGemType GetGemType(byte upgrade);
+
+        /// <summary>
+        /// Gets the number of Dimensiolith Shards an attempt from a specific upgrade level consumes
+        /// </summary>
+        /// <param name="upgrade">The item's current upgrade level</param>
+        /// <returns>The shard cost, 0 below +10</returns>
+        short GetShardCost(byte upgrade);
+
+        /// <summary>
+        /// Gets the value at which an item's pity gauge is full and its next attempt cannot fail
+        /// </summary>
+        short PityGaugeMaximum { get; }
+
+        /// <summary>
+        /// Gets how much an attempt from a specific upgrade level that does not succeed fills the item's pity gauge.
+        /// It equals the success chance, so a full gauge takes as many misses as the chance's inverse.
+        /// </summary>
+        /// <param name="upgrade">The item's current upgrade level</param>
+        /// <returns>The gauge gain out of <see cref="PityGaugeMaximum"/>, 0 below +10</returns>
+        short GetPityGaugeGain(byte upgrade);
     }
 }

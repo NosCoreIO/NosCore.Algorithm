@@ -56,8 +56,23 @@ namespace NosCore.Algorithm.SpUpgradeService
         /// Gets the number of souls a successful attempt from a specific upgrade level consumes
         /// </summary>
         /// <param name="upgrade">The card's current upgrade level</param>
-        /// <returns>The soul cost</returns>
+        /// <returns>The soul cost, 0 from +15</returns>
         short GetSoulCost(byte upgrade);
+
+        /// <summary>
+        /// Gets the number of Dragon Gems an attempt from a specific upgrade level consumes
+        /// </summary>
+        /// <param name="upgrade">The card's current upgrade level</param>
+        /// <returns>The dragon gem cost, 0 below +15</returns>
+        short GetDragonGemCost(byte upgrade);
+
+        /// <summary>
+        /// Gets the number of Dimensiolith Shards an attempt from a specific upgrade level consumes.
+        /// Only the cards of the other dimensions take them.
+        /// </summary>
+        /// <param name="upgrade">The card's current upgrade level</param>
+        /// <returns>The shard cost, 0 below +15</returns>
+        short GetShardCost(byte upgrade);
 
         /// <summary>
         /// Gets the card's minimum job level for an attempt from a specific upgrade level

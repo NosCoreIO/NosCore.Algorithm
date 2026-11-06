@@ -4,36 +4,27 @@
 // |_|\__|\__/ |___/ \__/\__/|_|_\___|
 // -----------------------------------
 
+using System;
+
 namespace NosCore.Algorithm.ExperienceShareService
 {
     /// <summary>
     /// Provides the experience split of a group
     /// </summary>
     /// <remarks>
-    /// Each extra member adds 15% experience and 25% job experience to the kill, and the total
-    /// is divided equally: 100%, 57.5% and 43.33% each for experience, 100%, 62.5% and 50% each
-    /// for job experience.
+    /// Every member who shares the kill receives the same fraction of the monster's experience
+    /// and job experience: 100% alone, 75% each in a group of two and 70% each in a group of three.
     /// </remarks>
     public class ExperienceShareService : IExperienceShareService
     {
-        private const double ExperienceBonusPerMember = 0.15;
-        private const double JobExperienceBonusPerMember = 0.25;
+        private static readonly double[] Share = [1, 1, 0.75, 0.7];
 
         /// <inheritdoc />
-        public double GetExperienceShare(byte memberCount) => Share(memberCount, ExperienceBonusPerMember);
+        public double GetExperienceShare(byte memberCount) => Share[Members(memberCount)];
 
         /// <inheritdoc />
-        public double GetJobExperienceShare(byte memberCount) => Share(memberCount, JobExperienceBonusPerMember);
+        public double GetJobExperienceShare(byte memberCount) => Share[Members(memberCount)];
 
-        private static double Share(byte memberCount, double bonusPerMember)
-        {
-            var members = memberCount switch
-            {
-                0 => 1,
-                > Constants.MaxGroupSize => Constants.MaxGroupSize,
-                _ => memberCount
-            };
-            return (1 + bonusPerMember * (members - 1)) / members;
-        }
+        private static int Members(byte memberCount) => Math.Min(memberCount, Constants.MaxGroupSize);
     }
 }

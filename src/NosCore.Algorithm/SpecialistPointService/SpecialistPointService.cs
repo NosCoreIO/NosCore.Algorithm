@@ -14,33 +14,37 @@ namespace NosCore.Algorithm.SpecialistPointService
     /// <remarks>
     /// A card earns 3 points per level above 20, plus a bonus for its upgrade. Each stat is
     /// bought in bands: the first points buy one level each, later bands cost 2, 3, ... points
-    /// per level, and the stat stops at the level reached with all the points a card can earn.
+    /// per level. A stat stops at level 100, or up to 120 on cards upgraded past +15.
     /// </remarks>
     public class SpecialistPointService : ISpecialistPointService
     {
-        private static readonly int[] UpgradeBonus = [0, 5, 10, 15, 20, 28, 36, 46, 56, 68, 80, 95, 110, 128, 148, 173];
+        private const int FirstRaisedCapUpgrade = 16;
+
+        private static readonly int[] UpgradeBonus = [0, 5, 10, 15, 20, 28, 36, 46, 56, 68, 80, 95, 110, 128, 148, 173, 188, 203, 218, 233, 249];
+
+        private static readonly byte[] MaximumStatLevel = [100, 105, 110, 115, 120, 120];
 
         private static readonly (short UpTo, int Cost)[] AttackBands =
-            [(10, 1), (28, 2), (88, 3), (168, 4), (268, 5), (334, 6), (383, 7), (391, 8), (400, 9), (410, 10)];
+            [(10, 1), (28, 2), (88, 3), (168, 4), (268, 5), (334, 6), (383, 7), (391, 8), (400, 9), (410, 10), (425, 3), (481, 4), (486, 5)];
 
         // A 360-400 band that starts at level 97 instead of 94 is sometimes seen; it would make
         // 400 points worth more than 410, so the band is taken to continue from 94 like the others.
         private static readonly (short UpTo, int Cost)[] DefenceBands =
-            [(10, 1), (48, 2), (81, 3), (161, 4), (236, 5), (290, 6), (360, 7), (400, 8), (410, 10)];
+            [(10, 1), (48, 2), (81, 3), (161, 4), (236, 5), (290, 6), (360, 7), (400, 8), (410, 10), (425, 3), (481, 4), (486, 5)];
 
         private static readonly (short UpTo, int Cost)[] ElementBands =
-            [(20, 1), (40, 2), (70, 3), (110, 4), (210, 5), (270, 6), (410, 7)];
+            [(20, 1), (40, 2), (70, 3), (110, 4), (210, 5), (270, 6), (410, 7), (425, 3), (481, 4), (486, 5)];
 
         private static readonly (short UpTo, int Cost)[] HpMpBands =
-            [(10, 1), (50, 2), (110, 3), (150, 4), (200, 5), (260, 6), (330, 7), (410, 8)];
+            [(10, 1), (50, 2), (110, 3), (150, 4), (200, 5), (260, 6), (330, 7), (410, 8), (425, 3), (481, 4), (486, 5)];
 
         private static readonly (int UpTo, int PerLevel)[] AttackDamageBands =
-            [(10, 5), (20, 6), (30, 7), (40, 8), (50, 9), (60, 10), (70, 11), (80, 13), (90, 14), (94, 15), (95, 16), (97, 17), (100, 20)];
+            [(10, 5), (20, 6), (30, 7), (40, 8), (50, 9), (60, 10), (70, 11), (80, 13), (90, 14), (94, 15), (95, 16), (97, 17), (100, 20), (110, 15), (120, 20)];
 
         private static readonly (int UpTo, int PerLevel)[] DefenceCurveBands =
-            [(10, 1), (20, 2), (30, 3), (40, 4), (50, 5), (60, 6), (70, 7), (80, 8), (90, 9), (100, 10)];
+            [(10, 1), (20, 2), (30, 3), (40, 4), (50, 5), (60, 6), (70, 7), (80, 8), (90, 9), (100, 10), (105, 10), (110, 12), (115, 14), (119, 15), (120, 20)];
 
-        private static readonly (int UpTo, int PerLevel)[] DoublingAfterFifty = [(50, 1), (100, 2)];
+        private static readonly (int UpTo, int PerLevel)[] DoublingAfterFifty = [(50, 1), (120, 2)];
 
         private static readonly (int Level, SpecialistPointBonus Bonus)[] AttackMilestones =
         [
@@ -55,6 +59,9 @@ namespace NosCore.Algorithm.SpecialistPointService
             (80, new(CriticalChance: 3)),
             (90, new(CriticalRate: 20)),
             (100, new(Damage: 5, HitRate: 20, CriticalChance: 3, CriticalRate: 20, Hp: 200, Mp: 200)),
+            (110, new(Damage: 10, HitRate: 20, CriticalRate: 30)),
+            (115, new(Hp: 200, Mp: 200)),
+            (120, new(Damage: 10, HitRate: 10, CriticalChance: 2, CriticalRate: 10)),
         ];
 
         private static readonly (int Level, SpecialistPointBonus Bonus)[] DefenceMilestones =
@@ -71,6 +78,9 @@ namespace NosCore.Algorithm.SpecialistPointService
             (90, new(Resistance: 3, DamageReduction: 1)),
             (95, new(Hp: 300)),
             (100, new(Dodge: 20, Resistance: 5, DamageReduction: 1)),
+            (110, new(Dodge: 10, CriticalDodge: 4)),
+            (115, new(Hp: 400)),
+            (120, new(CriticalDodge: 2, Resistance: 5)),
         ];
 
         private static readonly (int Level, SpecialistPointBonus Bonus)[] ElementMilestones =
@@ -86,6 +96,9 @@ namespace NosCore.Algorithm.SpecialistPointService
             (80, new(MagicDefence: 5)),
             (90, new(Resistance: 4, ElementRate: 2)),
             (100, new(Resistance: 6, MagicDefence: 5, Mp: 200, ElementRate: 2)),
+            (110, new(MagicDefence: 5, ElementRate: 2)),
+            (115, new(Mp: 200)),
+            (120, new(Resistance: 5, ElementRate: 2)),
         ];
 
         private static readonly (int Level, SpecialistPointBonus Bonus)[] HpMpMilestones =
@@ -121,6 +134,9 @@ namespace NosCore.Algorithm.SpecialistPointService
             (98, new(Dodge: 2)),
             (99, new(Dodge: 2)),
             (100, new(Damage: 20, Defence: 30, Dodge: 2, CriticalDodge: 1, Resistance: 3)),
+            (110, new(Damage: 30, Dodge: 4)),
+            (115, new(Defence: 35)),
+            (120, new(Resistance: 2, CriticalDodge: 2)),
         ];
 
         /// <inheritdoc />
@@ -129,6 +145,10 @@ namespace NosCore.Algorithm.SpecialistPointService
             var points = specialistLevel > 20 ? (specialistLevel - 20) * 3 : 0;
             return points + (upgrade < UpgradeBonus.Length ? UpgradeBonus[upgrade] : UpgradeBonus[^1]);
         }
+
+        /// <inheritdoc />
+        public int GetMaximumStatLevel(byte upgrade) =>
+            MaximumStatLevel[Math.Clamp(upgrade - FirstRaisedCapUpgrade + 1, 0, MaximumStatLevel.Length - 1)];
 
         /// <inheritdoc />
         public int GetAttackLevel(short points) => Level(AttackBands, points);
@@ -170,7 +190,7 @@ namespace NosCore.Algorithm.SpecialistPointService
             return Milestones(HpMpMilestones, level) + new SpecialistPointBonus(HpMpPercent: Curve(DoublingAfterFifty, level));
         }
 
-        private static int Clamp(int level) => Math.Clamp(level, 0, 100);
+        private static int Clamp(int level) => Math.Clamp(level, 0, MaximumStatLevel[^1]);
 
         private static SpecialistPointBonus Milestones((int Level, SpecialistPointBonus Bonus)[] milestones, int level)
         {

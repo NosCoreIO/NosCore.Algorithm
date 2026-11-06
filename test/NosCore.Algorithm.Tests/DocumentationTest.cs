@@ -416,7 +416,7 @@ namespace NosCore.Algorithm.Tests
             for (byte upgrade = 0; upgrade < spUpgradeService.MaxUpgrade; upgrade++)
             {
                 resultBuilder.AppendLine(
-                    $"- +{upgrade} to +{upgrade + 1} - Success: {spUpgradeService.GetSuccessRate(upgrade)}% - Soul destroyed: {spUpgradeService.GetDestructionRate(upgrade)}% - Gold: {spUpgradeService.GetGoldCost(upgrade)} - Feathers: {spUpgradeService.GetFeatherCost(upgrade)} - Full moons: {spUpgradeService.GetFullMoonCost(upgrade)} - Souls: {spUpgradeService.GetSoulCost(upgrade)} - Job level: {spUpgradeService.GetMinimumJobLevel(upgrade)}");
+                    $"- +{upgrade} to +{upgrade + 1} - Success: {spUpgradeService.GetSuccessRate(upgrade)}% - Soul destroyed: {spUpgradeService.GetDestructionRate(upgrade)}% - Gold: {spUpgradeService.GetGoldCost(upgrade)} - Feathers: {spUpgradeService.GetFeatherCost(upgrade)} - Full moons: {spUpgradeService.GetFullMoonCost(upgrade)} - Souls: {spUpgradeService.GetSoulCost(upgrade)} - Dragon Gems: {spUpgradeService.GetDragonGemCost(upgrade)} - Dimensiolith Shards (other dimensions): {spUpgradeService.GetShardCost(upgrade)} - Job level: {spUpgradeService.GetMinimumJobLevel(upgrade)}");
             }
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
@@ -432,7 +432,7 @@ namespace NosCore.Algorithm.Tests
             for (byte upgrade = 0; upgrade < equipmentUpgradeService.MaxUpgrade; upgrade++)
             {
                 resultBuilder.AppendLine(
-                    $"- +{upgrade} to +{upgrade + 1} - Success: {equipmentUpgradeService.GetSuccessRate(upgrade)}% - Fixed: {equipmentUpgradeService.GetFixedRate(upgrade)}% - Failure: {equipmentUpgradeService.GetFailureRate(upgrade)}% - Gold: {equipmentUpgradeService.GetGoldCost(upgrade)} - Cella Powder: {equipmentUpgradeService.GetCellaCost(upgrade)} - {(equipmentUpgradeService.UsesCompleteGem(upgrade) ? "Complete Soul Gems" : "Soul Gems")}: {equipmentUpgradeService.GetGemCost(upgrade)}");
+                    $"- +{upgrade} to +{upgrade + 1} - Success: {equipmentUpgradeService.GetSuccessRate(upgrade)}% - Fixed: {equipmentUpgradeService.GetFixedRate(upgrade)}% - Failure: {equipmentUpgradeService.GetFailureRate(upgrade)}% - Gold: {equipmentUpgradeService.GetGoldCost(upgrade)} - Cella Powder: {equipmentUpgradeService.GetCellaCost(upgrade)} - {equipmentUpgradeService.GetGemType(upgrade)}: {equipmentUpgradeService.GetGemCost(upgrade)} - Dimensiolith Shards: {equipmentUpgradeService.GetShardCost(upgrade)} - Pity gauge per miss: {equipmentUpgradeService.GetPityGaugeGain(upgrade)}/{equipmentUpgradeService.PityGaugeMaximum}");
             }
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
@@ -531,6 +531,22 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void LowLevelBoostDocumentation()
+        {
+            var lowLevelBoostService = new LowLevelBoostService.LowLevelBoostService();
+
+            var resultBuilder = new StringBuilder("# Low Level Experience Boost Table");
+            resultBuilder.AppendLine();
+            for (byte level = 1; level <= 22; level++)
+            {
+                resultBuilder.AppendLine(
+                    $"- Level {level,2} - XP: x{lowLevelBoostService.GetExperienceBoost(level)} Job XP: x{lowLevelBoostService.GetJobExperienceBoost(level)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void ExperienceShareDocumentation()
         {
             var experienceShareService = new ExperienceShareService.ExperienceShareService();
@@ -598,14 +614,14 @@ namespace NosCore.Algorithm.Tests
 
             resultBuilder.AppendLine();
             resultBuilder.AppendLine("## Points at level 99 by upgrade");
-            for (byte upgrade = 0; upgrade <= 15; upgrade++)
+            for (byte upgrade = 0; upgrade <= 20; upgrade++)
             {
-                resultBuilder.AppendLine($"- +{upgrade,-2} - Points: {specialistPointService.GetSpecialistPoints(99, upgrade)}");
+                resultBuilder.AppendLine($"- +{upgrade,-2} - Points: {specialistPointService.GetSpecialistPoints(99, upgrade)} - Highest stat level: {specialistPointService.GetMaximumStatLevel(upgrade)}");
             }
 
             resultBuilder.AppendLine();
             resultBuilder.AppendLine("## Stat level by points spent");
-            for (short points = 0; points <= 410; points += 5)
+            for (short points = 0; points <= 490; points += 5)
             {
                 resultBuilder.AppendLine(
                     $"- {points,3} points - Attack: {specialistPointService.GetAttackLevel(points)} Defence: {specialistPointService.GetDefenceLevel(points)} Element: {specialistPointService.GetElementLevel(points)} HP/MP: {specialistPointService.GetHpMpLevel(points)}");
@@ -613,7 +629,7 @@ namespace NosCore.Algorithm.Tests
 
             resultBuilder.AppendLine();
             resultBuilder.AppendLine("## Bonus by stat level");
-            for (var level = 0; level <= 100; level++)
+            for (var level = 0; level <= 120; level++)
             {
                 resultBuilder.AppendLine($"- Level {level,3}");
                 resultBuilder.AppendLine($"  - Attack: {specialistPointService.GetAttackBonus(level)}");
@@ -627,9 +643,14 @@ namespace NosCore.Algorithm.Tests
             Assert.AreEqual(5, specialistPointService.GetDefenceBonus(100).DamageReduction);
             Assert.AreEqual(150 + 10, specialistPointService.GetElementBonus(100).ElementRate);
             Assert.AreEqual(150, specialistPointService.GetHpMpBonus(100).HpMpPercent);
-            Assert.AreEqual(specialistPointService.GetAttackBonus(100), specialistPointService.GetAttackBonus(120));
+            Assert.AreEqual(1350 + 40, specialistPointService.GetAttackBonus(120).Damage);
+            Assert.AreEqual(810, specialistPointService.GetDefenceBonus(120).Defence);
+            Assert.AreEqual(190 + 14, specialistPointService.GetElementBonus(120).ElementRate);
+            Assert.AreEqual(190, specialistPointService.GetHpMpBonus(120).HpMpPercent);
+            Assert.AreEqual(120, specialistPointService.GetAttackLevel(486));
+            Assert.AreEqual(specialistPointService.GetAttackBonus(120), specialistPointService.GetAttackBonus(130));
 
-            for (short points = 1; points <= 420; points++)
+            for (short points = 1; points <= 500; points++)
             {
                 Assert.IsTrue(specialistPointService.GetAttackLevel(points) >= specialistPointService.GetAttackLevel((short)(points - 1)));
                 Assert.IsTrue(specialistPointService.GetDefenceLevel(points) >= specialistPointService.GetDefenceLevel((short)(points - 1)));

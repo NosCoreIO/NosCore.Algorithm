@@ -1,11 +1,14 @@
-# Equipment Upgrade Table
-- +0 to +1 - Success: 100% - Fixed: 0% - Failure: 0% - Gold: 500 - Cella Powder: 20 - Soul Gems: 1
-- +1 to +2 - Success: 100% - Fixed: 0% - Failure: 0% - Gold: 1500 - Cella Powder: 50 - Soul Gems: 1
-- +2 to +3 - Success: 90% - Fixed: 10% - Failure: 0% - Gold: 3000 - Cella Powder: 80 - Soul Gems: 2
-- +3 to +4 - Success: 80% - Fixed: 15% - Failure: 5% - Gold: 10000 - Cella Powder: 120 - Soul Gems: 2
-- +4 to +5 - Success: 60% - Fixed: 20% - Failure: 20% - Gold: 30000 - Cella Powder: 160 - Soul Gems: 3
-- +5 to +6 - Success: 40% - Fixed: 20% - Failure: 40% - Gold: 80000 - Cella Powder: 220 - Complete Soul Gems: 1
-- +6 to +7 - Success: 20% - Fixed: 20% - Failure: 60% - Gold: 150000 - Cella Powder: 280 - Complete Soul Gems: 1
-- +7 to +8 - Success: 5% - Fixed: 3% - Failure: 92% - Gold: 400000 - Cella Powder: 380 - Complete Soul Gems: 2
-- +8 to +9 - Success: 1.5% - Fixed: 2% - Failure: 96.5% - Gold: 700000 - Cella Powder: 480 - Complete Soul Gems: 2
-- +9 to +10 - Success: 0.6% - Fixed: 1% - Failure: 98.4% - Gold: 1000000 - Cella Powder: 600 - Complete Soul Gems: 3
+﻿# Equipment Upgrade Table
+- +0 to +1 - Success: 100% - Fixed: 0% - Failure: 0% - Gold: 500 - Cella Powder: 20 - SoulGem: 1 - Dimensiolith Shards: 0 - Pity gauge per miss: 0/1000
+- +1 to +2 - Success: 100% - Fixed: 0% - Failure: 0% - Gold: 1500 - Cella Powder: 50 - SoulGem: 1 - Dimensiolith Shards: 0 - Pity gauge per miss: 0/1000
+- +2 to +3 - Success: 90% - Fixed: 10% - Failure: 0% - Gold: 3000 - Cella Powder: 80 - SoulGem: 2 - Dimensiolith Shards: 0 - Pity gauge per miss: 0/1000
+- +3 to +4 - Success: 80% - Fixed: 15% - Failure: 5% - Gold: 10000 - Cella Powder: 120 - SoulGem: 2 - Dimensiolith Shards: 0 - Pity gauge per miss: 0/1000
+- +4 to +5 - Success: 60% - Fixed: 20% - Failure: 20% - Gold: 30000 - Cella Powder: 160 - SoulGem: 3 - Dimensiolith Shards: 0 - Pity gauge per miss: 0/1000
+- +5 to +6 - Success: 40% - Fixed: 20% - Failure: 40% - Gold: 80000 - Cella Powder: 220 - CompleteSoulGem: 1 - Dimensiolith Shards: 0 - Pity gauge per miss: 0/1000
+- +6 to +7 - Success: 20% - Fixed: 20% - Failure: 60% - Gold: 150000 - Cella Powder: 280 - CompleteSoulGem: 1 - Dimensiolith Shards: 0 - Pity gauge per miss: 0/1000
+- +7 to +8 - Success: 5% - Fixed: 3% - Failure: 92% - Gold: 400000 - Cella Powder: 380 - CompleteSoulGem: 2 - Dimensiolith Shards: 0 - Pity gauge per miss: 0/1000
+- +8 to +9 - Success: 1.5% - Fixed: 2% - Failure: 96.5% - Gold: 700000 - Cella Powder: 480 - CompleteSoulGem: 2 - Dimensiolith Shards: 0 - Pity gauge per miss: 0/1000
+- +9 to +10 - Success: 0.6% - Fixed: 1% - Failure: 98.4% - Gold: 1000000 - Cella Powder: 600 - CompleteSoulGem: 3 - Dimensiolith Shards: 0 - Pity gauge per miss: 0/1000
+- +10 to +11 - Success: 0.5% - Fixed: 0.5% - Failure: 99% - Gold: 1250000 - Cella Powder: 1200 - DimensionalForce: 4 - Dimensiolith Shards: 1 - Pity gauge per miss: 5/1000
+- +11 to +12 - Success: 0.4% - Fixed: 0.5% - Failure: 99.1% - Gold: 1600000 - Cella Powder: 1500 - DimensionalForce: 6 - Dimensiolith Shards: 2 - Pity gauge per miss: 4/1000
+- +12 to +13 - Success: 0.2% - Fixed: 0.5% - Failure: 99.3% - Gold: 2000000 - Cella Powder: 2000 - DimensionalForce: 8 - Dimensiolith Shards: 3 - Pity gauge per miss: 2/1000
