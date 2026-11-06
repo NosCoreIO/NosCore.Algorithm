@@ -467,6 +467,70 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void ShellDocumentation()
+        {
+            var shellService = new ShellService.ShellService();
+
+            var resultBuilder = new StringBuilder("# Shell Table");
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("## Slots");
+            foreach (var type in Enum.GetValues<ShellType>())
+            {
+                for (byte rarity = 1; rarity <= 7; rarity++)
+                {
+                    var slots = shellService.GetSlots(type, rarity).Select(s => s.Guaranteed ? $"{s.Level}" : $"{s.Level}?");
+                    resultBuilder.AppendLine($"- {type} R{rarity}: {string.Join(" ", slots)}");
+                }
+            }
+
+            for (byte level = 1; level <= 12; level++)
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## Option level {level}");
+                foreach (var option in shellService.GetWeaponOptions(level))
+                {
+                    resultBuilder.AppendLine($"- Weapon {option.Type}: {option.Minimum} - {option.Maximum}");
+                }
+
+                foreach (var option in shellService.GetArmorOptions(level))
+                {
+                    resultBuilder.AppendLine($"- Armor {option.Type}: {option.Minimum} - {option.Maximum}");
+                }
+            }
+
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("## Identification cost");
+            for (byte level = 10; level <= 90; level += 10)
+            {
+                resultBuilder.AppendLine($"- Level {level,2}: {string.Join(" ", Enumerable.Range(1, 7).Select(r => shellService.GetIdentificationCost(level, (byte)r)))}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
+        public void ShellValueScalesWithLevelFromThirty()
+        {
+            var shellService = new ShellService.ShellService();
+
+            Assert.AreEqual(25, shellService.GetValue(835, 30));
+            Assert.AreEqual(25, shellService.GetValue(835, 10));
+            Assert.AreEqual(50, shellService.GetValue(835, 60));
+            Assert.AreEqual(1, shellService.GetValue(0, 60));
+        }
+
+        [TestMethod]
+        public void NoShellRarityOrOptionLevelHasNothing()
+        {
+            var shellService = new ShellService.ShellService();
+
+            Assert.AreEqual(0, shellService.GetSlots(ShellType.Full, 0).Count);
+            Assert.AreEqual(0, shellService.GetSlots(ShellType.Full, 8).Count);
+            Assert.AreEqual(0, shellService.GetWeaponOptions(13).Count);
+            Assert.AreEqual(0, shellService.GetArmorOptions(0).Count);
+        }
+
+        [TestMethod]
         public void MateExperienceDocumentation()
         {
             var mateExperienceService = new MateExperienceService.MateExperienceService();

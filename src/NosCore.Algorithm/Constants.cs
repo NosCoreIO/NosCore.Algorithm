@@ -16,6 +16,8 @@ namespace NosCore.Algorithm
         internal const byte MaxSpUpgrade = 20;
         internal const byte MaxEquipmentUpgrade = 13;
         internal const short PityGaugeMaximum = 1000;
+        internal const byte MaxShellOptionLevel = 12;
+        internal const byte MinShellValueLevel = 30;
         internal static readonly int ClassCount = Enum.GetNames(typeof(CharacterClassType)).Length;
     }
 }
