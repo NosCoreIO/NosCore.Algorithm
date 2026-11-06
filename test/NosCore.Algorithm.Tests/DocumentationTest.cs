@@ -407,6 +407,22 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void SpUpgradeDocumentation()
+        {
+            var spUpgradeService = new SpUpgradeService.SpUpgradeService();
+
+            var resultBuilder = new StringBuilder("# Specialist Card Upgrade Table");
+            resultBuilder.AppendLine();
+            for (byte upgrade = 0; upgrade < spUpgradeService.MaxUpgrade; upgrade++)
+            {
+                resultBuilder.AppendLine(
+                    $"- +{upgrade} to +{upgrade + 1} - Success: {spUpgradeService.GetSuccessRate(upgrade)}% - Soul destroyed: {spUpgradeService.GetDestructionRate(upgrade)}% - Gold: {spUpgradeService.GetGoldCost(upgrade)} - Feathers: {spUpgradeService.GetFeatherCost(upgrade)} - Full moons: {spUpgradeService.GetFullMoonCost(upgrade)} - Souls: {spUpgradeService.GetSoulCost(upgrade)} - Job level: {spUpgradeService.GetMinimumJobLevel(upgrade)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void CellonDocumentation()
         {
             var cellonService = new CellonService.CellonService();
