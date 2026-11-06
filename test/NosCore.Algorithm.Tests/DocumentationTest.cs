@@ -423,6 +423,26 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void EquipmentUpgradeDocumentation()
+        {
+            var equipmentUpgradeService = new EquipmentUpgradeService.EquipmentUpgradeService();
+
+            var resultBuilder = new StringBuilder("# Equipment Upgrade Table");
+            foreach (var (title, rarity) in new (string, short)[] { ("Rarity below 8", 7), ("Rarity 8", 8) })
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## {title}");
+                for (byte upgrade = 0; upgrade < equipmentUpgradeService.MaxUpgrade; upgrade++)
+                {
+                    resultBuilder.AppendLine(
+                        $"- +{upgrade} to +{upgrade + 1} - Success: {equipmentUpgradeService.GetSuccessRate(upgrade, rarity)}% - Fixed: {equipmentUpgradeService.GetFixedRate(upgrade, rarity)}% - Failure: {equipmentUpgradeService.GetFailureRate(upgrade, rarity)}% - Gold: {equipmentUpgradeService.GetGoldCost(upgrade, rarity)} - Cella Powder: {equipmentUpgradeService.GetCellaCost(upgrade, rarity)} - {(equipmentUpgradeService.UsesCompleteGem(upgrade) ? "Complete Soul Gems" : "Soul Gems")}: {equipmentUpgradeService.GetGemCost(upgrade, rarity)}");
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void CellonDocumentation()
         {
             var cellonService = new CellonService.CellonService();

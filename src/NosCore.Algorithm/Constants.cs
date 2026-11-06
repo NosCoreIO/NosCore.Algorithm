@@ -14,6 +14,7 @@ namespace NosCore.Algorithm
         internal const byte MaxGroupSize = 3;
         internal const byte MaxCellonLevel = 10;
         internal const byte MaxSpUpgrade = 15;
+        internal const byte MaxEquipmentUpgrade = 10;
         internal static readonly int ClassCount = Enum.GetNames(typeof(CharacterClassType)).Length;
     }
 }

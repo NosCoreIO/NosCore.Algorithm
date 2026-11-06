@@ -3,4 +3,4 @@
 - Swordsman : 11
 - Archer : 12
 - Mage : 10
-- MartialArtist : 11
+- MartialArtist : 12

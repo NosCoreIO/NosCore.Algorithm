@@ -11,7 +11,7 @@ namespace NosCore.Algorithm.SpUpgradeService
     /// </summary>
     public class SpUpgradeService : ISpUpgradeService
     {
-        internal static readonly byte[] SuccessRate = { 80, 75, 70, 60, 50, 40, 35, 30, 25, 20, 10, 7, 5, 3, 1 };
+        internal static readonly double[] SuccessRate = { 80, 75, 70, 60, 50, 40, 35, 30, 25, 20, 10, 7, 5, 3, 1.5 };
         internal static readonly byte[] DestructionRate = { 0, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 70 };
         internal static readonly long[] GoldCost = { 200000, 200000, 200000, 200000, 200000, 500000, 500000, 500000, 500000, 500000, 1000000, 1000000, 1000000, 1000000, 1000000 };
         internal static readonly short[] FeatherCost = { 3, 5, 8, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 70 };
@@ -22,7 +22,7 @@ namespace NosCore.Algorithm.SpUpgradeService
         public byte MaxUpgrade => Constants.MaxSpUpgrade;
 
         /// <inheritdoc />
-        public byte GetSuccessRate(byte upgrade) => SuccessRate[upgrade];
+        public double GetSuccessRate(byte upgrade) => SuccessRate[upgrade];
 
         /// <inheritdoc />
         public byte GetDestructionRate(byte upgrade) => DestructionRate[upgrade];

@@ -1,4 +1,4 @@
-﻿# Specialist Card Upgrade Table
+# Specialist Card Upgrade Table
 - +0 to +1 - Success: 80% - Soul destroyed: 0% - Gold: 200000 - Feathers: 3 - Full moons: 1 - Souls: 2 - Job level: 21
 - +1 to +2 - Success: 75% - Soul destroyed: 0% - Gold: 200000 - Feathers: 5 - Full moons: 3 - Souls: 4 - Job level: 21
 - +2 to +3 - Success: 70% - Soul destroyed: 5% - Gold: 200000 - Feathers: 8 - Full moons: 5 - Souls: 6 - Job level: 21
@@ -13,4 +13,4 @@
 - +11 to +12 - Success: 7% - Soul destroyed: 50% - Gold: 1000000 - Feathers: 50 - Full moons: 24 - Souls: 2 - Job level: 51
 - +12 to +13 - Success: 5% - Soul destroyed: 55% - Gold: 1000000 - Feathers: 55 - Full moons: 26 - Souls: 3 - Job level: 51
 - +13 to +14 - Success: 3% - Soul destroyed: 60% - Gold: 1000000 - Feathers: 60 - Full moons: 28 - Souls: 4 - Job level: 51
-- +14 to +15 - Success: 1% - Soul destroyed: 70% - Gold: 1000000 - Feathers: 70 - Full moons: 30 - Souls: 5 - Job level: 51
+- +14 to +15 - Success: 1.5% - Soul destroyed: 70% - Gold: 1000000 - Feathers: 70 - Full moons: 30 - Souls: 5 - Job level: 51
