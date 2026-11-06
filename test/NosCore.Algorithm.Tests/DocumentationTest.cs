@@ -439,6 +439,22 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void SpPerfectionDocumentation()
+        {
+            var spPerfectionService = new SpPerfectionService.SpPerfectionService();
+
+            var resultBuilder = new StringBuilder("# Specialist Card Perfection Table");
+            resultBuilder.AppendLine();
+            for (byte perfection = 0; perfection < spPerfectionService.MaxPerfection; perfection++)
+            {
+                resultBuilder.AppendLine(
+                    $"- {perfection} to {perfection + 1} - Success: {spPerfectionService.GetSuccessRate(perfection)}% - Gold: {spPerfectionService.GetGoldCost(perfection)} - Stones: {spPerfectionService.GetStoneCost(perfection)} - Gain: {spPerfectionService.GetMinimumGain(perfection)} to {spPerfectionService.GetMaximumGain(perfection)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void CellonDocumentation()
         {
             var cellonService = new CellonService.CellonService();
