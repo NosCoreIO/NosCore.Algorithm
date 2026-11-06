@@ -25,7 +25,7 @@ namespace NosCore.Algorithm.SpeedService
             _data[CharacterClassType.Swordsman] = 11;
             _data[CharacterClassType.Archer] = 12;
             _data[CharacterClassType.Mage] = 10;
-            _data[CharacterClassType.MartialArtist] = 11;
+            _data[CharacterClassType.MartialArtist] = 12;
         }
 
         /// <summary>

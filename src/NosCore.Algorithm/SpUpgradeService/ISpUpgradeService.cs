@@ -21,7 +21,7 @@ namespace NosCore.Algorithm.SpUpgradeService
         /// </summary>
         /// <param name="upgrade">The card's current upgrade level</param>
         /// <returns>The success rate as a percentage</returns>
-        byte GetSuccessRate(byte upgrade);
+        double GetSuccessRate(byte upgrade);
 
         /// <summary>
         /// Gets the chance that an attempt from a specific upgrade level destroys the card's soul.
