@@ -611,6 +611,23 @@ namespace NosCore.Algorithm.Tests
                     $"- {points,3} points - Attack: {specialistPointService.GetAttackLevel(points)} Defence: {specialistPointService.GetDefenceLevel(points)} Element: {specialistPointService.GetElementLevel(points)} HP/MP: {specialistPointService.GetHpMpLevel(points)}");
             }
 
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("## Bonus by stat level");
+            for (var level = 0; level <= 100; level++)
+            {
+                resultBuilder.AppendLine($"- Level {level,3}");
+                resultBuilder.AppendLine($"  - Attack: {specialistPointService.GetAttackBonus(level)}");
+                resultBuilder.AppendLine($"  - Defence: {specialistPointService.GetDefenceBonus(level)}");
+                resultBuilder.AppendLine($"  - Element: {specialistPointService.GetElementBonus(level)}");
+                resultBuilder.AppendLine($"  - HP/MP: {specialistPointService.GetHpMpBonus(level)}");
+            }
+
+            Assert.AreEqual(1000 + 1000 + 20, specialistPointService.GetAttackBonus(100).Damage);
+            Assert.AreEqual(1000 + 550, specialistPointService.GetDefenceBonus(100).Defence);
+            Assert.AreEqual(150 + 10, specialistPointService.GetElementBonus(100).ElementRate);
+            Assert.AreEqual(150, specialistPointService.GetHpMpBonus(100).HpMpPercent);
+            Assert.AreEqual(specialistPointService.GetAttackBonus(100), specialistPointService.GetAttackBonus(120));
+
             for (short points = 1; points <= 420; points++)
             {
                 Assert.IsTrue(specialistPointService.GetAttackLevel(points) >= specialistPointService.GetAttackLevel((short)(points - 1)));

@@ -202,3 +202,510 @@
 - 400 points - Attack: 99 Defence: 99 Element: 98 HP/MP: 98
 - 405 points - Attack: 99 Defence: 99 Element: 99 HP/MP: 99
 - 410 points - Attack: 100 Defence: 100 Element: 100 HP/MP: 100
+
+## Bonus by stat level
+- Level   0
+  - Attack: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+- Level   1
+  - Attack: SpecialistPointBonus { Damage = 20, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 11, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 3, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 1 }
+- Level   2
+  - Attack: SpecialistPointBonus { Damage = 35, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 22, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 4, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 2 }
+- Level   3
+  - Attack: SpecialistPointBonus { Damage = 50, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 33, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 5, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 3 }
+- Level   4
+  - Attack: SpecialistPointBonus { Damage = 65, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 44, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 6, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 4 }
+- Level   5
+  - Attack: SpecialistPointBonus { Damage = 80, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 55, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 7, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 5, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 5 }
+- Level   6
+  - Attack: SpecialistPointBonus { Damage = 95, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 66, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 8, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 5, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 6 }
+- Level   7
+  - Attack: SpecialistPointBonus { Damage = 110, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 77, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 9, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 5, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 7 }
+- Level   8
+  - Attack: SpecialistPointBonus { Damage = 125, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 88, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 10, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 5, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 8 }
+- Level   9
+  - Attack: SpecialistPointBonus { Damage = 140, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 99, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 11, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 5, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 9 }
+- Level  10
+  - Attack: SpecialistPointBonus { Damage = 155, HitRate = 10, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 110, MagicDefence = 0, Dodge = 5, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 12, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 10, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 10 }
+- Level  11
+  - Attack: SpecialistPointBonus { Damage = 171, HitRate = 10, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 122, MagicDefence = 0, Dodge = 5, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 13, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 10, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 11 }
+- Level  12
+  - Attack: SpecialistPointBonus { Damage = 187, HitRate = 10, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 134, MagicDefence = 0, Dodge = 5, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 14, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 10, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 12 }
+- Level  13
+  - Attack: SpecialistPointBonus { Damage = 203, HitRate = 10, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 146, MagicDefence = 0, Dodge = 5, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 15, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 10, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 13 }
+- Level  14
+  - Attack: SpecialistPointBonus { Damage = 219, HitRate = 10, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 158, MagicDefence = 0, Dodge = 5, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 16, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 10, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 14 }
+- Level  15
+  - Attack: SpecialistPointBonus { Damage = 235, HitRate = 10, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 170, MagicDefence = 0, Dodge = 5, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 17, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 15, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 15 }
+- Level  16
+  - Attack: SpecialistPointBonus { Damage = 251, HitRate = 10, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 182, MagicDefence = 0, Dodge = 5, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 18, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 15, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 16 }
+- Level  17
+  - Attack: SpecialistPointBonus { Damage = 267, HitRate = 10, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 194, MagicDefence = 0, Dodge = 5, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 19, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 15, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 17 }
+- Level  18
+  - Attack: SpecialistPointBonus { Damage = 283, HitRate = 10, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 206, MagicDefence = 0, Dodge = 5, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 20, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 15, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 18 }
+- Level  19
+  - Attack: SpecialistPointBonus { Damage = 299, HitRate = 10, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 218, MagicDefence = 0, Dodge = 5, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 21, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 15, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 19 }
+- Level  20
+  - Attack: SpecialistPointBonus { Damage = 315, HitRate = 10, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 230, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 22, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 20, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 20 }
+- Level  21
+  - Attack: SpecialistPointBonus { Damage = 332, HitRate = 10, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 243, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 23, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 20, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 21 }
+- Level  22
+  - Attack: SpecialistPointBonus { Damage = 349, HitRate = 10, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 256, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 24, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 20, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 22 }
+- Level  23
+  - Attack: SpecialistPointBonus { Damage = 366, HitRate = 10, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 269, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 25, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 20, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 23 }
+- Level  24
+  - Attack: SpecialistPointBonus { Damage = 383, HitRate = 10, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 282, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 26, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 20, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 24 }
+- Level  25
+  - Attack: SpecialistPointBonus { Damage = 400, HitRate = 10, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 295, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 27, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 25, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 25 }
+- Level  26
+  - Attack: SpecialistPointBonus { Damage = 417, HitRate = 10, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 308, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 28, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 25, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 26 }
+- Level  27
+  - Attack: SpecialistPointBonus { Damage = 434, HitRate = 10, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 321, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 29, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 25, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 27 }
+- Level  28
+  - Attack: SpecialistPointBonus { Damage = 451, HitRate = 10, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 334, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 30, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 25, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 28 }
+- Level  29
+  - Attack: SpecialistPointBonus { Damage = 468, HitRate = 10, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 347, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 31, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 25, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 29 }
+- Level  30
+  - Attack: SpecialistPointBonus { Damage = 490, HitRate = 20, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 360, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 34, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 30, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 30 }
+- Level  31
+  - Attack: SpecialistPointBonus { Damage = 508, HitRate = 20, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 374, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 35, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 30, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 31 }
+- Level  32
+  - Attack: SpecialistPointBonus { Damage = 526, HitRate = 20, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 388, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 36, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 30, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 32 }
+- Level  33
+  - Attack: SpecialistPointBonus { Damage = 544, HitRate = 20, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 402, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 37, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 30, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 33 }
+- Level  34
+  - Attack: SpecialistPointBonus { Damage = 562, HitRate = 20, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 416, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 38, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 30, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 34 }
+- Level  35
+  - Attack: SpecialistPointBonus { Damage = 580, HitRate = 20, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 430, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 39, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 35, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 35 }
+- Level  36
+  - Attack: SpecialistPointBonus { Damage = 598, HitRate = 20, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 444, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 40, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 35, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 36 }
+- Level  37
+  - Attack: SpecialistPointBonus { Damage = 616, HitRate = 20, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 458, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 41, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 35, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 37 }
+- Level  38
+  - Attack: SpecialistPointBonus { Damage = 634, HitRate = 20, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 472, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 42, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 35, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 38 }
+- Level  39
+  - Attack: SpecialistPointBonus { Damage = 652, HitRate = 20, CriticalChance = 2, CriticalRate = 0, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 486, MagicDefence = 0, Dodge = 5, CriticalDodge = 2, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 43, Hp = 0, Mp = 100, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 35, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 10, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 39 }
+- Level  40
+  - Attack: SpecialistPointBonus { Damage = 670, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 500, MagicDefence = 0, Dodge = 5, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 44, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 40, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 40 }
+- Level  41
+  - Attack: SpecialistPointBonus { Damage = 689, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 515, MagicDefence = 0, Dodge = 5, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 45, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 40, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 41 }
+- Level  42
+  - Attack: SpecialistPointBonus { Damage = 708, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 530, MagicDefence = 0, Dodge = 5, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 46, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 40, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 42 }
+- Level  43
+  - Attack: SpecialistPointBonus { Damage = 727, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 545, MagicDefence = 0, Dodge = 5, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 47, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 40, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 43 }
+- Level  44
+  - Attack: SpecialistPointBonus { Damage = 746, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 560, MagicDefence = 0, Dodge = 5, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 48, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 40, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 44 }
+- Level  45
+  - Attack: SpecialistPointBonus { Damage = 765, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 575, MagicDefence = 0, Dodge = 5, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 49, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 50, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 45 }
+- Level  46
+  - Attack: SpecialistPointBonus { Damage = 784, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 590, MagicDefence = 0, Dodge = 5, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 50, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 50, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 46 }
+- Level  47
+  - Attack: SpecialistPointBonus { Damage = 803, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 605, MagicDefence = 0, Dodge = 5, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 51, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 50, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 47 }
+- Level  48
+  - Attack: SpecialistPointBonus { Damage = 822, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 620, MagicDefence = 0, Dodge = 5, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 52, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 50, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 48 }
+- Level  49
+  - Attack: SpecialistPointBonus { Damage = 841, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 635, MagicDefence = 0, Dodge = 5, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 5, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 53, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 50, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 49 }
+- Level  50
+  - Attack: SpecialistPointBonus { Damage = 860, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 650, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 54, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 60, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 50 }
+- Level  51
+  - Attack: SpecialistPointBonus { Damage = 880, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 666, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 56, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 60, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 52 }
+- Level  52
+  - Attack: SpecialistPointBonus { Damage = 900, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 682, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 58, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 60, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 54 }
+- Level  53
+  - Attack: SpecialistPointBonus { Damage = 920, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 698, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 60, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 60, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 56 }
+- Level  54
+  - Attack: SpecialistPointBonus { Damage = 940, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 714, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 62, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 60, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 58 }
+- Level  55
+  - Attack: SpecialistPointBonus { Damage = 960, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 730, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 64, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 70, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 60 }
+- Level  56
+  - Attack: SpecialistPointBonus { Damage = 980, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 746, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 66, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 70, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 62 }
+- Level  57
+  - Attack: SpecialistPointBonus { Damage = 1000, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 762, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 68, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 70, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 64 }
+- Level  58
+  - Attack: SpecialistPointBonus { Damage = 1020, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 778, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 70, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 70, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 66 }
+- Level  59
+  - Attack: SpecialistPointBonus { Damage = 1040, HitRate = 20, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 794, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 100, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 72, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 70, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 68 }
+- Level  60
+  - Attack: SpecialistPointBonus { Damage = 1060, HitRate = 35, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 810, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 76, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 80, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 70 }
+- Level  61
+  - Attack: SpecialistPointBonus { Damage = 1081, HitRate = 35, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 827, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 78, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 80, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 72 }
+- Level  62
+  - Attack: SpecialistPointBonus { Damage = 1102, HitRate = 35, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 844, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 80, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 80, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 74 }
+- Level  63
+  - Attack: SpecialistPointBonus { Damage = 1123, HitRate = 35, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 861, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 82, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 80, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 76 }
+- Level  64
+  - Attack: SpecialistPointBonus { Damage = 1144, HitRate = 35, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 878, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 84, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 80, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 78 }
+- Level  65
+  - Attack: SpecialistPointBonus { Damage = 1165, HitRate = 35, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 895, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 86, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 90, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 80 }
+- Level  66
+  - Attack: SpecialistPointBonus { Damage = 1186, HitRate = 35, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 912, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 88, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 90, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 82 }
+- Level  67
+  - Attack: SpecialistPointBonus { Damage = 1207, HitRate = 35, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 929, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 90, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 90, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 84 }
+- Level  68
+  - Attack: SpecialistPointBonus { Damage = 1228, HitRate = 35, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 946, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 92, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 90, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 86 }
+- Level  69
+  - Attack: SpecialistPointBonus { Damage = 1249, HitRate = 35, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 963, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 94, Hp = 0, Mp = 200, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 90, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 25, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 88 }
+- Level  70
+  - Attack: SpecialistPointBonus { Damage = 1275, HitRate = 50, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 980, MagicDefence = 0, Dodge = 10, CriticalDodge = 7, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 96, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 100, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 90 }
+- Level  71
+  - Attack: SpecialistPointBonus { Damage = 1298, HitRate = 50, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 998, MagicDefence = 0, Dodge = 10, CriticalDodge = 7, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 98, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 100, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 92 }
+- Level  72
+  - Attack: SpecialistPointBonus { Damage = 1321, HitRate = 50, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1016, MagicDefence = 0, Dodge = 10, CriticalDodge = 7, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 100, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 100, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 94 }
+- Level  73
+  - Attack: SpecialistPointBonus { Damage = 1344, HitRate = 50, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1034, MagicDefence = 0, Dodge = 10, CriticalDodge = 7, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 102, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 100, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 96 }
+- Level  74
+  - Attack: SpecialistPointBonus { Damage = 1367, HitRate = 50, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1052, MagicDefence = 0, Dodge = 10, CriticalDodge = 7, Resistance = 0, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 104, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 100, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 98 }
+- Level  75
+  - Attack: SpecialistPointBonus { Damage = 1390, HitRate = 50, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1070, MagicDefence = 0, Dodge = 10, CriticalDodge = 7, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 106, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 115, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 100 }
+- Level  76
+  - Attack: SpecialistPointBonus { Damage = 1413, HitRate = 50, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1088, MagicDefence = 0, Dodge = 10, CriticalDodge = 7, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 108, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 115, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 102 }
+- Level  77
+  - Attack: SpecialistPointBonus { Damage = 1436, HitRate = 50, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1106, MagicDefence = 0, Dodge = 10, CriticalDodge = 7, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 110, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 115, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 104 }
+- Level  78
+  - Attack: SpecialistPointBonus { Damage = 1459, HitRate = 50, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1124, MagicDefence = 0, Dodge = 10, CriticalDodge = 7, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 112, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 115, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 106 }
+- Level  79
+  - Attack: SpecialistPointBonus { Damage = 1482, HitRate = 50, CriticalChance = 2, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1142, MagicDefence = 0, Dodge = 10, CriticalDodge = 7, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 10, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 114, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 115, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 108 }
+- Level  80
+  - Attack: SpecialistPointBonus { Damage = 1505, HitRate = 50, CriticalChance = 5, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1160, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 116, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 130, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 110 }
+- Level  81
+  - Attack: SpecialistPointBonus { Damage = 1529, HitRate = 50, CriticalChance = 5, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1179, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 118, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 130, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 112 }
+- Level  82
+  - Attack: SpecialistPointBonus { Damage = 1553, HitRate = 50, CriticalChance = 5, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1198, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 120, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 130, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 114 }
+- Level  83
+  - Attack: SpecialistPointBonus { Damage = 1577, HitRate = 50, CriticalChance = 5, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1217, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 122, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 130, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 116 }
+- Level  84
+  - Attack: SpecialistPointBonus { Damage = 1601, HitRate = 50, CriticalChance = 5, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1236, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 124, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 130, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 118 }
+- Level  85
+  - Attack: SpecialistPointBonus { Damage = 1625, HitRate = 50, CriticalChance = 5, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1255, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 126, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 145, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 1, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 120 }
+- Level  86
+  - Attack: SpecialistPointBonus { Damage = 1649, HitRate = 50, CriticalChance = 5, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1274, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 128, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 145, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 2, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 122 }
+- Level  87
+  - Attack: SpecialistPointBonus { Damage = 1673, HitRate = 50, CriticalChance = 5, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1293, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 130, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 145, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 3, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 124 }
+- Level  88
+  - Attack: SpecialistPointBonus { Damage = 1697, HitRate = 50, CriticalChance = 5, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1312, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 132, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 145, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 4, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 126 }
+- Level  89
+  - Attack: SpecialistPointBonus { Damage = 1721, HitRate = 50, CriticalChance = 5, CriticalRate = 10, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1331, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 2, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 5, ElementRate = 134, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 145, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 45, MagicDefence = 0, Dodge = 0, CriticalDodge = 4, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 128 }
+- Level  90
+  - Attack: SpecialistPointBonus { Damage = 1745, HitRate = 50, CriticalChance = 5, CriticalRate = 30, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1350, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 5, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 9, ElementRate = 138, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 160, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 70, MagicDefence = 0, Dodge = 0, CriticalDodge = 4, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 130 }
+- Level  91
+  - Attack: SpecialistPointBonus { Damage = 1770, HitRate = 50, CriticalChance = 5, CriticalRate = 30, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1370, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 5, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 9, ElementRate = 140, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 160, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 70, MagicDefence = 0, Dodge = 2, CriticalDodge = 4, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 132 }
+- Level  92
+  - Attack: SpecialistPointBonus { Damage = 1795, HitRate = 50, CriticalChance = 5, CriticalRate = 30, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1390, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 5, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 9, ElementRate = 142, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 160, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 70, MagicDefence = 0, Dodge = 4, CriticalDodge = 4, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 134 }
+- Level  93
+  - Attack: SpecialistPointBonus { Damage = 1820, HitRate = 50, CriticalChance = 5, CriticalRate = 30, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1410, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 5, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 9, ElementRate = 144, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 160, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 70, MagicDefence = 0, Dodge = 6, CriticalDodge = 4, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 136 }
+- Level  94
+  - Attack: SpecialistPointBonus { Damage = 1845, HitRate = 50, CriticalChance = 5, CriticalRate = 30, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1430, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 5, ElementRate = 0, Hp = 300, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 9, ElementRate = 146, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 160, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 70, MagicDefence = 0, Dodge = 8, CriticalDodge = 4, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 138 }
+- Level  95
+  - Attack: SpecialistPointBonus { Damage = 1871, HitRate = 50, CriticalChance = 5, CriticalRate = 30, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1450, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 5, ElementRate = 0, Hp = 600, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 9, ElementRate = 148, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 180, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 70, MagicDefence = 0, Dodge = 10, CriticalDodge = 4, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 140 }
+- Level  96
+  - Attack: SpecialistPointBonus { Damage = 1898, HitRate = 50, CriticalChance = 5, CriticalRate = 30, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1470, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 5, ElementRate = 0, Hp = 600, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 9, ElementRate = 150, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 180, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 70, MagicDefence = 0, Dodge = 12, CriticalDodge = 4, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 142 }
+- Level  97
+  - Attack: SpecialistPointBonus { Damage = 1925, HitRate = 50, CriticalChance = 5, CriticalRate = 30, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1490, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 5, ElementRate = 0, Hp = 600, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 9, ElementRate = 152, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 180, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 70, MagicDefence = 0, Dodge = 14, CriticalDodge = 4, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 144 }
+- Level  98
+  - Attack: SpecialistPointBonus { Damage = 1955, HitRate = 50, CriticalChance = 5, CriticalRate = 30, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1510, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 5, ElementRate = 0, Hp = 600, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 9, ElementRate = 154, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 180, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 70, MagicDefence = 0, Dodge = 16, CriticalDodge = 4, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 146 }
+- Level  99
+  - Attack: SpecialistPointBonus { Damage = 1985, HitRate = 50, CriticalChance = 5, CriticalRate = 30, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 200, Mp = 200, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1530, MagicDefence = 0, Dodge = 20, CriticalDodge = 10, Resistance = 5, ElementRate = 0, Hp = 600, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 15, Dodge = 0, CriticalDodge = 0, Resistance = 9, ElementRate = 156, Hp = 0, Mp = 300, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 180, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 70, MagicDefence = 0, Dodge = 18, CriticalDodge = 4, Resistance = 2, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 148 }
+- Level 100
+  - Attack: SpecialistPointBonus { Damage = 2020, HitRate = 70, CriticalChance = 8, CriticalRate = 50, Defence = 0, MagicDefence = 0, Dodge = 0, CriticalDodge = 0, Resistance = 0, ElementRate = 0, Hp = 400, Mp = 400, HpMpPercent = 0 }
+  - Defence: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 1550, MagicDefence = 0, Dodge = 40, CriticalDodge = 10, Resistance = 10, ElementRate = 0, Hp = 600, Mp = 0, HpMpPercent = 0 }
+  - Element: SpecialistPointBonus { Damage = 0, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 0, MagicDefence = 20, Dodge = 0, CriticalDodge = 0, Resistance = 15, ElementRate = 160, Hp = 0, Mp = 500, HpMpPercent = 0 }
+  - HP/MP: SpecialistPointBonus { Damage = 200, HitRate = 0, CriticalChance = 0, CriticalRate = 0, Defence = 100, MagicDefence = 0, Dodge = 20, CriticalDodge = 5, Resistance = 5, ElementRate = 0, Hp = 0, Mp = 0, HpMpPercent = 150 }
