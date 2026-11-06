@@ -505,6 +505,21 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void BankDocumentation()
+        {
+            var bankService = new BankService.BankService();
+
+            var resultBuilder = new StringBuilder("# Bank Table");
+            resultBuilder.AppendLine();
+            foreach (var reputation in Enum.GetValues(typeof(ReputationType)).Cast<ReputationType>())
+            {
+                resultBuilder.AppendLine($"- {(byte)reputation,2} {reputation,-16} - Rank: {bankService.GetRank(reputation),-8} Withdrawal fee: {bankService.GetWithdrawalFee(reputation)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void DignityShopPriceDocumentation()
         {
             var dignityService = new DignityService.DignityService();
