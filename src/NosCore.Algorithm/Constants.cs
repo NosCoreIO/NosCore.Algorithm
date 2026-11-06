@@ -13,8 +13,9 @@ namespace NosCore.Algorithm
         internal const byte MaxFamilyLevel = 30;
         internal const byte MaxGroupSize = 3;
         internal const byte MaxCellonLevel = 10;
-        internal const byte MaxSpUpgrade = 15;
-        internal const byte MaxEquipmentUpgrade = 10;
+        internal const byte MaxSpUpgrade = 20;
+        internal const byte MaxEquipmentUpgrade = 13;
+        internal const short PityGaugeMaximum = 1000;
         internal static readonly int ClassCount = Enum.GetNames(typeof(CharacterClassType)).Length;
     }
 }

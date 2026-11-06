@@ -1,0 +1,23 @@
+﻿# Low Level Experience Boost Table
+- Level  1 - XP: x3 Job XP: x3
+- Level  2 - XP: x3 Job XP: x3
+- Level  3 - XP: x3 Job XP: x3
+- Level  4 - XP: x3 Job XP: x3
+- Level  5 - XP: x3 Job XP: x3
+- Level  6 - XP: x2 Job XP: x3
+- Level  7 - XP: x2 Job XP: x3
+- Level  8 - XP: x2 Job XP: x3
+- Level  9 - XP: x2 Job XP: x3
+- Level 10 - XP: x2 Job XP: x3
+- Level 11 - XP: x2 Job XP: x3
+- Level 12 - XP: x2 Job XP: x3
+- Level 13 - XP: x2 Job XP: x2
+- Level 14 - XP: x2 Job XP: x2
+- Level 15 - XP: x2 Job XP: x2
+- Level 16 - XP: x2 Job XP: x2
+- Level 17 - XP: x2 Job XP: x2
+- Level 18 - XP: x2 Job XP: x2
+- Level 19 - XP: x1 Job XP: x2
+- Level 20 - XP: x1 Job XP: x2
+- Level 21 - XP: x1 Job XP: x1
+- Level 22 - XP: x1 Job XP: x1
