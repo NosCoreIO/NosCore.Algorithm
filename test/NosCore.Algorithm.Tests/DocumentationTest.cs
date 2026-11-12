@@ -791,5 +791,45 @@ namespace NosCore.Algorithm.Tests
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
         }
+
+        [TestMethod]
+        public void MonsterStatDocumentation()
+        {
+            var service = new MonsterStatService.MonsterStatService(new MateHpService.MateHpService(), new MateMpService.MateMpService());
+
+            // Published stats with the entries' flat modifiers taken off: a race 0 level 55 monster, a race 2
+            // level 41 monster wearing level 44 armour, and a race 5 level 72 archer.
+            Assert.AreEqual(3919, service.GetMaxHp(0, 55));
+            Assert.AreEqual(969, service.GetMaxMp(0, 55));
+            Assert.AreEqual(157, service.GetCloseDefence(0, 55, 55));
+            Assert.AreEqual(171, service.GetDistanceDefence(0, 55, 55));
+            Assert.AreEqual(150, service.GetMagicDefence(0, 55, 55));
+            Assert.AreEqual(301, service.GetDodge(0, 55, 55));
+            Assert.AreEqual(258, service.GetMinimumDamage(0, 55, 55, MonsterStatService.MonsterAttackClass.Melee));
+            Assert.AreEqual(354, service.GetMaximumDamage(0, 55, 55, MonsterStatService.MonsterAttackClass.Melee));
+            Assert.AreEqual(297, service.GetHitRate(0, 55, 55, MonsterStatService.MonsterAttackClass.Melee));
+            Assert.AreEqual(3493, service.GetMaxHp(2, 41));
+            Assert.AreEqual(136, service.GetCloseDefence(2, 41, 44));
+            Assert.AreEqual(430, service.GetHitRate(5, 72, 72, MonsterStatService.MonsterAttackClass.Ranged));
+
+            var resultBuilder = new StringBuilder("# Monster Stat Table");
+            resultBuilder.AppendLine();
+            byte[] races = { 0, 1, 2, 3, 4, 5, 6, 8 };
+            byte[] levels = { 1, 10, 20, 30, 37, 40, 50, 52, 60, 62, 70, 72, 80, 82, 90, 99 };
+            foreach (var race in races)
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## Race {race}");
+                foreach (var level in levels)
+                {
+                    var classes = string.Join(" - ", Enum.GetValues<MonsterStatService.MonsterAttackClass>().Select(attackClass =>
+                        $"{attackClass}: {service.GetMinimumDamage(race, level, level, attackClass)}~{service.GetMaximumDamage(race, level, level, attackClass)} hit {service.GetHitRate(race, level, level, attackClass)}"));
+                    resultBuilder.AppendLine(
+                        $"- Level {level,2} - HP: {service.GetMaxHp(race, level)} - MP: {service.GetMaxMp(race, level)} - Defence: {service.GetCloseDefence(race, level, level)}/{service.GetDistanceDefence(race, level, level)}/{service.GetMagicDefence(race, level, level)} - Dodge: {service.GetDodge(race, level, level)} - {classes}");
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
     }
 }
