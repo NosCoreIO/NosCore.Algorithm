@@ -11,6 +11,9 @@ namespace NosCore.Algorithm.SumService
     /// </summary>
     public class SumService : ISumService
     {
+        /// <inheritdoc />
+        public byte MaxLevel => Constants.MaxSumLevel;
+
         internal static readonly byte[] SuccessRate = { 100, 100, 85, 70, 50, 20 };
         internal static readonly ushort[] Price = { 1500, 3000, 6000, 12000, 24000, 48000 };
         internal static readonly byte[] SandCost = { 5, 10, 15, 20, 25, 30 };

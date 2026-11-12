@@ -12,6 +12,11 @@ namespace NosCore.Algorithm.SumService
     public interface ISumService
     {
         /// <summary>
+        /// Gets the highest level the sum tables cover; a combined level above it cannot be summed
+        /// </summary>
+        byte MaxLevel => Constants.MaxSumLevel;
+
+        /// <summary>
         /// Gets the success rate for a summoning operation at a specific level
         /// </summary>
         /// <param name="level">The summoning level</param>
