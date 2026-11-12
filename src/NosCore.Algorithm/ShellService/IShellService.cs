@@ -51,5 +51,21 @@ namespace NosCore.Algorithm.ShellService
         /// <param name="rarity">The shell rarity</param>
         /// <returns>The pearl count</returns>
         int GetIdentificationCost(byte shellLevel, byte rarity);
+
+        /// <summary>
+        /// Gets how many bottles of Perfume taking over an item bound to another player costs
+        /// </summary>
+        /// <param name="itemLevel">The item's level</param>
+        /// <param name="rarity">The item's rarity, as the client holds it (a negative rarity wraps above 8)</param>
+        /// <param name="heroic">Whether the item is a heroic item</param>
+        /// <returns>The perfume count, 0 for a level or rarity the client gives no count</returns>
+        int GetPerfumeCost(byte itemLevel, byte rarity, bool heroic);
+
+        /// <summary>
+        /// Gets the gold that taking over an item bound to another player costs on top of the Perfume
+        /// </summary>
+        /// <param name="itemLevel">The item's level</param>
+        /// <returns>The gold, 0 for level 0 and from level 100</returns>
+        int GetPerfumeGoldCost(byte itemLevel);
     }
 }

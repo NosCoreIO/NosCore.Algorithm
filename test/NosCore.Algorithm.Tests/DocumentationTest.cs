@@ -563,6 +563,20 @@ namespace NosCore.Algorithm.Tests
                 resultBuilder.AppendLine($"- Level {level,2}: {string.Join(" ", Enumerable.Range(1, 7).Select(r => shellService.GetIdentificationCost(level, (byte)r)))}");
             }
 
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("## Perfume cost (rarity 0 to 8, then gold)");
+            foreach (byte level in new byte[] { 0, 1, 10, 11, 20, 21, 39, 40, 49, 50, 59, 60, 69, 70, 79, 80, 89, 90, 99, 100 })
+            {
+                resultBuilder.AppendLine($"- Level {level,3}: {string.Join(" ", Enumerable.Range(0, 9).Select(r => shellService.GetPerfumeCost(level, (byte)r, false)))} - {shellService.GetPerfumeGoldCost(level)} gold");
+            }
+
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("## Heroic perfume cost (rarity 0 to 8)");
+            foreach (byte level in new byte[] { 1, 50, 99 })
+            {
+                resultBuilder.AppendLine($"- Level {level,2}: {string.Join(" ", Enumerable.Range(0, 9).Select(r => shellService.GetPerfumeCost(level, (byte)r, true)))}");
+            }
+
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
         }
 
