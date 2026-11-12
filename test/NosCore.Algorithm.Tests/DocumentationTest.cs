@@ -291,6 +291,26 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void SkillPointDocumentation()
+        {
+            var skillPointService = new SkillPointService.SkillPointService();
+
+            var resultBuilder = new StringBuilder("# Skill Point (CP) Table");
+            foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## Class {@class}");
+                for (byte level = 1; level < (@class == CharacterClassType.Adventurer ? 21 : 81); level++)
+                {
+                    resultBuilder.AppendLine(
+                        $"- Job level {level,2} - CP: {skillPointService.GetSkillPoints(@class, level)}");
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void HitDodgeDocumentation()
         {
             var hitDodgeService = new HitDodgeService.HitDodgeService();
