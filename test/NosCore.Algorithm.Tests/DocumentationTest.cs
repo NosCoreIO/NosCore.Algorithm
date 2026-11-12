@@ -757,5 +757,39 @@ namespace NosCore.Algorithm.Tests
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
         }
+        [TestMethod]
+        public void MateHpMpDocumentation()
+        {
+            var hpService = new MateHpService.MateHpService();
+            var mpService = new MateMpService.MateMpService();
+
+            // Recorded pets: a race 3 partner with factors 8 and 6 shows 2165/877 at level 28, a race
+            // 2 pet with factors 12 and 0 shows 10638/708 at level 48 once its flat 500 HP is added.
+            Assert.AreEqual(2165, hpService.GetHp(3, 28, 8));
+            Assert.AreEqual(877, mpService.GetMp(3, 28, 6));
+            Assert.AreEqual(10638, hpService.GetHp(2, 48, 12) + 500);
+            Assert.AreEqual(708, mpService.GetMp(2, 48, 0));
+
+            var resultBuilder = new StringBuilder("# Mate HP/MP Table");
+            resultBuilder.AppendLine();
+            byte[] races = { 0, 1, 2, 3, 4, 5, 6, 8 };
+            short[] factors = { 0, 4, 8, 12 };
+            byte[] levels = { 1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 99 };
+            foreach (var race in races)
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## Race {race}");
+                foreach (var factor in factors)
+                {
+                    foreach (var level in levels)
+                    {
+                        resultBuilder.AppendLine(
+                            $"- Factor {factor,2} - Level {level,2} - HP: {hpService.GetHp(race, level, factor)} - MP: {mpService.GetMp(race, level, factor)}");
+                    }
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
     }
 }
