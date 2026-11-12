@@ -831,5 +831,61 @@ namespace NosCore.Algorithm.Tests
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
         }
+
+        [TestMethod]
+        public void MateStatDocumentation()
+        {
+            var service = new MateStatService.MateStatService();
+            var melee = MonsterStatService.MonsterAttackClass.Melee;
+            var ranged = MonsterStatService.MonsterAttackClass.Ranged;
+            var magic = MonsterStatService.MonsterAttackClass.Magic;
+
+            // Published pet stats with the entries' flat modifiers taken off: a level 40 race 2 melee pet growing
+            // 12/5/2, a level 99 race 2 archer growing 4/12/0 and a level 99 race 0 melee pet growing 1/10/0.
+            var brawler = new MateStatService.MateGrowth(12, 5, 2);
+            Assert.AreEqual(150, service.GetCloseDefence(2, 40, brawler));
+            Assert.AreEqual(140, service.GetDistanceDefence(2, 40, brawler));
+            Assert.AreEqual(115, service.GetMagicDefence(2, 40, brawler));
+            Assert.AreEqual(248, service.GetDodge(2, 40, brawler));
+            Assert.AreEqual(259, service.GetMinimumDamage(2, 40, melee, brawler));
+            Assert.AreEqual(331, service.GetMaximumDamage(2, 40, melee, brawler));
+            Assert.AreEqual(244, service.GetHitRate(2, 40, melee, brawler));
+            var archer = new MateStatService.MateGrowth(4, 12, 0);
+            Assert.AreEqual(314, service.GetCloseDefence(2, 99, archer));
+            Assert.AreEqual(357, service.GetDistanceDefence(2, 99, archer));
+            Assert.AreEqual(641, service.GetDodge(2, 99, archer));
+            Assert.AreEqual(558, service.GetMinimumDamage(2, 99, ranged, archer));
+            Assert.AreEqual(724, service.GetMaximumDamage(2, 99, ranged, archer));
+            Assert.AreEqual(862, service.GetHitRate(2, 99, ranged, archer));
+            var sharpshooter = new MateStatService.MateGrowth(1, 10, 0);
+            Assert.AreEqual(275, service.GetCloseDefence(0, 99, sharpshooter));
+            Assert.AreEqual(346, service.GetDistanceDefence(0, 99, sharpshooter));
+            Assert.AreEqual(619, service.GetDodge(0, 99, sharpshooter));
+            Assert.AreEqual(452, service.GetMinimumDamage(0, 99, melee, sharpshooter));
+            Assert.AreEqual(615, service.GetHitRate(0, 99, melee, sharpshooter));
+            Assert.AreEqual(136, service.GetMagicDefence(2, 40, new MateStatService.MateGrowth(4, 0, 13)));
+            Assert.AreEqual(235, service.GetMinimumDamage(2, 40, magic, new MateStatService.MateGrowth(4, 0, 13)));
+
+            var resultBuilder = new StringBuilder("# Pet Stat Table");
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("Race 0, before the entry's flat modifiers, for a few growth factors (melee/ranged/magic).");
+            MateStatService.MateGrowth[] growths = { new(0, 0, 0), new(10, 0, 0), new(0, 10, 0), new(0, 0, 10), new(5, 5, 5) };
+            byte[] levels = { 1, 2, 10, 20, 40, 60, 80, 99 };
+            foreach (var growth in growths)
+            {
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine($"## Growth {growth.Melee}/{growth.Ranged}/{growth.Magic}");
+                foreach (var level in levels)
+                {
+                    var classes = string.Join(" - ", Enum.GetValues<MonsterStatService.MonsterAttackClass>().Select(attackClass =>
+                        $"{attackClass}: {service.GetMinimumDamage(0, level, attackClass, growth)}~{service.GetMaximumDamage(0, level, attackClass, growth)} hit {service.GetHitRate(0, level, attackClass, growth)}"));
+                    resultBuilder.AppendLine(
+                        $"- Level {level,2} - Defence: {service.GetCloseDefence(0, level, growth)}/{service.GetDistanceDefence(0, level, growth)}/{service.GetMagicDefence(0, level, growth)} - Dodge: {service.GetDodge(0, level, growth)} - {classes}");
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
     }
 }
