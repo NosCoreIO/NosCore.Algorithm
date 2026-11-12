@@ -216,6 +216,28 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void RecoveryRateDocumentation()
+        {
+            var recoveryRateService = new RecoveryRateService.RecoveryRateService();
+
+            var resultBuilder = new StringBuilder("# Recovery Rate Table");
+            resultBuilder.AppendLine();
+            foreach (var @class in Enum.GetValues(typeof(CharacterClassType)).Cast<CharacterClassType>())
+            {
+                var hp = recoveryRateService.GetRestingHpRate(@class);
+                var mp = recoveryRateService.GetRestingMpRate(@class);
+                resultBuilder.AppendLine($"## {@class} - Resting HP: {hp} - Resting MP: {mp}");
+                for (byte level = 1; level < 100; level++)
+                {
+                    resultBuilder.AppendLine(
+                        $"- Level {level} - Standing HP: {recoveryRateService.GetStandingRate(hp, level)} - Standing MP: {recoveryRateService.GetStandingRate(mp, level)}");
+                }
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void SpeedDocumentation()
         {
             var speedService = new SpeedService.SpeedService();
