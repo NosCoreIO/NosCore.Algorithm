@@ -417,7 +417,7 @@ namespace NosCore.Algorithm.Tests
 
             var resultBuilder = new StringBuilder($"# Sum Table");
             resultBuilder.AppendLine();
-            for (byte i = 0; i < 6; i++)
+            for (byte i = 0; i <= sumService.MaxLevel; i++)
             {
                 resultBuilder.AppendLine(
                     $"- Sum {i + 1} - Rate: {sumService.GetSuccessRate(i)}% - Cost: {sumService.GetPrice(i)} - Sand: {sumService.GetSandCost(i)}");
