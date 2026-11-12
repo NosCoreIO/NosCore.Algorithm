@@ -45,7 +45,7 @@ namespace NosCore.Algorithm.DamageService
                 _minDamage[(byte)CharacterClassType.Swordsman, i] = _minDamage[(byte)CharacterClassType.Swordsman, i - 1] + swordmanMinUp;
 
                 int archerMinUp;
-                if ((i - 1) % 10 == 0 || (i - 3) % 10 == 0 || (i - 5) % 10 == 0 || (i - 8) % 10 == 0)
+                if ((i - 1) % 10 == 0 || (i - 3) % 10 == 0 || (i - 6) % 10 == 0 || (i - 8) % 10 == 0)
                 {
                     archerMinUp = 1;
                 }

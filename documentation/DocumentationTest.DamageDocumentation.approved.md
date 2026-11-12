@@ -207,7 +207,7 @@
 - Level  3 - Damage Min: 63 Damage Max: 63
 - Level  4 - Damage Min: 64 Damage Max: 64
 - Level  5 - Damage Min: 66 Damage Max: 66
-- Level  6 - Damage Min: 67 Damage Max: 67
+- Level  6 - Damage Min: 68 Damage Max: 68
 - Level  7 - Damage Min: 69 Damage Max: 69
 - Level  8 - Damage Min: 71 Damage Max: 71
 - Level  9 - Damage Min: 72 Damage Max: 72
@@ -217,7 +217,7 @@
 - Level 13 - Damage Min: 79 Damage Max: 79
 - Level 14 - Damage Min: 80 Damage Max: 80
 - Level 15 - Damage Min: 82 Damage Max: 82
-- Level 16 - Damage Min: 83 Damage Max: 83
+- Level 16 - Damage Min: 84 Damage Max: 84
 - Level 17 - Damage Min: 85 Damage Max: 85
 - Level 18 - Damage Min: 87 Damage Max: 87
 - Level 19 - Damage Min: 88 Damage Max: 88
@@ -227,7 +227,7 @@
 - Level 23 - Damage Min: 95 Damage Max: 95
 - Level 24 - Damage Min: 96 Damage Max: 96
 - Level 25 - Damage Min: 98 Damage Max: 98
-- Level 26 - Damage Min: 99 Damage Max: 99
+- Level 26 - Damage Min: 100 Damage Max: 100
 - Level 27 - Damage Min: 101 Damage Max: 101
 - Level 28 - Damage Min: 103 Damage Max: 103
 - Level 29 - Damage Min: 104 Damage Max: 104
@@ -237,7 +237,7 @@
 - Level 33 - Damage Min: 111 Damage Max: 111
 - Level 34 - Damage Min: 112 Damage Max: 112
 - Level 35 - Damage Min: 114 Damage Max: 114
-- Level 36 - Damage Min: 115 Damage Max: 115
+- Level 36 - Damage Min: 116 Damage Max: 116
 - Level 37 - Damage Min: 117 Damage Max: 117
 - Level 38 - Damage Min: 119 Damage Max: 119
 - Level 39 - Damage Min: 120 Damage Max: 120
@@ -247,7 +247,7 @@
 - Level 43 - Damage Min: 127 Damage Max: 127
 - Level 44 - Damage Min: 128 Damage Max: 128
 - Level 45 - Damage Min: 130 Damage Max: 130
-- Level 46 - Damage Min: 131 Damage Max: 131
+- Level 46 - Damage Min: 132 Damage Max: 132
 - Level 47 - Damage Min: 133 Damage Max: 133
 - Level 48 - Damage Min: 135 Damage Max: 135
 - Level 49 - Damage Min: 136 Damage Max: 136
@@ -257,7 +257,7 @@
 - Level 53 - Damage Min: 143 Damage Max: 143
 - Level 54 - Damage Min: 144 Damage Max: 144
 - Level 55 - Damage Min: 146 Damage Max: 146
-- Level 56 - Damage Min: 147 Damage Max: 147
+- Level 56 - Damage Min: 148 Damage Max: 148
 - Level 57 - Damage Min: 149 Damage Max: 149
 - Level 58 - Damage Min: 151 Damage Max: 151
 - Level 59 - Damage Min: 152 Damage Max: 152
@@ -267,7 +267,7 @@
 - Level 63 - Damage Min: 159 Damage Max: 159
 - Level 64 - Damage Min: 160 Damage Max: 160
 - Level 65 - Damage Min: 162 Damage Max: 162
-- Level 66 - Damage Min: 163 Damage Max: 163
+- Level 66 - Damage Min: 164 Damage Max: 164
 - Level 67 - Damage Min: 165 Damage Max: 165
 - Level 68 - Damage Min: 167 Damage Max: 167
 - Level 69 - Damage Min: 168 Damage Max: 168
@@ -277,7 +277,7 @@
 - Level 73 - Damage Min: 175 Damage Max: 175
 - Level 74 - Damage Min: 176 Damage Max: 176
 - Level 75 - Damage Min: 178 Damage Max: 178
-- Level 76 - Damage Min: 179 Damage Max: 179
+- Level 76 - Damage Min: 180 Damage Max: 180
 - Level 77 - Damage Min: 181 Damage Max: 181
 - Level 78 - Damage Min: 183 Damage Max: 183
 - Level 79 - Damage Min: 184 Damage Max: 184
@@ -287,7 +287,7 @@
 - Level 83 - Damage Min: 191 Damage Max: 191
 - Level 84 - Damage Min: 192 Damage Max: 192
 - Level 85 - Damage Min: 194 Damage Max: 194
-- Level 86 - Damage Min: 195 Damage Max: 195
+- Level 86 - Damage Min: 196 Damage Max: 196
 - Level 87 - Damage Min: 197 Damage Max: 197
 - Level 88 - Damage Min: 199 Damage Max: 199
 - Level 89 - Damage Min: 200 Damage Max: 200
@@ -297,7 +297,7 @@
 - Level 93 - Damage Min: 207 Damage Max: 207
 - Level 94 - Damage Min: 208 Damage Max: 208
 - Level 95 - Damage Min: 210 Damage Max: 210
-- Level 96 - Damage Min: 211 Damage Max: 211
+- Level 96 - Damage Min: 212 Damage Max: 212
 - Level 97 - Damage Min: 213 Damage Max: 213
 - Level 98 - Damage Min: 215 Damage Max: 215
 - Level 99 - Damage Min: 216 Damage Max: 216
