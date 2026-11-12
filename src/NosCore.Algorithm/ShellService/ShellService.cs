@@ -144,5 +144,47 @@ namespace NosCore.Algorithm.ShellService
         {
             return shellLevel / 10 + rarity;
         }
+
+        /// <inheritdoc />
+        public int GetPerfumeCost(byte itemLevel, byte rarity, bool heroic)
+        {
+            if (heroic)
+            {
+                return itemLevel + HeroicPerfumePerRarity * rarity;
+            }
+
+            var bracket = Array.FindLastIndex(PerfumeLevels, l => l <= itemLevel);
+            return bracket < 0 || rarity >= PerfumeByRarity[bracket].Length ? 0 : PerfumeByRarity[bracket][rarity];
+        }
+
+        /// <inheritdoc />
+        public int GetPerfumeGoldCost(byte itemLevel)
+        {
+            var bracket = Array.FindLastIndex(PerfumeLevels, l => l <= itemLevel);
+            return bracket < 0 ? 0 : PerfumeGold[bracket];
+        }
+
+        private const int HeroicPerfumePerRarity = 40;
+
+        // The client's perfume window computes both costs itself. Each entry is the first item level
+        // of a bracket; level 100 and above costs nothing, like level 0.
+        private static readonly byte[] PerfumeLevels = { 1, 11, 21, 40, 50, 60, 70, 80, 90, 100 };
+
+        private static readonly int[] PerfumeGold = { 1000, 2000, 5000, 8000, 10000, 12500, 15000, 17500, 20000, 0 };
+
+        // By rarity 0 to 7; rarity 8 and above costs no perfume.
+        private static readonly int[][] PerfumeByRarity =
+        {
+            new[] { 0, 0, 0, 0, 0, 0, 0, 0 },
+            new[] { 0, 0, 0, 0, 0, 0, 0, 0 },
+            new[] { 0, 0, 0, 0, 5, 5, 5, 10 },
+            new[] { 0, 0, 0, 5, 5, 10, 20, 40 },
+            new[] { 0, 0, 5, 10, 10, 20, 40, 80 },
+            new[] { 0, 5, 10, 10, 20, 40, 80, 120 },
+            new[] { 0, 10, 10, 20, 40, 80, 120, 160 },
+            new[] { 0, 10, 20, 40, 80, 120, 160, 200 },
+            new[] { 0, 20, 40, 80, 120, 160, 200, 300 },
+            Array.Empty<int>(),
+        };
     }
 }
