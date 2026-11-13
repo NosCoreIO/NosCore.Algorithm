@@ -767,6 +767,21 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void MonsterLevelDamageDocumentation()
+        {
+            var monsterLevelDamageService = new MonsterLevelDamageService.MonsterLevelDamageService();
+
+            var resultBuilder = new StringBuilder("# Monster Level Damage Table");
+            resultBuilder.AppendLine();
+            for (byte level = 1; level <= 99; level++)
+            {
+                resultBuilder.AppendLine($"- Monster level {level}: +{monsterLevelDamageService.GetExtraDamage(level)} damage");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void LevelPenaltyDocumentation()
         {
             var levelPenaltyService = new LevelPenaltyService.LevelPenaltyService();
