@@ -700,6 +700,26 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void IceBreakerRewardDocumentation()
+        {
+            var rewardService = new IceBreakerRewardService.IceBreakerRewardService();
+
+            var resultBuilder = new StringBuilder("# Icebreaker Reward Table");
+            resultBuilder.AppendLine();
+            for (var bracket = 0; bracket < rewardService.BracketCount; bracket++)
+            {
+                resultBuilder.AppendLine($"- Levels {rewardService.GetLevelMinimum(bracket),2}-{rewardService.GetLevelMaximum(bracket),2} - Gold: {rewardService.GetGold(bracket),5}");
+            }
+
+            for (byte level = 1; level < 100; level++)
+            {
+                resultBuilder.AppendLine($"- Level {level,2} - Reputation: {rewardService.GetReputation(level),4}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void DignityShopPriceDocumentation()
         {
             var dignityService = new DignityService.DignityService();
