@@ -216,6 +216,22 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void MonsterGoldDocumentation()
+        {
+            var monsterGoldService = new MonsterGoldService.MonsterGoldService();
+
+            var resultBuilder = new StringBuilder("# Monster Gold Drop Table");
+            resultBuilder.AppendLine();
+            for (byte level = 1; level <= 99; level++)
+            {
+                var (min, max) = monsterGoldService.GetGoldDrop(level);
+                resultBuilder.AppendLine($"- Monster level {level}: {min} - {max} gold");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void RecoveryRateDocumentation()
         {
             var recoveryRateService = new RecoveryRateService.RecoveryRateService();
