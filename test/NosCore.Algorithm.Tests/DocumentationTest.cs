@@ -685,6 +685,21 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void InstantCombatRewardDocumentation()
+        {
+            var rewardService = new InstantCombatRewardService.InstantCombatRewardService();
+
+            var resultBuilder = new StringBuilder("# Instant Combat Reward Table");
+            resultBuilder.AppendLine();
+            for (byte level = 1; level < 100; level++)
+            {
+                resultBuilder.AppendLine($"- Level {level,2} - Reputation: {rewardService.GetReputation(level),5} Gold: {rewardService.GetGold(level),6} SP points: {rewardService.GetSpAdditionPoints(level),5}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void DignityShopPriceDocumentation()
         {
             var dignityService = new DignityService.DignityService();
