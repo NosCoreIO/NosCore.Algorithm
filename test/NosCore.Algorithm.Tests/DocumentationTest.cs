@@ -1009,5 +1009,39 @@ namespace NosCore.Algorithm.Tests
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
         }
+        [TestMethod]
+        public void UpgradeBonusDocumentation()
+        {
+            var service = new UpgradeBonusService.UpgradeBonusService();
+            Assert.AreEqual(2.0, service.GetUpgradeBonus(10));
+
+            var resultBuilder = new StringBuilder("# Upgrade Bonus Table");
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("Fraction added to the weapon's damage, or the armour's defence, of the side that is ahead on upgrades.");
+            for (var lead = 0; lead <= 12; lead++)
+            {
+                resultBuilder.AppendLine($"- Ahead by {lead}: {service.GetUpgradeBonus(lead)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
+        public void DodgeChanceDocumentation()
+        {
+            var service = new DodgeChanceService.DodgeChanceService();
+
+            var resultBuilder = new StringBuilder("# Dodge Chance Table");
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("Chance in percent that a monster dodges, by its dodge against an attacker with 100 hit rate.");
+            for (var dodge = 0; dodge <= 600; dodge += 25)
+            {
+                resultBuilder.AppendLine($"- Dodge {dodge}: {service.GetDodgeChance(dodge, 100):0.##}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
     }
 }
