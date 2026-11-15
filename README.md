@@ -25,8 +25,10 @@ dotnet add package NosCore.Algorithm
 Each curve is an `I<Thing>Service` with its `<Thing>Service` implementation, ready to register in a container:
 
 ```csharp
+using NosCore.Algorithm.ExperienceService;
+
 IExperienceService experience = new ExperienceService();
-long toLevel = experience.GetExperience(level);
+long toLevelUp = experience.GetExperience(10);
 ```
 
 The ceilings (maximum level, job level, hero level and so on) are in
