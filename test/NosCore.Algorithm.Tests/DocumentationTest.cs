@@ -541,6 +541,21 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void PartnerSkillRankDocumentation()
+        {
+            var partnerSkillRankService = new PartnerSkillRankService.PartnerSkillRankService();
+
+            var resultBuilder = new StringBuilder("# Partner Skill Rank Table");
+            resultBuilder.AppendLine();
+            for (var rank = partnerSkillRankService.MinRank; rank <= partnerSkillRankService.MaxRank; rank++)
+            {
+                resultBuilder.AppendLine($"- Rank {rank} - Weight: {partnerSkillRankService.GetWeight(rank)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void ShellDocumentation()
         {
             var shellService = new ShellService.ShellService();
