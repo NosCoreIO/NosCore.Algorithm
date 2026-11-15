@@ -728,7 +728,7 @@ namespace NosCore.Algorithm.Tests
             resultBuilder.AppendLine();
             foreach (var dignity in Enum.GetValues(typeof(DignityType)).Cast<DignityType>())
             {
-                resultBuilder.AppendLine($"- {dignity,-11} - Price: x{dignityService.GetShopPriceMultiplier(dignity)}");
+                resultBuilder.AppendLine($"- {dignity,-11} - Price: x{dignityService.GetShopPriceMultiplier(dignity)} - In Glacernon: x{dignityService.GetShopPriceMultiplier(dignity, true)}");
             }
 
             Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
