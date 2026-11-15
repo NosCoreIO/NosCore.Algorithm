@@ -1,4 +1,4 @@
-﻿using NosCore.Shared.Enumerations;
+using NosCore.Shared.Enumerations;
 using System;
 using System.Collections.Generic;
 using System.Text;
