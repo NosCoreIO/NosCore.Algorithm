@@ -16,7 +16,7 @@
     <Version>5.2.0</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>NosCore's Algorithm</Description>
-    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <Company>NosCore</Company>
     <PackageIcon>icon.png</PackageIcon>
