@@ -33,5 +33,13 @@ namespace NosCore.Algorithm.DignityService
         /// <param name="level">The buyer's dignity level type</param>
         /// <returns>The price multiplier</returns>
         double GetShopPriceMultiplier(DignityType level);
+
+        /// <summary>
+        /// Gets the multiplier applied to NPC shop prices for a dignity level, in Glacernon or elsewhere
+        /// </summary>
+        /// <param name="level">The buyer's dignity level type</param>
+        /// <param name="inGlacernon">Whether the shop stands in Glacernon, where every price is raised</param>
+        /// <returns>The price multiplier</returns>
+        double GetShopPriceMultiplier(DignityType level, bool inGlacernon);
     }
 }
