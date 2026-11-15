@@ -1,4 +1,4 @@
-﻿using NosCore.Shared.Enumerations;
+using NosCore.Shared.Enumerations;
 
 namespace NosCore.Algorithm.DistanceDefenceService
 {
