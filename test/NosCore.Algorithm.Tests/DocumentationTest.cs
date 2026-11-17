@@ -735,6 +735,21 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void DignityLossDocumentation()
+        {
+            var dignityService = new DignityService.DignityService();
+
+            var resultBuilder = new StringBuilder("# Dignity Loss Table");
+            resultBuilder.AppendLine();
+            for (byte level = 1; level < 100; level++)
+            {
+                resultBuilder.AppendLine($"- {level,2} - Loss: {dignityService.GetDignityLoss(level)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void DignityShopPriceDocumentation()
         {
             var dignityService = new DignityService.DignityService();
