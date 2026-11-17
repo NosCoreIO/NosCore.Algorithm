@@ -28,6 +28,13 @@ namespace NosCore.Algorithm.DignityService
         (short, short) GetDignity(DignityType level);
 
         /// <summary>
+        /// Gets the dignity lost on dying or failing a time-space
+        /// </summary>
+        /// <param name="level">The character's level</param>
+        /// <returns>The dignity lost, equal to the level up to a cap</returns>
+        short GetDignityLoss(byte level);
+
+        /// <summary>
         /// Gets the multiplier applied to NPC shop prices for a dignity level
         /// </summary>
         /// <param name="level">The buyer's dignity level type</param>
