@@ -25,6 +25,9 @@ namespace NosCore.Algorithm
         internal const short MaxDignityLoss = 50;
         internal const byte TimeSpacePenaltyPerLevel = 2;
         internal const byte MaxTimeSpacePenalty = 100;
+        internal const byte TimeSpaceExperiencePerLevel = 3;
+        internal const byte TimeSpaceJobExperienceNumerator = 21;
+        internal const byte TimeSpaceJobExperienceDenominator = 4;
         internal static readonly int ClassCount = Enum.GetNames(typeof(CharacterClassType)).Length;
     }
 }
