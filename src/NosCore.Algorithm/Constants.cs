@@ -23,6 +23,8 @@ namespace NosCore.Algorithm
         internal const byte MaxSumLevel = 5;
         internal const byte MaxPartnerSkillRank = 7;
         internal const short MaxDignityLoss = 50;
+        internal const byte TimeSpacePenaltyPerLevel = 2;
+        internal const byte MaxTimeSpacePenalty = 100;
         internal static readonly int ClassCount = Enum.GetNames(typeof(CharacterClassType)).Length;
     }
 }
