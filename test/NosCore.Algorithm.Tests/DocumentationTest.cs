@@ -556,6 +556,25 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void PartnerAgilityDocumentation()
+        {
+            var partnerAgilityService = new PartnerAgilityService.PartnerAgilityService();
+
+            var resultBuilder = new StringBuilder("# Partner Agility Table");
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine($"Full agility: {partnerAgilityService.MaxAgility}");
+            for (byte playerLevel = 1; playerLevel < 100; playerLevel++)
+            {
+                var gains = Enumerable.Range(1, 99)
+                    .GroupBy(monsterLevel => partnerAgilityService.GetAgilityGain(playerLevel, (byte)monsterLevel))
+                    .Select(g => $"{g.Key} from monster level {g.Min()} to {g.Max()}");
+                resultBuilder.AppendLine($"- Player level {playerLevel,2} - {string.Join(", ", gains)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void ShellDocumentation()
         {
             var shellService = new ShellService.ShellService();
