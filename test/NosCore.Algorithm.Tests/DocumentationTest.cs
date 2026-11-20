@@ -830,6 +830,26 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void TimeSpacePenaltyDocumentation()
+        {
+            var timeSpacePenaltyService = new TimeSpacePenaltyService.TimeSpacePenaltyService();
+
+            var resultBuilder = new StringBuilder("# Time-Space Penalty Table");
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("Percentage of the time-space points lost, by how far the character is above the time-space's minimum level.");
+            for (var difference = -2; difference <= 55; difference++)
+            {
+                const byte levelMinimum = 30;
+                var level = (byte)(levelMinimum + difference);
+                resultBuilder.AppendLine(
+                    $"- {difference,3} level(s) above the minimum - Penalty: {timeSpacePenaltyService.GetPointPenalty(level, levelMinimum)}%");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void RarityPointDocumentation()
         {
             var rarityPointService = new RarityPointService.RarityPointService();
