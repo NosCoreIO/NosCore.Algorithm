@@ -22,6 +22,7 @@ namespace NosCore.Algorithm
         internal const byte MaxSpPerfection = 100;
         internal const byte MaxSumLevel = 5;
         internal const byte MaxPartnerSkillRank = 7;
+        internal const byte MaxPartnerAgility = 100;
         internal const short MaxDignityLoss = 50;
         internal const byte TimeSpacePenaltyPerLevel = 2;
         internal const byte MaxTimeSpacePenalty = 100;

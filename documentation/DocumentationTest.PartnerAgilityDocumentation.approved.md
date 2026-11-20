@@ -1,0 +1,101 @@
+﻿# Partner Agility Table
+Full agility: 100
+- Player level  1 - 2 from monster level 1 to 99
+- Player level  2 - 2 from monster level 1 to 99
+- Player level  3 - 2 from monster level 1 to 99
+- Player level  4 - 2 from monster level 1 to 99
+- Player level  5 - 2 from monster level 1 to 99
+- Player level  6 - 2 from monster level 1 to 99
+- Player level  7 - 2 from monster level 1 to 99
+- Player level  8 - 2 from monster level 1 to 99
+- Player level  9 - 2 from monster level 1 to 99
+- Player level 10 - 2 from monster level 1 to 99
+- Player level 11 - 2 from monster level 1 to 99
+- Player level 12 - 2 from monster level 1 to 99
+- Player level 13 - 2 from monster level 1 to 99
+- Player level 14 - 2 from monster level 1 to 99
+- Player level 15 - 2 from monster level 1 to 99
+- Player level 16 - 1 from monster level 1 to 1, 2 from monster level 2 to 99
+- Player level 17 - 1 from monster level 1 to 2, 2 from monster level 3 to 99
+- Player level 18 - 1 from monster level 1 to 3, 2 from monster level 4 to 99
+- Player level 19 - 1 from monster level 1 to 4, 2 from monster level 5 to 99
+- Player level 20 - 1 from monster level 1 to 5, 2 from monster level 6 to 99
+- Player level 21 - 1 from monster level 1 to 6, 2 from monster level 7 to 99
+- Player level 22 - 1 from monster level 1 to 7, 2 from monster level 8 to 99
+- Player level 23 - 1 from monster level 1 to 8, 2 from monster level 9 to 99
+- Player level 24 - 1 from monster level 1 to 9, 2 from monster level 10 to 99
+- Player level 25 - 1 from monster level 1 to 10, 2 from monster level 11 to 99
+- Player level 26 - 1 from monster level 1 to 11, 2 from monster level 12 to 99
+- Player level 27 - 1 from monster level 1 to 12, 2 from monster level 13 to 99
+- Player level 28 - 1 from monster level 1 to 13, 2 from monster level 14 to 99
+- Player level 29 - 1 from monster level 1 to 14, 2 from monster level 15 to 99
+- Player level 30 - 1 from monster level 1 to 15, 2 from monster level 16 to 99
+- Player level 31 - 0 from monster level 1 to 1, 1 from monster level 2 to 16, 2 from monster level 17 to 99
+- Player level 32 - 0 from monster level 1 to 2, 1 from monster level 3 to 17, 2 from monster level 18 to 99
+- Player level 33 - 0 from monster level 1 to 3, 1 from monster level 4 to 18, 2 from monster level 19 to 99
+- Player level 34 - 0 from monster level 1 to 4, 1 from monster level 5 to 19, 2 from monster level 20 to 99
+- Player level 35 - 0 from monster level 1 to 5, 1 from monster level 6 to 20, 2 from monster level 21 to 99
+- Player level 36 - 0 from monster level 1 to 6, 1 from monster level 7 to 21, 2 from monster level 22 to 99
+- Player level 37 - 0 from monster level 1 to 7, 1 from monster level 8 to 22, 2 from monster level 23 to 99
+- Player level 38 - 0 from monster level 1 to 8, 1 from monster level 9 to 23, 2 from monster level 24 to 99
+- Player level 39 - 0 from monster level 1 to 9, 1 from monster level 10 to 24, 2 from monster level 25 to 99
+- Player level 40 - 0 from monster level 1 to 10, 1 from monster level 11 to 25, 2 from monster level 26 to 99
+- Player level 41 - 0 from monster level 1 to 11, 1 from monster level 12 to 26, 2 from monster level 27 to 99
+- Player level 42 - 0 from monster level 1 to 12, 1 from monster level 13 to 27, 2 from monster level 28 to 99
+- Player level 43 - 0 from monster level 1 to 13, 1 from monster level 14 to 28, 2 from monster level 29 to 99
+- Player level 44 - 0 from monster level 1 to 14, 1 from monster level 15 to 29, 2 from monster level 30 to 99
+- Player level 45 - 0 from monster level 1 to 15, 1 from monster level 16 to 30, 2 from monster level 31 to 99
+- Player level 46 - 0 from monster level 1 to 16, 1 from monster level 17 to 31, 2 from monster level 32 to 99
+- Player level 47 - 0 from monster level 1 to 17, 1 from monster level 18 to 32, 2 from monster level 33 to 99
+- Player level 48 - 0 from monster level 1 to 18, 1 from monster level 19 to 33, 2 from monster level 34 to 99
+- Player level 49 - 0 from monster level 1 to 19, 1 from monster level 20 to 34, 2 from monster level 35 to 99
+- Player level 50 - 0 from monster level 1 to 20, 1 from monster level 21 to 35, 2 from monster level 36 to 99
+- Player level 51 - 0 from monster level 1 to 21, 1 from monster level 22 to 36, 2 from monster level 37 to 99
+- Player level 52 - 0 from monster level 1 to 22, 1 from monster level 23 to 37, 2 from monster level 38 to 99
+- Player level 53 - 0 from monster level 1 to 23, 1 from monster level 24 to 38, 2 from monster level 39 to 99
+- Player level 54 - 0 from monster level 1 to 24, 1 from monster level 25 to 39, 2 from monster level 40 to 99
+- Player level 55 - 0 from monster level 1 to 25, 1 from monster level 26 to 40, 2 from monster level 41 to 99
+- Player level 56 - 0 from monster level 1 to 26, 1 from monster level 27 to 41, 2 from monster level 42 to 99
+- Player level 57 - 0 from monster level 1 to 27, 1 from monster level 28 to 42, 2 from monster level 43 to 99
+- Player level 58 - 0 from monster level 1 to 28, 1 from monster level 29 to 43, 2 from monster level 44 to 99
+- Player level 59 - 0 from monster level 1 to 29, 1 from monster level 30 to 44, 2 from monster level 45 to 99
+- Player level 60 - 0 from monster level 1 to 30, 1 from monster level 31 to 45, 2 from monster level 46 to 99
+- Player level 61 - 0 from monster level 1 to 31, 1 from monster level 32 to 46, 2 from monster level 47 to 99
+- Player level 62 - 0 from monster level 1 to 32, 1 from monster level 33 to 47, 2 from monster level 48 to 99
+- Player level 63 - 0 from monster level 1 to 33, 1 from monster level 34 to 48, 2 from monster level 49 to 99
+- Player level 64 - 0 from monster level 1 to 34, 1 from monster level 35 to 49, 2 from monster level 50 to 99
+- Player level 65 - 0 from monster level 1 to 35, 1 from monster level 36 to 50, 2 from monster level 51 to 99
+- Player level 66 - 0 from monster level 1 to 36, 1 from monster level 37 to 51, 2 from monster level 52 to 99
+- Player level 67 - 0 from monster level 1 to 37, 1 from monster level 38 to 52, 2 from monster level 53 to 99
+- Player level 68 - 0 from monster level 1 to 38, 1 from monster level 39 to 53, 2 from monster level 54 to 99
+- Player level 69 - 0 from monster level 1 to 39, 1 from monster level 40 to 54, 2 from monster level 55 to 99
+- Player level 70 - 0 from monster level 1 to 40, 1 from monster level 41 to 55, 2 from monster level 56 to 99
+- Player level 71 - 0 from monster level 1 to 41, 1 from monster level 42 to 56, 2 from monster level 57 to 99
+- Player level 72 - 0 from monster level 1 to 42, 1 from monster level 43 to 57, 2 from monster level 58 to 99
+- Player level 73 - 0 from monster level 1 to 43, 1 from monster level 44 to 58, 2 from monster level 59 to 99
+- Player level 74 - 0 from monster level 1 to 44, 1 from monster level 45 to 59, 2 from monster level 60 to 99
+- Player level 75 - 0 from monster level 1 to 45, 1 from monster level 46 to 60, 2 from monster level 61 to 99
+- Player level 76 - 0 from monster level 1 to 46, 1 from monster level 47 to 61, 2 from monster level 62 to 99
+- Player level 77 - 0 from monster level 1 to 47, 1 from monster level 48 to 62, 2 from monster level 63 to 99
+- Player level 78 - 0 from monster level 1 to 48, 1 from monster level 49 to 63, 2 from monster level 64 to 99
+- Player level 79 - 0 from monster level 1 to 49, 1 from monster level 50 to 64, 2 from monster level 65 to 99
+- Player level 80 - 0 from monster level 1 to 50, 1 from monster level 51 to 65, 2 from monster level 66 to 99
+- Player level 81 - 0 from monster level 1 to 51, 1 from monster level 52 to 66, 2 from monster level 67 to 99
+- Player level 82 - 0 from monster level 1 to 52, 1 from monster level 53 to 67, 2 from monster level 68 to 99
+- Player level 83 - 0 from monster level 1 to 53, 1 from monster level 54 to 68, 2 from monster level 69 to 99
+- Player level 84 - 0 from monster level 1 to 54, 1 from monster level 55 to 69, 2 from monster level 70 to 99
+- Player level 85 - 0 from monster level 1 to 55, 1 from monster level 56 to 70, 2 from monster level 71 to 99
+- Player level 86 - 0 from monster level 1 to 56, 1 from monster level 57 to 71, 2 from monster level 72 to 99
+- Player level 87 - 0 from monster level 1 to 57, 1 from monster level 58 to 72, 2 from monster level 73 to 99
+- Player level 88 - 0 from monster level 1 to 58, 1 from monster level 59 to 73, 2 from monster level 74 to 99
+- Player level 89 - 0 from monster level 1 to 59, 1 from monster level 60 to 74, 2 from monster level 75 to 99
+- Player level 90 - 0 from monster level 1 to 60, 1 from monster level 61 to 75, 2 from monster level 76 to 99
+- Player level 91 - 0 from monster level 1 to 61, 1 from monster level 62 to 76, 2 from monster level 77 to 99
+- Player level 92 - 0 from monster level 1 to 62, 1 from monster level 63 to 77, 2 from monster level 78 to 99
+- Player level 93 - 0 from monster level 1 to 63, 1 from monster level 64 to 78, 2 from monster level 79 to 99
+- Player level 94 - 0 from monster level 1 to 64, 1 from monster level 65 to 79, 2 from monster level 80 to 99
+- Player level 95 - 0 from monster level 1 to 65, 1 from monster level 66 to 80, 2 from monster level 81 to 99
+- Player level 96 - 0 from monster level 1 to 66, 1 from monster level 67 to 81, 2 from monster level 82 to 99
+- Player level 97 - 0 from monster level 1 to 67, 1 from monster level 68 to 82, 2 from monster level 83 to 99
+- Player level 98 - 0 from monster level 1 to 68, 1 from monster level 69 to 83, 2 from monster level 84 to 99
+- Player level 99 - 0 from monster level 1 to 69, 1 from monster level 70 to 84, 2 from monster level 85 to 99
