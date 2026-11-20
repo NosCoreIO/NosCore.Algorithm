@@ -850,6 +850,32 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void TimeSpaceExperienceDocumentation()
+        {
+            var timeSpaceExperienceService = new TimeSpaceExperienceService.TimeSpaceExperienceService();
+
+            var resultBuilder = new StringBuilder("# Time-Space Experience Table");
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("Experience for clearing a time-space, by its minimum level, for 100 monsters killed, before any rate or bonus.");
+            for (byte levelMinimum = 1; levelMinimum < 100; levelMinimum++)
+            {
+                resultBuilder.AppendLine(
+                    $"- Minimum level {levelMinimum,2} - XP: {timeSpaceExperienceService.GetExperience(levelMinimum, 100),5}");
+            }
+
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("Job experience for clearing a time-space, by monsters killed, before any rate or bonus.");
+            for (var monstersKilled = 0; monstersKilled <= 120; monstersKilled++)
+            {
+                resultBuilder.AppendLine(
+                    $"- {monstersKilled,3} monster(s) killed - Job XP: {timeSpaceExperienceService.GetJobExperience(monstersKilled),3}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void RarityPointDocumentation()
         {
             var rarityPointService = new RarityPointService.RarityPointService();

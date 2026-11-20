@@ -1,0 +1,225 @@
+﻿# Time-Space Experience Table
+
+Experience for clearing a time-space, by its minimum level, for 100 monsters killed, before any rate or bonus.
+- Minimum level  1 - XP:   300
+- Minimum level  2 - XP:   600
+- Minimum level  3 - XP:   900
+- Minimum level  4 - XP:  1200
+- Minimum level  5 - XP:  1500
+- Minimum level  6 - XP:  1800
+- Minimum level  7 - XP:  2100
+- Minimum level  8 - XP:  2400
+- Minimum level  9 - XP:  2700
+- Minimum level 10 - XP:  3000
+- Minimum level 11 - XP:  3300
+- Minimum level 12 - XP:  3600
+- Minimum level 13 - XP:  3900
+- Minimum level 14 - XP:  4200
+- Minimum level 15 - XP:  4500
+- Minimum level 16 - XP:  4800
+- Minimum level 17 - XP:  5100
+- Minimum level 18 - XP:  5400
+- Minimum level 19 - XP:  5700
+- Minimum level 20 - XP:  6000
+- Minimum level 21 - XP:  6300
+- Minimum level 22 - XP:  6600
+- Minimum level 23 - XP:  6900
+- Minimum level 24 - XP:  7200
+- Minimum level 25 - XP:  7500
+- Minimum level 26 - XP:  7800
+- Minimum level 27 - XP:  8100
+- Minimum level 28 - XP:  8400
+- Minimum level 29 - XP:  8700
+- Minimum level 30 - XP:  9000
+- Minimum level 31 - XP:  9300
+- Minimum level 32 - XP:  9600
+- Minimum level 33 - XP:  9900
+- Minimum level 34 - XP: 10200
+- Minimum level 35 - XP: 10500
+- Minimum level 36 - XP: 10800
+- Minimum level 37 - XP: 11100
+- Minimum level 38 - XP: 11400
+- Minimum level 39 - XP: 11700
+- Minimum level 40 - XP: 12000
+- Minimum level 41 - XP: 12300
+- Minimum level 42 - XP: 12600
+- Minimum level 43 - XP: 12900
+- Minimum level 44 - XP: 13200
+- Minimum level 45 - XP: 13500
+- Minimum level 46 - XP: 13800
+- Minimum level 47 - XP: 14100
+- Minimum level 48 - XP: 14400
+- Minimum level 49 - XP: 14700
+- Minimum level 50 - XP: 15000
+- Minimum level 51 - XP: 15300
+- Minimum level 52 - XP: 15600
+- Minimum level 53 - XP: 15900
+- Minimum level 54 - XP: 16200
+- Minimum level 55 - XP: 16500
+- Minimum level 56 - XP: 16800
+- Minimum level 57 - XP: 17100
+- Minimum level 58 - XP: 17400
+- Minimum level 59 - XP: 17700
+- Minimum level 60 - XP: 18000
+- Minimum level 61 - XP: 18300
+- Minimum level 62 - XP: 18600
+- Minimum level 63 - XP: 18900
+- Minimum level 64 - XP: 19200
+- Minimum level 65 - XP: 19500
+- Minimum level 66 - XP: 19800
+- Minimum level 67 - XP: 20100
+- Minimum level 68 - XP: 20400
+- Minimum level 69 - XP: 20700
+- Minimum level 70 - XP: 21000
+- Minimum level 71 - XP: 21300
+- Minimum level 72 - XP: 21600
+- Minimum level 73 - XP: 21900
+- Minimum level 74 - XP: 22200
+- Minimum level 75 - XP: 22500
+- Minimum level 76 - XP: 22800
+- Minimum level 77 - XP: 23100
+- Minimum level 78 - XP: 23400
+- Minimum level 79 - XP: 23700
+- Minimum level 80 - XP: 24000
+- Minimum level 81 - XP: 24300
+- Minimum level 82 - XP: 24600
+- Minimum level 83 - XP: 24900
+- Minimum level 84 - XP: 25200
+- Minimum level 85 - XP: 25500
+- Minimum level 86 - XP: 25800
+- Minimum level 87 - XP: 26100
+- Minimum level 88 - XP: 26400
+- Minimum level 89 - XP: 26700
+- Minimum level 90 - XP: 27000
+- Minimum level 91 - XP: 27300
+- Minimum level 92 - XP: 27600
+- Minimum level 93 - XP: 27900
+- Minimum level 94 - XP: 28200
+- Minimum level 95 - XP: 28500
+- Minimum level 96 - XP: 28800
+- Minimum level 97 - XP: 29100
+- Minimum level 98 - XP: 29400
+- Minimum level 99 - XP: 29700
+
+Job experience for clearing a time-space, by monsters killed, before any rate or bonus.
+-   0 monster(s) killed - Job XP:   0
+-   1 monster(s) killed - Job XP:   5
+-   2 monster(s) killed - Job XP:  10
+-   3 monster(s) killed - Job XP:  15
+-   4 monster(s) killed - Job XP:  21
+-   5 monster(s) killed - Job XP:  26
+-   6 monster(s) killed - Job XP:  31
+-   7 monster(s) killed - Job XP:  36
+-   8 monster(s) killed - Job XP:  42
+-   9 monster(s) killed - Job XP:  47
+-  10 monster(s) killed - Job XP:  52
+-  11 monster(s) killed - Job XP:  57
+-  12 monster(s) killed - Job XP:  63
+-  13 monster(s) killed - Job XP:  68
+-  14 monster(s) killed - Job XP:  73
+-  15 monster(s) killed - Job XP:  78
+-  16 monster(s) killed - Job XP:  84
+-  17 monster(s) killed - Job XP:  89
+-  18 monster(s) killed - Job XP:  94
+-  19 monster(s) killed - Job XP:  99
+-  20 monster(s) killed - Job XP: 105
+-  21 monster(s) killed - Job XP: 110
+-  22 monster(s) killed - Job XP: 115
+-  23 monster(s) killed - Job XP: 120
+-  24 monster(s) killed - Job XP: 126
+-  25 monster(s) killed - Job XP: 131
+-  26 monster(s) killed - Job XP: 136
+-  27 monster(s) killed - Job XP: 141
+-  28 monster(s) killed - Job XP: 147
+-  29 monster(s) killed - Job XP: 152
+-  30 monster(s) killed - Job XP: 157
+-  31 monster(s) killed - Job XP: 162
+-  32 monster(s) killed - Job XP: 168
+-  33 monster(s) killed - Job XP: 173
+-  34 monster(s) killed - Job XP: 178
+-  35 monster(s) killed - Job XP: 183
+-  36 monster(s) killed - Job XP: 189
+-  37 monster(s) killed - Job XP: 194
+-  38 monster(s) killed - Job XP: 199
+-  39 monster(s) killed - Job XP: 204
+-  40 monster(s) killed - Job XP: 210
+-  41 monster(s) killed - Job XP: 215
+-  42 monster(s) killed - Job XP: 220
+-  43 monster(s) killed - Job XP: 225
+-  44 monster(s) killed - Job XP: 231
+-  45 monster(s) killed - Job XP: 236
+-  46 monster(s) killed - Job XP: 241
+-  47 monster(s) killed - Job XP: 246
+-  48 monster(s) killed - Job XP: 252
+-  49 monster(s) killed - Job XP: 257
+-  50 monster(s) killed - Job XP: 262
+-  51 monster(s) killed - Job XP: 267
+-  52 monster(s) killed - Job XP: 273
+-  53 monster(s) killed - Job XP: 278
+-  54 monster(s) killed - Job XP: 283
+-  55 monster(s) killed - Job XP: 288
+-  56 monster(s) killed - Job XP: 294
+-  57 monster(s) killed - Job XP: 299
+-  58 monster(s) killed - Job XP: 304
+-  59 monster(s) killed - Job XP: 309
+-  60 monster(s) killed - Job XP: 315
+-  61 monster(s) killed - Job XP: 320
+-  62 monster(s) killed - Job XP: 325
+-  63 monster(s) killed - Job XP: 330
+-  64 monster(s) killed - Job XP: 336
+-  65 monster(s) killed - Job XP: 341
+-  66 monster(s) killed - Job XP: 346
+-  67 monster(s) killed - Job XP: 351
+-  68 monster(s) killed - Job XP: 357
+-  69 monster(s) killed - Job XP: 362
+-  70 monster(s) killed - Job XP: 367
+-  71 monster(s) killed - Job XP: 372
+-  72 monster(s) killed - Job XP: 378
+-  73 monster(s) killed - Job XP: 383
+-  74 monster(s) killed - Job XP: 388
+-  75 monster(s) killed - Job XP: 393
+-  76 monster(s) killed - Job XP: 399
+-  77 monster(s) killed - Job XP: 404
+-  78 monster(s) killed - Job XP: 409
+-  79 monster(s) killed - Job XP: 414
+-  80 monster(s) killed - Job XP: 420
+-  81 monster(s) killed - Job XP: 425
+-  82 monster(s) killed - Job XP: 430
+-  83 monster(s) killed - Job XP: 435
+-  84 monster(s) killed - Job XP: 441
+-  85 monster(s) killed - Job XP: 446
+-  86 monster(s) killed - Job XP: 451
+-  87 monster(s) killed - Job XP: 456
+-  88 monster(s) killed - Job XP: 462
+-  89 monster(s) killed - Job XP: 467
+-  90 monster(s) killed - Job XP: 472
+-  91 monster(s) killed - Job XP: 477
+-  92 monster(s) killed - Job XP: 483
+-  93 monster(s) killed - Job XP: 488
+-  94 monster(s) killed - Job XP: 493
+-  95 monster(s) killed - Job XP: 498
+-  96 monster(s) killed - Job XP: 504
+-  97 monster(s) killed - Job XP: 509
+-  98 monster(s) killed - Job XP: 514
+-  99 monster(s) killed - Job XP: 519
+- 100 monster(s) killed - Job XP: 525
+- 101 monster(s) killed - Job XP: 530
+- 102 monster(s) killed - Job XP: 535
+- 103 monster(s) killed - Job XP: 540
+- 104 monster(s) killed - Job XP: 546
+- 105 monster(s) killed - Job XP: 551
+- 106 monster(s) killed - Job XP: 556
+- 107 monster(s) killed - Job XP: 561
+- 108 monster(s) killed - Job XP: 567
+- 109 monster(s) killed - Job XP: 572
+- 110 monster(s) killed - Job XP: 577
+- 111 monster(s) killed - Job XP: 582
+- 112 monster(s) killed - Job XP: 588
+- 113 monster(s) killed - Job XP: 593
+- 114 monster(s) killed - Job XP: 598
+- 115 monster(s) killed - Job XP: 603
+- 116 monster(s) killed - Job XP: 609
+- 117 monster(s) killed - Job XP: 614
+- 118 monster(s) killed - Job XP: 619
+- 119 monster(s) killed - Job XP: 624
+- 120 monster(s) killed - Job XP: 630
