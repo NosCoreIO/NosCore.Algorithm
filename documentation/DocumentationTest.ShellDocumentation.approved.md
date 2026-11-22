@@ -145,6 +145,7 @@
 ## Option level 6
 - Weapon IncreasedGold: 130 - 177
 - Weapon IncreasedCombatExperience: 60 - 104
+- Weapon IncreasedJobExperience: 60 - 104
 - Armor ReducedProductionPointConsumption: 471 - 602
 - Armor IncreasedMinigameRewards: 490 - 602
 - Armor IncreasedItemRecovery: 187 - 290
