@@ -26,6 +26,11 @@ namespace NosCore.Algorithm
         internal const short MaxDignityLoss = 50;
         internal const byte TimeSpacePenaltyPerLevel = 2;
         internal const byte MaxTimeSpacePenalty = 100;
+        internal const byte TimeSpaceKillPointsAtSameLevel = 3;
+        // Packet traces show 4 for monsters one to ten levels above the killer, though a few kills of a
+        // monster nine levels above score 3, so the ceiling past one level above is not settled.
+        internal const byte MaxTimeSpaceKillLevelPoints = 4;
+        internal const byte TimeSpaceKillPointsPerChain = 5;
         internal const byte TimeSpaceExperiencePerLevel = 3;
         internal const byte TimeSpaceJobExperienceNumerator = 21;
         internal const byte TimeSpaceJobExperienceDenominator = 4;

@@ -895,6 +895,27 @@ namespace NosCore.Algorithm.Tests
         }
 
         [TestMethod]
+        public void TimeSpaceScoreDocumentation()
+        {
+            var timeSpaceScoreService = new TimeSpaceScoreService.TimeSpaceScoreService();
+
+            var resultBuilder = new StringBuilder("# Time-Space Kill Points Table");
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine();
+            resultBuilder.AppendLine("Points a kill adds to the running score, by how far the monster is above its killer and how many marked monsters in a row the kill completes (0 for an unmarked monster).");
+            for (var difference = -5; difference <= 5; difference++)
+            {
+                const byte killerLevel = 30;
+                var monsterLevel = (byte)(killerLevel + difference);
+                var points = Enumerable.Range(0, 6).Select(chain => timeSpaceScoreService.GetKillPoints(monsterLevel, killerLevel, chain));
+                resultBuilder.AppendLine(
+                    $"- {difference,2} level(s) above the killer - Points for a chain of 0 to 5: {string.Join(", ", points)}");
+            }
+
+            Approvals.Verify(WriterFactory.CreateTextWriter(resultBuilder.ToString(), "md"));
+        }
+
+        [TestMethod]
         public void RarityPointDocumentation()
         {
             var rarityPointService = new RarityPointService.RarityPointService();
